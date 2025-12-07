@@ -38,14 +38,14 @@
         "destinations": 119
       },
       {
-        "name": "Nice-C\u00f4te d'Azur Airport",
+        "name": "Nice-Côte d'Azur Airport",
         "iata": "NCE",
         "destinations": 90
       }
     ],
     "coords": [
-      2.2137,
-      46.2276
+      3.0713,
+      46.3495
     ]
   },
   "United Kingdom": {
@@ -93,8 +93,8 @@
       }
     ],
     "coords": [
-      -3.436,
-      55.3781
+      -1.6097,
+      52.7846
     ]
   },
   "Germany": {
@@ -136,14 +136,14 @@
         "destinations": 191
       },
       {
-        "name": "D\u00fcsseldorf Airport",
+        "name": "Düsseldorf Airport",
         "iata": "DUS",
         "destinations": 147
       }
     ],
     "coords": [
-      10.4515,
-      51.1657
+      9.6247,
+      50.7152
     ]
   },
   "United States": {
@@ -191,8 +191,8 @@
       }
     ],
     "coords": [
-      -95.7129,
-      37.0902
+      -92.6431,
+      36.5433
     ]
   },
   "United Arab Emirates": {
@@ -240,8 +240,8 @@
       }
     ],
     "coords": [
-      53.8478,
-      23.4241
+      55.2181,
+      25.0461
     ]
   },
   "Turkey": {
@@ -278,7 +278,7 @@
         "destinations": 227
       },
       {
-        "name": "Sabiha G\u00f6k\u00e7en International Airport",
+        "name": "Sabiha Gökçen International Airport",
         "iata": "SAW",
         "destinations": 98
       },
@@ -289,8 +289,8 @@
       }
     ],
     "coords": [
-      35.2433,
-      38.9637
+      29.5834,
+      39.7805
     ]
   },
   "Netherlands": {
@@ -338,8 +338,8 @@
       }
     ],
     "coords": [
-      5.2913,
-      52.1326
+      4.9045,
+      52.0916
     ]
   },
   "Italy": {
@@ -371,7 +371,7 @@
     ],
     "top_airports": [
       {
-        "name": "Leonardo da Vinci\u2013Fiumicino Airport",
+        "name": "Leonardo da Vinci–Fiumicino Airport",
         "iata": "FCO",
         "destinations": 157
       },
@@ -387,8 +387,8 @@
       }
     ],
     "coords": [
-      12.5674,
-      41.8719
+      11.6151,
+      42.7618
     ]
   },
   "Spain": {
@@ -425,7 +425,7 @@
         "destinations": 163
       },
       {
-        "name": "Adolfo Su\u00e1rez Madrid\u2013Barajas Airport",
+        "name": "Adolfo Suárez Madrid–Barajas Airport",
         "iata": "MAD",
         "destinations": 158
       },
@@ -436,8 +436,8 @@
       }
     ],
     "coords": [
-      -3.7492,
-      40.4637
+      -4.1785,
+      37.2006
     ]
   },
   "Russia": {
@@ -485,8 +485,8 @@
       }
     ],
     "coords": [
-      105.3188,
-      61.524
+      54.7978,
+      54.6465
     ]
   },
   "Canada": {
@@ -534,8 +534,8 @@
       }
     ],
     "coords": [
-      -106.3468,
-      56.1304
+      -91.0854,
+      47.1664
     ]
   },
   "China": {
@@ -583,8 +583,8 @@
       }
     ],
     "coords": [
-      104.1954,
-      35.8617
+      114.5257,
+      31.8307
     ]
   },
   "Qatar": {
@@ -622,8 +622,8 @@
       }
     ],
     "coords": [
-      51.1839,
-      25.3548
+      51.6081,
+      25.2731
     ]
   },
   "Switzerland": {
@@ -655,7 +655,7 @@
     ],
     "top_airports": [
       {
-        "name": "Z\u00fcrich Airport",
+        "name": "Zürich Airport",
         "iata": "ZRH",
         "destinations": 137
       },
@@ -671,8 +671,8 @@
       }
     ],
     "coords": [
-      8.2275,
-      46.8182
+      7.5291,
+      46.947
     ]
   },
   "Austria": {
@@ -720,8 +720,8 @@
       }
     ],
     "coords": [
-      14.5501,
-      47.5162
+      15.8156,
+      47.9572
     ]
   },
   "Belgium": {
@@ -763,14 +763,14 @@
         "destinations": 83
       },
       {
-        "name": "Li\u00e8ge Airport",
+        "name": "Liège Airport",
         "iata": "LGG",
         "destinations": 7
       }
     ],
     "coords": [
-      4.4699,
-      50.5039
+      4.5019,
+      50.74
     ]
   },
   "Thailand": {
@@ -818,8 +818,8 @@
       }
     ],
     "coords": [
-      100.9925,
-      15.87
+      100.1419,
+      13.1029
     ]
   },
   "India": {
@@ -867,8 +867,8 @@
       }
     ],
     "coords": [
-      78.9629,
-      20.5937
+      77.787,
+      19.4307
     ]
   },
   "Morocco": {
@@ -916,8 +916,8 @@
       }
     ],
     "coords": [
-      -7.0926,
-      31.7917
+      -7.0685,
+      33.0184
     ]
   },
   "Egypt": {
@@ -965,8 +965,8 @@
       }
     ],
     "coords": [
-      30.8025,
-      26.8206
+      32.0145,
+      29.0314
     ]
   },
   "Ethiopia": {
@@ -1004,8 +1004,8 @@
       }
     ],
     "coords": [
-      40.4897,
-      9.145
+      38.7993,
+      8.9779
     ]
   },
   "Denmark": {
@@ -1053,8 +1053,8 @@
       }
     ],
     "coords": [
-      9.5018,
-      56.2639
+      11.6093,
+      55.7804
     ]
   },
   "Kenya": {
@@ -1102,8 +1102,8 @@
       }
     ],
     "coords": [
-      37.9062,
-      -0.0236
+      37.3361,
+      -1.4601
     ]
   },
   "South Korea": {
@@ -1151,8 +1151,8 @@
       }
     ],
     "coords": [
-      127.7669,
-      35.9078
+      126.9186,
+      36.4306
     ]
   },
   "Saudi Arabia": {
@@ -1200,8 +1200,8 @@
       }
     ],
     "coords": [
-      45.0792,
-      23.8859
+      43.0201,
+      23.8124
     ]
   },
   "Sweden": {
@@ -1249,8 +1249,8 @@
       }
     ],
     "coords": [
-      18.6435,
-      60.1282
+      16.369,
+      59.0081
     ]
   },
   "Hong Kong": {
@@ -1288,8 +1288,8 @@
       }
     ],
     "coords": [
-      114.1095,
-      22.3193
+      113.915,
+      22.3089
     ]
   },
   "Greece": {
@@ -1337,8 +1337,8 @@
       }
     ],
     "coords": [
-      21.8243,
-      39.0742
+      24.2292,
+      37.6319
     ]
   },
   "South Africa": {
@@ -1386,8 +1386,8 @@
       }
     ],
     "coords": [
-      22.9375,
-      -30.5595
+      26.6694,
+      -28.0637
     ]
   },
   "Singapore": {
@@ -1425,8 +1425,8 @@
       }
     ],
     "coords": [
-      103.8198,
-      1.3521
+      103.994,
+      1.3502
     ]
   },
   "Israel": {
@@ -1464,8 +1464,8 @@
       }
     ],
     "coords": [
-      34.8516,
-      31.0461
+      34.8867,
+      32.0114
     ]
   },
   "Japan": {
@@ -1513,8 +1513,8 @@
       }
     ],
     "coords": [
-      138.2529,
-      36.2048
+      136.4361,
+      35.0052
     ]
   },
   "Poland": {
@@ -1551,19 +1551,19 @@
         "destinations": 78
       },
       {
-        "name": "Krak\u00f3w John Paul II International Airport",
+        "name": "Kraków John Paul II International Airport",
         "iata": "KRK",
         "destinations": 52
       },
       {
-        "name": "Gda\u0144sk Lech Wa\u0142\u0119sa Airport",
+        "name": "Gdańsk Lech Wałęsa Airport",
         "iata": "GDN",
         "destinations": 47
       }
     ],
     "coords": [
-      19.1451,
-      51.9194
+      19.4272,
+      51.8842
     ]
   },
   "Finland": {
@@ -1611,8 +1611,8 @@
       }
     ],
     "coords": [
-      25.7482,
-      61.9241
+      24.714,
+      60.6166
     ]
   },
   "Norway": {
@@ -1660,8 +1660,8 @@
       }
     ],
     "coords": [
-      8.4689,
-      60.472
+      9.5215,
+      60.7685
     ]
   },
   "Malaysia": {
@@ -1709,8 +1709,8 @@
       }
     ],
     "coords": [
-      101.9758,
-      4.2105
+      105.2978,
+      3.5184
     ]
   },
   "Czech Republic": {
@@ -1742,7 +1742,7 @@
     ],
     "top_airports": [
       {
-        "name": "V\u00e1clav Havel Airport Prague",
+        "name": "Václav Havel Airport Prague",
         "iata": "PRG",
         "destinations": 94
       },
@@ -1752,14 +1752,14 @@
         "destinations": 3
       },
       {
-        "name": "Ostrava Leos Jan\u00e1\u010dek Airport",
+        "name": "Ostrava Leos Janáček Airport",
         "iata": "OSR",
         "destinations": 3
       }
     ],
     "coords": [
-      15.473,
-      49.8175
+      14.3627,
+      50.0902
     ]
   },
   "Portugal": {
@@ -1801,14 +1801,14 @@
         "destinations": 63
       },
       {
-        "name": "Francisco de S\u00e1 Carneiro Airport",
+        "name": "Francisco de Sá Carneiro Airport",
         "iata": "OPO",
         "destinations": 61
       }
     ],
     "coords": [
-      -8.2245,
-      39.3999
+      -10.6296,
+      38.1936
     ]
   },
   "Jordan": {
@@ -1846,8 +1846,8 @@
       }
     ],
     "coords": [
-      36.2384,
-      30.5852
+      35.9932,
+      31.7226
     ]
   },
   "Ukraine": {
@@ -1895,8 +1895,8 @@
       }
     ],
     "coords": [
-      31.1656,
-      48.3794
+      31.3186,
+      49.4499
     ]
   },
   "Ireland": {
@@ -1944,8 +1944,8 @@
       }
     ],
     "coords": [
-      -8.2439,
-      53.4129
+      -7.1447,
+      53.1133
     ]
   },
   "Australia": {
@@ -1993,8 +1993,8 @@
       }
     ],
     "coords": [
-      133.7751,
-      -25.2744
+      143.724,
+      -30.1034
     ]
   },
   "Hungary": {
@@ -2037,8 +2037,8 @@
       }
     ],
     "coords": [
-      19.5033,
-      47.1625
+      19.3207,
+      47.4313
     ]
   },
   "Brazil": {
@@ -2070,12 +2070,12 @@
     ],
     "top_airports": [
       {
-        "name": "Guarulhos - Governador Andr\u00e9 Franco Montoro International Airport",
+        "name": "Guarulhos - Governador André Franco Montoro International Airport",
         "iata": "GRU",
         "destinations": 92
       },
       {
-        "name": "Rio Gale\u00e3o \u2013 Tom Jobim International Airport",
+        "name": "Rio Galeão – Tom Jobim International Airport",
         "iata": "GIG",
         "destinations": 49
       },
@@ -2086,8 +2086,8 @@
       }
     ],
     "coords": [
-      -51.9253,
-      -14.235
+      -45.904,
+      -18.5084
     ]
   },
   "Nigeria": {
@@ -2135,8 +2135,8 @@
       }
     ],
     "coords": [
-      8.6753,
-      9.082
+      5.1208,
+      7.8977
     ]
   },
   "Latvia": {
@@ -2174,8 +2174,8 @@
       }
     ],
     "coords": [
-      24.6032,
-      56.8796
+      23.9711,
+      56.9236
     ]
   },
   "Cyprus": {
@@ -2223,8 +2223,8 @@
       }
     ],
     "coords": [
-      33.4299,
-      35.1264
+      33.2818,
+      34.8554
     ]
   },
   "Panama": {
@@ -2262,8 +2262,8 @@
       }
     ],
     "coords": [
-      -80.7821,
-      8.538
+      -79.3835,
+      9.0714
     ]
   },
   "Lebanon": {
@@ -2301,8 +2301,8 @@
       }
     ],
     "coords": [
-      35.8623,
-      33.8547
+      35.4884,
+      33.8209
     ]
   },
   "Tunisia": {
@@ -2350,8 +2350,8 @@
       }
     ],
     "coords": [
-      9.5375,
-      33.8869
+      10.4372,
+      35.9446
     ]
   },
   "Iran": {
@@ -2399,8 +2399,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      53.6947,
+      32.7683
     ]
   },
   "Algeria": {
@@ -2448,8 +2448,8 @@
       }
     ],
     "coords": [
-      1.6596,
-      28.0339
+      3.247,
+      36.3191
     ]
   },
   "Belarus": {
@@ -2487,8 +2487,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      28.0307,
+      53.8825
     ]
   },
   "Serbia": {
@@ -2525,14 +2525,14 @@
         "destinations": 52
       },
       {
-        "name": "Pri\u0161tina International Airport",
+        "name": "Priština International Airport",
         "iata": "PRN",
         "destinations": 17
       }
     ],
     "coords": [
-      21.0059,
-      44.0165
+      20.4881,
+      44.2651
     ]
   },
   "Romania": {
@@ -2564,7 +2564,7 @@
     ],
     "top_airports": [
       {
-        "name": "Henri Coand\u0103 International Airport",
+        "name": "Henri Coandă International Airport",
         "iata": "OTP",
         "destinations": 66
       },
@@ -2574,14 +2574,14 @@
         "destinations": 18
       },
       {
-        "name": "Timi\u015foara Traian Vuia Airport",
+        "name": "Timişoara Traian Vuia Airport",
         "iata": "TSR",
         "destinations": 12
       }
     ],
     "coords": [
-      24.9668,
-      45.9432
+      25.1345,
+      45.3184
     ]
   },
   "Dominican Republic": {
@@ -2618,7 +2618,7 @@
         "destinations": 46
       },
       {
-        "name": "Las Am\u00e9ricas International Airport",
+        "name": "Las Américas International Airport",
         "iata": "SDQ",
         "destinations": 27
       },
@@ -2629,8 +2629,8 @@
       }
     ],
     "coords": [
-      -70.1627,
-      18.7357
+      -69.2553,
+      18.765
     ]
   },
   "Lithuania": {
@@ -2678,8 +2678,8 @@
       }
     ],
     "coords": [
-      23.8813,
-      55.1694
+      24.7653,
+      54.7853
     ]
   },
   "Kuwait": {
@@ -2717,8 +2717,8 @@
       }
     ],
     "coords": [
-      47.4818,
-      29.3117
+      47.9689,
+      29.2266
     ]
   },
   "Malta": {
@@ -2756,8 +2756,8 @@
       }
     ],
     "coords": [
-      14.3754,
-      35.9375
+      14.4775,
+      35.8575
     ]
   },
   "Mexico": {
@@ -2794,7 +2794,7 @@
         "destinations": 94
       },
       {
-        "name": "Canc\u00fan International Airport",
+        "name": "Cancún International Airport",
         "iata": "CUN",
         "destinations": 78
       },
@@ -2805,8 +2805,8 @@
       }
     ],
     "coords": [
-      -102.5528,
-      23.6345
+      -100.142,
+      22.3418
     ]
   },
   "Oman": {
@@ -2849,8 +2849,8 @@
       }
     ],
     "coords": [
-      55.9233,
-      21.4735
+      57.8651,
+      22.9378
     ]
   },
   "Senegal": {
@@ -2882,14 +2882,14 @@
     ],
     "top_airports": [
       {
-        "name": "L\u00e9opold S\u00e9dar Senghor International Airport",
+        "name": "Léopold Sédar Senghor International Airport",
         "iata": "DKR",
         "destinations": 31
       }
     ],
     "coords": [
-      -14.4524,
-      14.4974
+      -17.4902,
+      14.7397
     ]
   },
   "Croatia": {
@@ -2937,8 +2937,8 @@
       }
     ],
     "coords": [
-      15.2,
-      45.1
+      16.341,
+      43.9671
     ]
   },
   "Ghana": {
@@ -2976,8 +2976,8 @@
       }
     ],
     "coords": [
-      -1.0232,
-      7.9465
+      -0.1668,
+      5.6052
     ]
   },
   "Bulgaria": {
@@ -3025,8 +3025,8 @@
       }
     ],
     "coords": [
-      25.4858,
-      42.7339
+      24.8042,
+      42.731
     ]
   },
   "Philippines": {
@@ -3074,8 +3074,8 @@
       }
     ],
     "coords": [
-      121.774,
-      12.8797
+      122.0657,
+      12.8308
     ]
   },
   "Kazakhstan": {
@@ -3123,8 +3123,8 @@
       }
     ],
     "coords": [
-      66.9237,
-      48.0196
+      69.1031,
+      46.1633
     ]
   },
   "Taiwan": {
@@ -3172,8 +3172,8 @@
       }
     ],
     "coords": [
-      120.9605,
-      23.6978
+      121.0095,
+      24.4657
     ]
   },
   "Netherlands Antilles": {
@@ -3221,8 +3221,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -65.5593,
+      15.5126
     ]
   },
   "Sri Lanka": {
@@ -3265,8 +3265,8 @@
       }
     ],
     "coords": [
-      80.7718,
-      7.8731
+      79.9943,
+      7.1011
     ]
   },
   "Cuba": {
@@ -3298,7 +3298,7 @@
     ],
     "top_airports": [
       {
-        "name": "Jos\u00e9 Mart\u00ed International Airport",
+        "name": "José Martí International Airport",
         "iata": "HAV",
         "destinations": 31
       },
@@ -3314,8 +3314,8 @@
       }
     ],
     "coords": [
-      -77.7812,
-      21.5218
+      -80.4128,
+      22.3855
     ]
   },
   "Bahrain": {
@@ -3353,8 +3353,8 @@
       }
     ],
     "coords": [
-      50.5577,
-      26.0667
+      50.6336,
+      26.2708
     ]
   },
   "Pakistan": {
@@ -3402,8 +3402,8 @@
       }
     ],
     "coords": [
-      69.3451,
-      30.3753
+      70.986,
+      30.433
     ]
   },
   "Uzbekistan": {
@@ -3451,8 +3451,8 @@
       }
     ],
     "coords": [
-      64.5853,
-      41.3775
+      68.4806,
+      40.966
     ]
   },
   "Colombia": {
@@ -3494,14 +3494,14 @@
         "destinations": 18
       },
       {
-        "name": "Jose Maria C\u00f3rdova International Airport",
+        "name": "Jose Maria Córdova International Airport",
         "iata": "MDE",
         "destinations": 18
       }
     ],
     "coords": [
-      -74.2973,
-      4.5709
+      -74.7754,
+      5.4156
     ]
   },
   "Azerbaijan": {
@@ -3549,8 +3549,8 @@
       }
     ],
     "coords": [
-      47.5769,
-      40.1431
+      49.6606,
+      40.415
     ]
   },
   "Venezuela": {
@@ -3582,12 +3582,12 @@
     ],
     "top_airports": [
       {
-        "name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "name": "Simón Bolívar International Airport",
         "iata": "CCS",
         "destinations": 47
       },
       {
-        "name": "Del Caribe Santiago Mari\u00f1o International Airport",
+        "name": "Del Caribe Santiago Mariño International Airport",
         "iata": "PMV",
         "destinations": 14
       },
@@ -3598,8 +3598,8 @@
       }
     ],
     "coords": [
-      -66.5897,
-      6.4238
+      -66.9538,
+      10.6239
     ]
   },
   "Vietnam": {
@@ -3647,8 +3647,8 @@
       }
     ],
     "coords": [
-      108.2772,
-      14.0583
+      106.5859,
+      15.6772
     ]
   },
   "Argentina": {
@@ -3696,8 +3696,8 @@
       }
     ],
     "coords": [
-      -63.6167,
-      -38.4161
+      -59.2274,
+      -34.2223
     ]
   },
   "Peru": {
@@ -3729,14 +3729,14 @@
     ],
     "top_airports": [
       {
-        "name": "Jorge Ch\u00e1vez International Airport",
+        "name": "Jorge Chávez International Airport",
         "iata": "LIM",
         "destinations": 57
       }
     ],
     "coords": [
-      -75.0152,
-      -9.19
+      -77.1143,
+      -12.0219
     ]
   },
   "Angola": {
@@ -3774,8 +3774,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      13.2312,
+      -8.8584
     ]
   },
   "Luxembourg": {
@@ -3813,8 +3813,8 @@
       }
     ],
     "coords": [
-      6.1296,
-      49.8153
+      6.2044,
+      49.6233
     ]
   },
   "Indonesia": {
@@ -3862,8 +3862,8 @@
       }
     ],
     "coords": [
-      113.9213,
-      -0.7893
+      111.4838,
+      -5.3601
     ]
   },
   "Georgia": {
@@ -3911,8 +3911,8 @@
       }
     ],
     "coords": [
-      43.3569,
-      42.3154
+      43.9668,
+      41.771
     ]
   },
   "Cote d'Ivoire": {
@@ -3950,8 +3950,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -3.9263,
+      5.2614
     ]
   },
   "Bangladesh": {
@@ -3999,8 +3999,8 @@
       }
     ],
     "coords": [
-      90.3563,
-      23.685
+      90.7529,
+      23.5066
     ]
   },
   "Estonia": {
@@ -4043,8 +4043,8 @@
       }
     ],
     "coords": [
-      25.0136,
-      58.5953
+      24.8969,
+      59.3752
     ]
   },
   "Slovenia": {
@@ -4076,14 +4076,14 @@
     ],
     "top_airports": [
       {
-        "name": "Ljubljana Jo\u017ee Pu\u010dnik Airport",
+        "name": "Ljubljana Jože Pučnik Airport",
         "iata": "LJU",
         "destinations": 22
       }
     ],
     "coords": [
-      14.9955,
-      46.1512
+      14.4576,
+      46.2237
     ]
   },
   "Puerto Rico": {
@@ -4131,8 +4131,8 @@
       }
     ],
     "coords": [
-      -66.5901,
-      18.2208
+      -66.1042,
+      18.4278
     ]
   },
   "Chile": {
@@ -4164,7 +4164,7 @@
     ],
     "top_airports": [
       {
-        "name": "Comodoro Arturo Merino Ben\u00edtez International Airport",
+        "name": "Comodoro Arturo Merino Benítez International Airport",
         "iata": "SCL",
         "destinations": 40
       },
@@ -4175,8 +4175,8 @@
       }
     ],
     "coords": [
-      -71.543,
-      -35.6751
+      -70.7186,
+      -31.9644
     ]
   },
   "Cameroon": {
@@ -4213,14 +4213,14 @@
         "destinations": 21
       },
       {
-        "name": "Yaound\u00e9 Nsimalen International Airport",
+        "name": "Yaoundé Nsimalen International Airport",
         "iata": "NSI",
         "destinations": 7
       }
     ],
     "coords": [
-      0,
-      0
+      10.1779,
+      3.9352
     ]
   },
   "Tanzania": {
@@ -4268,8 +4268,8 @@
       }
     ],
     "coords": [
-      34.8888,
-      -6.369
+      38.1532,
+      -5.6075
     ]
   },
   "New Zealand": {
@@ -4317,8 +4317,8 @@
       }
     ],
     "coords": [
-      174.886,
-      -40.9006
+      174.0238,
+      -39.8123
     ]
   },
   "Mauritius": {
@@ -4356,8 +4356,8 @@
       }
     ],
     "coords": [
-      57.5522,
-      -20.3484
+      57.6836,
+      -20.4302
     ]
   },
   "Antigua and Barbuda": {
@@ -4395,8 +4395,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -61.7927,
+      17.1367
     ]
   },
   "Uganda": {
@@ -4434,8 +4434,8 @@
       }
     ],
     "coords": [
-      32.2903,
-      1.3733
+      32.4435,
+      0.0424
     ]
   },
   "Yemen": {
@@ -4483,8 +4483,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      45.3908,
+      14.4185
     ]
   },
   "Mali": {
@@ -4522,8 +4522,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -7.9499,
+      12.5335
     ]
   },
   "Maldives": {
@@ -4555,14 +4555,14 @@
     ],
     "top_airports": [
       {
-        "name": "Mal\u00e9 International Airport",
+        "name": "Malé International Airport",
         "iata": "MLE",
         "destinations": 29
       }
     ],
     "coords": [
-      73.2207,
-      3.2028
+      73.5291,
+      4.1918
     ]
   },
   "Moldova": {
@@ -4594,14 +4594,14 @@
     ],
     "top_airports": [
       {
-        "name": "Chi\u015fin\u0103u International Airport",
+        "name": "Chişinău International Airport",
         "iata": "KIV",
         "destinations": 25
       }
     ],
     "coords": [
-      0,
-      0
+      28.931,
+      46.9277
     ]
   },
   "Benin": {
@@ -4639,8 +4639,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      2.3844,
+      6.3572
     ]
   },
   "Jamaica": {
@@ -4683,8 +4683,8 @@
       }
     ],
     "coords": [
-      -77.2975,
-      18.1096
+      -77.438,
+      18.2639
     ]
   },
   "Nepal": {
@@ -4722,8 +4722,8 @@
       }
     ],
     "coords": [
-      84.124,
-      28.3949
+      85.3591,
+      27.6966
     ]
   },
   "Cape Verde": {
@@ -4755,7 +4755,7 @@
     ],
     "top_airports": [
       {
-        "name": "Am\u00edlcar Cabral International Airport",
+        "name": "Amílcar Cabral International Airport",
         "iata": "SID",
         "destinations": 15
       },
@@ -4771,8 +4771,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -23.355,
+      15.9785
     ]
   },
   "Barbados": {
@@ -4810,8 +4810,8 @@
       }
     ],
     "coords": [
-      -59.5432,
-      13.1939
+      -59.4925,
+      13.0746
     ]
   },
   "Gabon": {
@@ -4849,8 +4849,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      9.4123,
+      0.4586
     ]
   },
   "El Salvador": {
@@ -4882,14 +4882,14 @@
     ],
     "top_airports": [
       {
-        "name": "Monse\u00f1or \u00d3scar Arnulfo Romero International Airport",
+        "name": "Monseñor Óscar Arnulfo Romero International Airport",
         "iata": "SAL",
         "destinations": 32
       }
     ],
     "coords": [
-      -88.8965,
-      13.7942
+      -89.0557,
+      13.4409
     ]
   },
   "Iceland": {
@@ -4927,8 +4927,8 @@
       }
     ],
     "coords": [
-      -19.0208,
-      64.9631
+      -22.6056,
+      63.985
     ]
   },
   "Burkina Faso": {
@@ -4966,8 +4966,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -1.5124,
+      12.3532
     ]
   },
   "Iraq": {
@@ -5015,8 +5015,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      44.685,
+      34.1699
     ]
   },
   "Trinidad and Tobago": {
@@ -5059,8 +5059,8 @@
       }
     ],
     "coords": [
-      -61.2225,
-      10.6918
+      -61.2564,
+      10.6841
     ]
   },
   "Sudan": {
@@ -5103,8 +5103,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      33.1149,
+      16.0508
     ]
   },
   "Burma": {
@@ -5152,8 +5152,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      96.1041,
+      18.0597
     ]
   },
   "Macedonia": {
@@ -5191,8 +5191,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      21.6214,
+      41.9616
     ]
   },
   "Ecuador": {
@@ -5229,14 +5229,14 @@
         "destinations": 23
       },
       {
-        "name": "Jos\u00e9 Joaqu\u00edn de Olmedo International Airport",
+        "name": "José Joaquín de Olmedo International Airport",
         "iata": "GYE",
         "destinations": 19
       }
     ],
     "coords": [
-      -78.1834,
-      -1.8312
+      -79.0479,
+      -1.0467
     ]
   },
   "Rwanda": {
@@ -5274,8 +5274,8 @@
       }
     ],
     "coords": [
-      29.8739,
-      -1.9403
+      30.1395,
+      -1.9686
     ]
   },
   "Fiji": {
@@ -5318,8 +5318,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      177.815,
+      -17.8514
     ]
   },
   "Togo": {
@@ -5351,14 +5351,14 @@
     ],
     "top_airports": [
       {
-        "name": "Lom\u00e9-Tokoin Airport",
+        "name": "Lomé-Tokoin Airport",
         "iata": "LFW",
         "destinations": 14
       }
     ],
     "coords": [
-      0,
-      0
+      1.2545,
+      6.1656
     ]
   },
   "Armenia": {
@@ -5396,8 +5396,8 @@
       }
     ],
     "coords": [
-      45.0382,
-      40.0691
+      44.3959,
+      40.1473
     ]
   },
   "Libya": {
@@ -5445,8 +5445,8 @@
       }
     ],
     "coords": [
-      17.2283,
-      26.3351
+      16.3776,
+      32.4502
     ]
   },
   "Costa Rica": {
@@ -5489,8 +5489,8 @@
       }
     ],
     "coords": [
-      -83.7534,
-      9.7489
+      -84.5868,
+      10.1635
     ]
   },
   "Cambodia": {
@@ -5533,8 +5533,8 @@
       }
     ],
     "coords": [
-      104.991,
-      12.5657
+      104.2549,
+      12.6118
     ]
   },
   "Zambia": {
@@ -5582,8 +5582,8 @@
       }
     ],
     "coords": [
-      27.8493,
-      -13.1339
+      28.1411,
+      -15.1113
     ]
   },
   "Montenegro": {
@@ -5626,8 +5626,8 @@
       }
     ],
     "coords": [
-      19.3744,
-      42.7087
+      19.0757,
+      42.3745
     ]
   },
   "Congo (Brazzaville)": {
@@ -5670,8 +5670,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      13.8758,
+      -4.4826
     ]
   },
   "Guam": {
@@ -5709,8 +5709,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      144.796,
+      13.4834
     ]
   },
   "Saint Lucia": {
@@ -5753,8 +5753,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -60.9668,
+      13.8345
     ]
   },
   "Brunei": {
@@ -5792,8 +5792,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      114.928,
+      4.9442
     ]
   },
   "Martinique": {
@@ -5825,14 +5825,14 @@
     ],
     "top_airports": [
       {
-        "name": "Martinique Aim\u00e9 C\u00e9saire International Airport",
+        "name": "Martinique Aimé Césaire International Airport",
         "iata": "FDF",
         "destinations": 11
       }
     ],
     "coords": [
-      0,
-      0
+      -61.0032,
+      14.591
     ]
   },
   "Guadeloupe": {
@@ -5864,14 +5864,14 @@
     ],
     "top_airports": [
       {
-        "name": "Pointe-\u00e0-Pitre Le Raizet",
+        "name": "Pointe-à-Pitre Le Raizet",
         "iata": "PTP",
         "destinations": 12
       }
     ],
     "coords": [
-      0,
-      0
+      -61.5318,
+      16.2653
     ]
   },
   "Aruba": {
@@ -5909,8 +5909,8 @@
       }
     ],
     "coords": [
-      -69.9683,
-      12.5211
+      -70.0152,
+      12.5014
     ]
   },
   "Guatemala": {
@@ -5953,8 +5953,8 @@
       }
     ],
     "coords": [
-      -90.2308,
-      15.7835
+      -90.4645,
+      14.8053
     ]
   },
   "Bolivia": {
@@ -5997,8 +5997,8 @@
       }
     ],
     "coords": [
-      -63.5887,
-      -16.2902
+      -66.0251,
+      -16.9982
     ]
   },
   "Bosnia and Herzegovina": {
@@ -6046,8 +6046,8 @@
       }
     ],
     "coords": [
-      17.6791,
-      43.9159
+      18.2303,
+      44.1011
     ]
   },
   "Macau": {
@@ -6085,8 +6085,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      113.592,
+      22.1496
     ]
   },
   "Turkmenistan": {
@@ -6124,8 +6124,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      58.361,
+      37.9868
     ]
   },
   "Congo (Kinshasa)": {
@@ -6168,8 +6168,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      18.7409,
+      -6.3509
     ]
   },
   "Djibouti": {
@@ -6207,8 +6207,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      43.1595,
+      11.5473
     ]
   },
   "Sierra Leone": {
@@ -6246,8 +6246,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -13.1955,
+      8.6164
     ]
   },
   "Tajikistan": {
@@ -6295,8 +6295,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      69.1865,
+      39.0142
     ]
   },
   "Slovakia": {
@@ -6328,19 +6328,19 @@
     ],
     "top_airports": [
       {
-        "name": "M. R. \u0160tef\u00e1nik Airport",
+        "name": "M. R. Štefánik Airport",
         "iata": "BTS",
         "destinations": 18
       },
       {
-        "name": "Ko\u0161ice Airport",
+        "name": "Košice Airport",
         "iata": "KSC",
         "destinations": 4
       }
     ],
     "coords": [
-      19.699,
-      48.669
+      17.9451,
+      48.2598
     ]
   },
   "Virgin Islands": {
@@ -6383,8 +6383,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -64.9354,
+      18.1992
     ]
   },
   "Uruguay": {
@@ -6427,8 +6427,8 @@
       }
     ],
     "coords": [
-      -55.7658,
-      -32.5228
+      -55.897,
+      -34.8408
     ]
   },
   "Paraguay": {
@@ -6471,8 +6471,8 @@
       }
     ],
     "coords": [
-      -58.4438,
-      -23.4425
+      -57.0738,
+      -25.2758
     ]
   },
   "Papua New Guinea": {
@@ -6510,8 +6510,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      147.22,
+      -9.4434
     ]
   },
   "Afghanistan": {
@@ -6559,8 +6559,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      67.3892,
+      34.2874
     ]
   },
   "Zimbabwe": {
@@ -6608,8 +6608,8 @@
       }
     ],
     "coords": [
-      29.1549,
-      -19.0154
+      29.3194,
+      -18.3043
     ]
   },
   "Madagascar": {
@@ -6657,8 +6657,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      48.0482,
+      -17.0979
     ]
   },
   "Bahamas": {
@@ -6706,8 +6706,8 @@
       }
     ],
     "coords": [
-      -77.3963,
-      25.0343
+      -77.299,
+      25.273
     ]
   },
   "Niger": {
@@ -6745,8 +6745,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      2.1836,
+      13.4815
     ]
   },
   "Guinea": {
@@ -6784,8 +6784,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -13.612,
+      9.5769
     ]
   },
   "Honduras": {
@@ -6817,12 +6817,12 @@
     ],
     "top_airports": [
       {
-        "name": "Ram\u00f3n Villeda Morales International Airport",
+        "name": "Ramón Villeda Morales International Airport",
         "iata": "SAP",
         "destinations": 15
       },
       {
-        "name": "Toncont\u00edn International Airport",
+        "name": "Toncontín International Airport",
         "iata": "TGU",
         "destinations": 11
       },
@@ -6833,8 +6833,8 @@
       }
     ],
     "coords": [
-      -86.2419,
-      15.2
+      -87.2429,
+      15.3448
     ]
   },
   "Kyrgyzstan": {
@@ -6877,8 +6877,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      73.852,
+      42.1504
     ]
   },
   "Dominica": {
@@ -6916,8 +6916,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -61.3,
+      15.547
     ]
   },
   "Laos": {
@@ -6965,8 +6965,8 @@
       }
     ],
     "coords": [
-      102.4955,
-      19.8563
+      103.0208,
+      17.9566
     ]
   },
   "Suriname": {
@@ -7004,8 +7004,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -55.1878,
+      5.4528
     ]
   },
   "Haiti": {
@@ -7048,8 +7048,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -72.2785,
+      18.7447
     ]
   },
   "Seychelles": {
@@ -7087,8 +7087,8 @@
       }
     ],
     "coords": [
-      55.492,
-      -4.6796
+      55.5218,
+      -4.6743
     ]
   },
   "Jersey": {
@@ -7126,8 +7126,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -2.1955,
+      49.2079
     ]
   },
   "Equatorial Guinea": {
@@ -7165,8 +7165,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      8.7087,
+      3.7553
     ]
   },
   "Turks and Caicos Islands": {
@@ -7204,8 +7204,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -72.2659,
+      21.7736
     ]
   },
   "Albania": {
@@ -7243,8 +7243,8 @@
       }
     ],
     "coords": [
-      20.1683,
-      41.1533
+      19.7206,
+      41.4147
     ]
   },
   "Grenada": {
@@ -7282,8 +7282,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -61.7862,
+      12.0042
     ]
   },
   "South Sudan": {
@@ -7321,8 +7321,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      31.6011,
+      4.872
     ]
   },
   "Namibia": {
@@ -7365,8 +7365,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      16.9058,
+      -22.5799
     ]
   },
   "Reunion": {
@@ -7409,8 +7409,8 @@
       }
     ],
     "coords": [
-      55.5364,
-      -21.1151
+      55.5042,
+      -20.9181
     ]
   },
   "Mauritania": {
@@ -7442,7 +7442,7 @@
     ],
     "top_airports": [
       {
-        "name": "Nouakchott\u2013Oumtounsy International Airport",
+        "name": "Nouakchott–Oumtounsy International Airport",
         "iata": "NKC",
         "destinations": 9
       },
@@ -7453,8 +7453,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -16.2348,
+      18.9658
     ]
   },
   "New Caledonia": {
@@ -7492,8 +7492,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      166.213,
+      -22.0146
     ]
   },
   "Mongolia": {
@@ -7536,8 +7536,8 @@
       }
     ],
     "coords": [
-      103.8467,
-      46.8625
+      108.0802,
+      47.8919
     ]
   },
   "Malawi": {
@@ -7580,8 +7580,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      34.2582,
+      -14.5453
     ]
   },
   "Palau": {
@@ -7619,8 +7619,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      134.5442,
+      7.3673
     ]
   },
   "Somalia": {
@@ -7668,8 +7668,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      44.8457,
+      6.8904
     ]
   },
   "Gambia": {
@@ -7707,8 +7707,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -16.6522,
+      13.338
     ]
   },
   "Eritrea": {
@@ -7746,8 +7746,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      38.9107,
+      15.2919
     ]
   },
   "Mozambique": {
@@ -7795,8 +7795,8 @@
       }
     ],
     "coords": [
-      35.5296,
-      -18.6657
+      35.4403,
+      -19.8596
     ]
   },
   "Liberia": {
@@ -7839,8 +7839,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -10.4614,
+      6.2476
     ]
   },
   "Comoros": {
@@ -7878,8 +7878,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      43.2719,
+      -11.5337
     ]
   },
   "Chad": {
@@ -7917,8 +7917,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      15.034,
+      12.1337
     ]
   },
   "Cayman Islands": {
@@ -7956,8 +7956,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -81.3577,
+      19.2928
     ]
   },
   "Saint Kitts and Nevis": {
@@ -8000,8 +8000,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -62.6602,
+      17.2632
     ]
   },
   "Botswana": {
@@ -8049,8 +8049,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      24.907,
+      -21.7515
     ]
   },
   "Vanuatu": {
@@ -8093,8 +8093,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      167.9533,
+      -16.9679
     ]
   },
   "British Virgin Islands": {
@@ -8137,8 +8137,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -64.51,
+      18.4453
     ]
   },
   "French Polynesia": {
@@ -8176,8 +8176,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -149.607,
+      -17.5537
     ]
   },
   "Belize": {
@@ -8191,11 +8191,11 @@
         "routes": 10
       },
       {
-        "country": "Guatemala",
+        "country": "Honduras",
         "routes": 2
       },
       {
-        "country": "Honduras",
+        "country": "Guatemala",
         "routes": 2
       },
       {
@@ -8215,8 +8215,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -88.3082,
+      17.5391
     ]
   },
   "Guinea-Bissau": {
@@ -8254,8 +8254,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -15.6537,
+      11.8948
     ]
   },
   "Guernsey": {
@@ -8293,8 +8293,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -2.602,
+      49.435
     ]
   },
   "Guyana": {
@@ -8332,8 +8332,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -58.2541,
+      6.4985
     ]
   },
   "Nicaragua": {
@@ -8371,8 +8371,8 @@
       }
     ],
     "coords": [
-      -85.2072,
-      12.8654
+      -86.1682,
+      12.1415
     ]
   },
   "Northern Mariana Islands": {
@@ -8406,8 +8406,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      145.729,
+      15.119
     ]
   },
   "Anguilla": {
@@ -8441,8 +8441,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -63.0551,
+      18.2048
     ]
   },
   "Solomon Islands": {
@@ -8476,8 +8476,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      160.055,
+      -9.428
     ]
   },
   "French Guiana": {
@@ -8511,8 +8511,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -52.3604,
+      4.8198
     ]
   },
   "Kiribati": {
@@ -8551,8 +8551,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      40.9482,
+      1.6234
     ]
   },
   "Mayotte": {
@@ -8586,8 +8586,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      45.2811,
+      -12.8047
     ]
   },
   "Cook Islands": {
@@ -8621,8 +8621,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -159.806,
+      -21.2027
     ]
   },
   "Saint Vincent and the Grenadines": {
@@ -8656,8 +8656,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -61.1499,
+      13.1567
     ]
   },
   "Marshall Islands": {
@@ -8692,8 +8692,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      169.7549,
+      7.7742
     ]
   },
   "Bermuda": {
@@ -8723,8 +8723,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -64.6787,
+      32.364
     ]
   },
   "Bhutan": {
@@ -8754,8 +8754,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      89.4246,
+      27.4032
     ]
   },
   "Nauru": {
@@ -8785,8 +8785,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      166.919,
+      -0.5475
     ]
   },
   "Burundi": {
@@ -8816,8 +8816,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      29.3185,
+      -3.324
     ]
   },
   "North Korea": {
@@ -8847,8 +8847,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      125.67,
+      39.2241
     ]
   },
   "Samoa": {
@@ -8878,8 +8878,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -172.008,
+      -13.83
     ]
   },
   "Sao Tome and Principe": {
@@ -8903,14 +8903,14 @@
     ],
     "top_airports": [
       {
-        "name": "S\u00e3o Tom\u00e9 International Airport",
+        "name": "São Tomé International Airport",
         "iata": "TMS",
         "destinations": 3
       }
     ],
     "coords": [
-      0,
-      0
+      6.7122,
+      0.3782
     ]
   },
   "East Timor": {
@@ -8940,8 +8940,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      125.526,
+      -8.5464
     ]
   },
   "Tonga": {
@@ -8971,8 +8971,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -175.15,
+      -21.2412
     ]
   },
   "Central African Republic": {
@@ -8998,8 +8998,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      18.5188,
+      4.3985
     ]
   },
   "Micronesia": {
@@ -9025,8 +9025,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      138.083,
+      9.4989
     ]
   },
   "Isle of Man": {
@@ -9052,8 +9052,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -4.6239,
+      54.0833
     ]
   },
   "Faroe Islands": {
@@ -9079,8 +9079,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -7.2772,
+      62.0636
     ]
   },
   "Wallis and Futuna": {
@@ -9106,8 +9106,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -176.199,
+      -13.2383
     ]
   },
   "Western Sahara": {
@@ -9138,8 +9138,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -14.5756,
+      25.435
     ]
   },
   "Norfolk Island": {
@@ -9165,8 +9165,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      167.939,
+      -29.0416
     ]
   },
   "Saint Pierre and Miquelon": {
@@ -9188,8 +9188,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -56.1731,
+      46.7629
     ]
   },
   "Greenland": {
@@ -9211,8 +9211,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -51.6781,
+      64.1909
     ]
   },
   "Gibraltar": {
@@ -9234,8 +9234,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      -5.3497,
+      36.1512
     ]
   },
   "Christmas Island": {
@@ -9257,8 +9257,8 @@
       }
     ],
     "coords": [
-      0,
-      0
+      105.69,
+      -10.4506
     ]
   }
 }
