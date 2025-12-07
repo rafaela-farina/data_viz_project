@@ -1,0 +1,877 @@
+/**
+ * WINDOW ELEMENTS - Airplane Window & Screen Styles
+ * ==================================================
+ * Airplane window, seat screen, and special visual components
+ */
+
+/* ============================================
+   WINDOW SECTIONS (Hero & Finale)
+   ============================================ */
+.window-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.window-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* ============================================
+   AIRPLANE WINDOW
+   ============================================ */
+.airplane-window {
+    position: relative;
+    width: min(480px, 85vw);
+    height: min(580px, 75vh);
+    border-radius: 42% 42% 45% 45% / 48% 48% 52% 52%;
+    background: #1a1f2e;
+    padding: 20px;
+    box-shadow: 
+        /* Outer shadow */
+        0 30px 80px rgba(0, 0, 0, 0.6),
+        0 15px 35px rgba(0, 0, 0, 0.4),
+        /* Inner edge highlight */
+        inset 0 2px 0 rgba(255, 255, 255, 0.1),
+        /* Depth */
+        inset 0 -5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Window frame (inner border) */
+.window-frame {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 18px solid #2d3748;
+    border-radius: 42% 42% 45% 45% / 48% 48% 52% 52%;
+    pointer-events: none;
+    box-shadow:
+        inset 0 0 30px rgba(0, 0, 0, 0.4),
+        inset 0 0 80px rgba(0, 0, 0, 0.2);
+}
+
+/* Rivets */
+.rivet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle at 30% 30%, #666, #333);
+    border-radius: 50%;
+    box-shadow: 
+        inset 0 2px 3px rgba(0, 0, 0, 0.5),
+        0 1px 1px rgba(255, 255, 255, 0.1);
+    z-index: 10;
+}
+
+.rivet-tl { top: 25px; left: 25px; }
+.rivet-tr { top: 25px; right: 25px; }
+.rivet-bl { bottom: 25px; left: 25px; }
+.rivet-br { bottom: 25px; right: 25px; }
+
+/* Window view (the actual window content) */
+.window-view {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 38% 38% 42% 42% / 44% 44% 48% 48%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============================================
+   SKY GRADIENT (Hero)
+   ============================================ */
+.sky-gradient {
+    background: linear-gradient(to bottom,
+        #0f172a 0%,
+        #1e3a8a 25%,
+        #3b82f6 50%,
+        #60a5fa 70%,
+        #93c5fd 85%,
+        #e0f2fe 100%
+    );
+}
+
+/* Clouds layer */
+.clouds-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Emoji clouds with blur effect */
+.emoji-cloud {
+    position: absolute;
+    font-size: 80px;
+    filter: blur(3px);
+    opacity: 0.85;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.emoji-cloud.cloud-1 {
+    font-size: 100px;
+    bottom: 10%;
+    left: -10%;
+    filter: blur(2px);
+    opacity: 0.9;
+    animation: cloudFloat1 20s ease-in-out infinite;
+}
+
+.emoji-cloud.cloud-2 {
+    font-size: 120px;
+    bottom: 20%;
+    right: -15%;
+    filter: blur(4px);
+    opacity: 0.7;
+    animation: cloudFloat2 25s ease-in-out infinite;
+    animation-delay: -5s;
+}
+
+.emoji-cloud.cloud-3 {
+    font-size: 70px;
+    bottom: 35%;
+    left: 15%;
+    filter: blur(2px);
+    opacity: 0.8;
+    animation: cloudFloat3 18s ease-in-out infinite;
+    animation-delay: -8s;
+}
+
+.emoji-cloud.cloud-4 {
+    font-size: 90px;
+    bottom: 5%;
+    right: 20%;
+    filter: blur(5px);
+    opacity: 0.6;
+    animation: cloudFloat4 22s ease-in-out infinite;
+    animation-delay: -12s;
+}
+
+.emoji-cloud.cloud-5 {
+    font-size: 60px;
+    bottom: 25%;
+    left: 40%;
+    filter: blur(3px);
+    opacity: 0.75;
+    animation: cloudFloat5 15s ease-in-out infinite;
+    animation-delay: -3s;
+}
+
+@keyframes cloudFloat1 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(30px, -10px) scale(1.05); }
+    50% { transform: translate(60px, 5px) scale(1); }
+    75% { transform: translate(30px, -5px) scale(1.02); }
+}
+
+@keyframes cloudFloat2 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(-40px, 15px) scale(1.03); }
+    66% { transform: translate(-20px, -10px) scale(0.98); }
+}
+
+@keyframes cloudFloat3 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(25px, -15px); }
+}
+
+@keyframes cloudFloat4 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    40% { transform: translate(-30px, 10px) scale(1.05); }
+    80% { transform: translate(15px, -5px) scale(0.97); }
+}
+
+@keyframes cloudFloat5 {
+    0%, 100% { transform: translate(0, 0); }
+    30% { transform: translate(20px, 10px); }
+    70% { transform: translate(-15px, -8px); }
+}
+
+/* ============================================
+   HERO CONTENT - Improved legibility
+   ============================================ */
+.window-content {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    /* Strong text shadow for legibility over clouds */
+    text-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.8),
+        0 4px 8px rgba(0, 0, 0, 0.6),
+        0 8px 16px rgba(0, 0, 0, 0.4),
+        0 0 40px rgba(30, 58, 138, 0.8);
+}
+
+.hero-subtitle {
+    font-family: var(--font-body);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    /* Background pill for better legibility */
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: rgba(30, 58, 138, 0.7);
+    backdrop-filter: blur(8px);
+    border-radius: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: white;
+    letter-spacing: 0.05em;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    padding: 0.5rem 1rem;
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    display: inline-flex;
+}
+
+.hero-meta .separator {
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+}
+
+/* ============================================
+   SUNSET GRADIENT (Finale)
+   ============================================ */
+.sunset-gradient {
+    background: linear-gradient(to bottom,
+        #f59e0b 0%,
+        #f97316 20%,
+        #ea580c 35%,
+        #dc2626 50%,
+        #991b1b 65%,
+        #7c2d12 80%,
+        #1e293b 100%
+    );
+}
+
+/* Wing tip SVG */
+.wing-tip {
+    position: absolute;
+    bottom: -30px;
+    right: -20px;
+    width: 180px;
+    height: 350px;
+    opacity: 0;
+    animation: wingFadeIn 2s ease-out 0.5s forwards;
+}
+
+@keyframes wingFadeIn {
+    to { opacity: 1; }
+}
+
+/* Finale content */
+.finale-content {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.finale-content h2 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 0.5rem;
+}
+
+.finale-tagline {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: rgba(255, 255, 255, 0.85);
+    font-style: italic;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Credits */
+.credits {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+    z-index: 5;
+}
+
+.credits-title {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.5rem;
+}
+
+.credits-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.credit-name {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.credits-names {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.credits-separator {
+    margin: 0 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.credits-prof {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.2rem;
+}
+
+.credits-year {
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ============================================
+   SEAT SCREEN (Entertainment Screen)
+   ============================================ */
+.seat-screen {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #0a0a0a;
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 
+        0 40px 100px rgba(0, 0, 0, 0.7),
+        0 15px 40px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+.screen-bezel {
+    position: relative;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #1a1a1a;
+}
+
+/* Subtle screen reflection */
+.screen-bezel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg,
+        transparent 0%,
+        transparent 40%,
+        rgba(255, 255, 255, 0.02) 45%,
+        rgba(255, 255, 255, 0.03) 50%,
+        rgba(255, 255, 255, 0.02) 55%,
+        transparent 60%,
+        transparent 100%
+    );
+    pointer-events: none;
+    z-index: 100;
+}
+
+/* Screen header */
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(180deg, #1a1a1a, #111);
+    border-bottom: 1px solid #222;
+}
+
+.screen-title {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.02em;
+}
+
+.screen-author {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.screen-controls-top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Country select dropdown */
+#country-select {
+    padding: 0.4rem 0.75rem;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-family: var(--font-body);
+    cursor: pointer;
+    min-width: 180px;
+}
+
+#country-select:hover {
+    border-color: var(--accent-cyan);
+}
+
+#country-select:focus {
+    outline: none;
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
+}
+
+/* Routes control */
+.routes-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+#max-routes {
+    width: 80px;
+    height: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #333;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#max-routes::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background: var(--accent-cyan);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#routes-value {
+    min-width: 24px;
+    text-align: center;
+    color: var(--accent-cyan);
+    font-weight: 600;
+}
+
+/* ============================================
+   MAP DISPLAY
+   ============================================ */
+.map-display {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%; /* 2:1 aspect ratio - more compact */
+    max-height: 500px;
+    background: 
+        radial-gradient(ellipse at center, #1e293b 0%, #0f172a 100%);
+    overflow: hidden;
+}
+
+.map-display svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Loading indicator */
+.loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top-color: var(--accent-cyan);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Info panel */
+.info-panel {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 260px;
+    max-height: calc(100% - 2rem);
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 1rem;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 50;
+}
+
+.info-panel.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.info-panel h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.info-panel .flag {
+    font-size: 1.5rem;
+}
+
+.info-stat {
+    margin-bottom: 0.75rem;
+}
+
+.info-stat-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 0.2rem;
+}
+
+.info-stat-value {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+}
+
+/* ============================================
+   SCREEN CONTROLS (Bottom)
+   ============================================ */
+.screen-controls-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    margin-top: 8px;
+}
+
+.control-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 30% 30%, #444, #222);
+    border: 2px solid #555;
+    border-radius: 50%;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 
+        inset 0 2px 4px rgba(0, 0, 0, 0.4),
+        0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all var(--transition-fast);
+}
+
+.control-btn:hover {
+    background: radial-gradient(circle at 30% 30%, #555, #333);
+    border-color: #666;
+}
+
+.control-btn:active {
+    transform: scale(0.95);
+}
+
+.control-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.control-btn.reset {
+    width: auto;
+    padding: 0 1rem;
+    border-radius: 18px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.control-spacer {
+    flex: 1;
+}
+
+/* Control indicators (decorative dots) */
+.control-indicator {
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle at 30% 30%, #333, #1a1a1a);
+    border: 1px solid #444;
+    border-radius: 50%;
+}
+
+.control-indicator.active {
+    background: radial-gradient(circle at 30% 30%, var(--accent-cyan), #0e7490);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.4);
+}
+
+/* ============================================
+   MAP COUNTRY STYLES
+   ============================================ */
+.country {
+    fill: #1e293b;
+    stroke: #334155;
+    stroke-width: 0.5px;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+.country:hover {
+    fill: #334155;
+}
+
+.country.selected {
+    fill: var(--accent-yellow);
+    stroke: #fbbf24;
+    stroke-width: 1.5px;
+}
+
+.country.destination {
+    fill: var(--accent-teal);
+    stroke: #14b8a6;
+    stroke-width: 1px;
+}
+
+/* Connection arcs */
+.connection-arc {
+    fill: none;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    opacity: 0.6;
+    transition: opacity 0.2s, stroke-width 0.2s;
+}
+
+.connection-arc:hover {
+    opacity: 1;
+    stroke-width: 3px;
+}
+
+/* ============================================
+   REGIONAL MAP CONTAINERS
+   ============================================ */
+.regional-map {
+    /* These will show static/focused views */
+}
+
+/* ============================================
+   TEAMMATE VISUALIZATION SECTION
+   ============================================ */
+.teammate-viz .screen-header {
+    background: linear-gradient(180deg, #1a1a2e, #111122);
+}
+
+.teammate-viz .viz-placeholder {
+    min-height: 450px;
+}
+
+/* ============================================
+   ANIMATIONS FOR SCROLL EFFECTS
+   ============================================ */
+.glass-card {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.glass-card.animate-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.seat-screen {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.seat-screen.animate-in {
+    animation: scaleIn 0.8s ease forwards;
+}
+
+@keyframes scaleIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+@media (max-width: 1024px) {
+    .info-panel {
+        position: static;
+        width: 100%;
+        max-height: none;
+        margin-top: 1rem;
+        transform: none;
+        display: none;
+    }
+    
+    .info-panel.visible {
+        display: block;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .airplane-window {
+        width: min(360px, 90vw);
+        height: min(440px, 70vh);
+        padding: 15px;
+    }
+    
+    .window-frame {
+        border-width: 14px;
+    }
+    
+    .rivet {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .rivet-tl { top: 20px; left: 20px; }
+    .rivet-tr { top: 20px; right: 20px; }
+    .rivet-bl { bottom: 20px; left: 20px; }
+    .rivet-br { bottom: 20px; right: 20px; }
+    
+    .screen-header {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+    
+    .screen-controls-top {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    #country-select {
+        flex: 1;
+        min-width: 150px;
+    }
+    
+    .seat-screen {
+        padding: 12px;
+        border-radius: 12px;
+    }
+    
+    .control-btn {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .routes-control {
+        display: none;
+    }
+    
+    .info-panel {
+        padding: 0.75rem;
+    }
+}

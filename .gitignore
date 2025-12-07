@@ -38,3 +38,6 @@ settings.json
 *.code-workspace
 .history/
 .vscode
+
+# General
+.old

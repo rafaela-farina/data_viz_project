@@ -1,0 +1,9264 @@
+{
+  "France": {
+    "name": "France",
+    "num_countries_connected": 115,
+    "total_routes": 1433,
+    "num_airports": 40,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 156
+      },
+      {
+        "country": "Italy",
+        "routes": 149
+      },
+      {
+        "country": "Spain",
+        "routes": 148
+      },
+      {
+        "country": "United States",
+        "routes": 91
+      },
+      {
+        "country": "Germany",
+        "routes": 82
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Charles de Gaulle International Airport",
+        "iata": "CDG",
+        "destinations": 237
+      },
+      {
+        "name": "Paris-Orly Airport",
+        "iata": "ORY",
+        "destinations": 119
+      },
+      {
+        "name": "Nice-C\u00f4te d'Azur Airport",
+        "iata": "NCE",
+        "destinations": 90
+      }
+    ],
+    "coords": [
+      2.2137,
+      46.2276
+    ]
+  },
+  "United Kingdom": {
+    "name": "United Kingdom",
+    "num_countries_connected": 99,
+    "total_routes": 2326,
+    "num_airports": 28,
+    "top_destinations": [
+      {
+        "country": "Spain",
+        "routes": 503
+      },
+      {
+        "country": "United States",
+        "routes": 203
+      },
+      {
+        "country": "France",
+        "routes": 157
+      },
+      {
+        "country": "Italy",
+        "routes": 140
+      },
+      {
+        "country": "Greece",
+        "routes": 105
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "London Heathrow Airport",
+        "iata": "LHR",
+        "destinations": 171
+      },
+      {
+        "name": "London Gatwick Airport",
+        "iata": "LGW",
+        "destinations": 165
+      },
+      {
+        "name": "London Stansted Airport",
+        "iata": "STN",
+        "destinations": 153
+      }
+    ],
+    "coords": [
+      -3.436,
+      55.3781
+    ]
+  },
+  "Germany": {
+    "name": "Germany",
+    "num_countries_connected": 97,
+    "total_routes": 2134,
+    "num_airports": 27,
+    "top_destinations": [
+      {
+        "country": "Spain",
+        "routes": 353
+      },
+      {
+        "country": "Italy",
+        "routes": 221
+      },
+      {
+        "country": "Greece",
+        "routes": 175
+      },
+      {
+        "country": "Turkey",
+        "routes": 128
+      },
+      {
+        "country": "United States",
+        "routes": 115
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Frankfurt am Main Airport",
+        "iata": "FRA",
+        "destinations": 239
+      },
+      {
+        "name": "Munich Airport",
+        "iata": "MUC",
+        "destinations": 191
+      },
+      {
+        "name": "D\u00fcsseldorf Airport",
+        "iata": "DUS",
+        "destinations": 147
+      }
+    ],
+    "coords": [
+      10.4515,
+      51.1657
+    ]
+  },
+  "United States": {
+    "name": "United States",
+    "num_countries_connected": 92,
+    "total_routes": 2482,
+    "num_airports": 57,
+    "top_destinations": [
+      {
+        "country": "Mexico",
+        "routes": 359
+      },
+      {
+        "country": "Canada",
+        "routes": 358
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 207
+      },
+      {
+        "country": "Germany",
+        "routes": 114
+      },
+      {
+        "country": "France",
+        "routes": 89
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Hartsfield Jackson Atlanta International Airport",
+        "iata": "ATL",
+        "destinations": 217
+      },
+      {
+        "name": "Chicago O'Hare International Airport",
+        "iata": "ORD",
+        "destinations": 206
+      },
+      {
+        "name": "Dallas Fort Worth International Airport",
+        "iata": "DFW",
+        "destinations": 187
+      }
+    ],
+    "coords": [
+      -95.7129,
+      37.0902
+    ]
+  },
+  "United Arab Emirates": {
+    "name": "United Arab Emirates",
+    "num_countries_connected": 91,
+    "total_routes": 732,
+    "num_airports": 5,
+    "top_destinations": [
+      {
+        "country": "India",
+        "routes": 87
+      },
+      {
+        "country": "Pakistan",
+        "routes": 49
+      },
+      {
+        "country": "Saudi Arabia",
+        "routes": 46
+      },
+      {
+        "country": "Russia",
+        "routes": 39
+      },
+      {
+        "country": "United States",
+        "routes": 24
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Dubai International Airport",
+        "iata": "DXB",
+        "destinations": 188
+      },
+      {
+        "name": "Abu Dhabi International Airport",
+        "iata": "AUH",
+        "destinations": 87
+      },
+      {
+        "name": "Sharjah International Airport",
+        "iata": "SHJ",
+        "destinations": 78
+      }
+    ],
+    "coords": [
+      53.8478,
+      23.4241
+    ]
+  },
+  "Turkey": {
+    "name": "Turkey",
+    "num_countries_connected": 90,
+    "total_routes": 662,
+    "num_airports": 12,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 128
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 89
+      },
+      {
+        "country": "Russia",
+        "routes": 29
+      },
+      {
+        "country": "France",
+        "routes": 26
+      },
+      {
+        "country": "Netherlands",
+        "routes": 22
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Istanbul Airport",
+        "iata": "IST",
+        "destinations": 227
+      },
+      {
+        "name": "Sabiha G\u00f6k\u00e7en International Airport",
+        "iata": "SAW",
+        "destinations": 98
+      },
+      {
+        "name": "Antalya International Airport",
+        "iata": "AYT",
+        "destinations": 63
+      }
+    ],
+    "coords": [
+      35.2433,
+      38.9637
+    ]
+  },
+  "Netherlands": {
+    "name": "Netherlands",
+    "num_countries_connected": 81,
+    "total_routes": 561,
+    "num_airports": 5,
+    "top_destinations": [
+      {
+        "country": "Spain",
+        "routes": 67
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 53
+      },
+      {
+        "country": "Italy",
+        "routes": 42
+      },
+      {
+        "country": "United States",
+        "routes": 39
+      },
+      {
+        "country": "France",
+        "routes": 34
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Amsterdam Airport Schiphol",
+        "iata": "AMS",
+        "destinations": 232
+      },
+      {
+        "name": "Eindhoven Airport",
+        "iata": "EIN",
+        "destinations": 62
+      },
+      {
+        "name": "Rotterdam The Hague Airport",
+        "iata": "RTM",
+        "destinations": 29
+      }
+    ],
+    "coords": [
+      5.2913,
+      52.1326
+    ]
+  },
+  "Italy": {
+    "name": "Italy",
+    "num_countries_connected": 77,
+    "total_routes": 1346,
+    "num_airports": 31,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 221
+      },
+      {
+        "country": "France",
+        "routes": 148
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 140
+      },
+      {
+        "country": "Spain",
+        "routes": 119
+      },
+      {
+        "country": "United States",
+        "routes": 53
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Leonardo da Vinci\u2013Fiumicino Airport",
+        "iata": "FCO",
+        "destinations": 157
+      },
+      {
+        "name": "Malpensa International Airport",
+        "iata": "MXP",
+        "destinations": 107
+      },
+      {
+        "name": "Il Caravaggio International Airport",
+        "iata": "BGY",
+        "destinations": 80
+      }
+    ],
+    "coords": [
+      12.5674,
+      41.8719
+    ]
+  },
+  "Spain": {
+    "name": "Spain",
+    "num_countries_connected": 73,
+    "total_routes": 1924,
+    "num_airports": 26,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 498
+      },
+      {
+        "country": "Germany",
+        "routes": 352
+      },
+      {
+        "country": "France",
+        "routes": 150
+      },
+      {
+        "country": "Italy",
+        "routes": 119
+      },
+      {
+        "country": "Netherlands",
+        "routes": 67
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Barcelona International Airport",
+        "iata": "BCN",
+        "destinations": 163
+      },
+      {
+        "name": "Adolfo Su\u00e1rez Madrid\u2013Barajas Airport",
+        "iata": "MAD",
+        "destinations": 158
+      },
+      {
+        "name": "Palma De Mallorca Airport",
+        "iata": "PMI",
+        "destinations": 126
+      }
+    ],
+    "coords": [
+      -3.7492,
+      40.4637
+    ]
+  },
+  "Russia": {
+    "name": "Russia",
+    "num_countries_connected": 70,
+    "total_routes": 856,
+    "num_airports": 34,
+    "top_destinations": [
+      {
+        "country": "Uzbekistan",
+        "routes": 80
+      },
+      {
+        "country": "Tajikistan",
+        "routes": 75
+      },
+      {
+        "country": "Kyrgyzstan",
+        "routes": 48
+      },
+      {
+        "country": "China",
+        "routes": 47
+      },
+      {
+        "country": "Germany",
+        "routes": 47
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Domodedovo International Airport",
+        "iata": "DME",
+        "destinations": 189
+      },
+      {
+        "name": "Sheremetyevo International Airport",
+        "iata": "SVO",
+        "destinations": 144
+      },
+      {
+        "name": "Pulkovo Airport",
+        "iata": "LED",
+        "destinations": 110
+      }
+    ],
+    "coords": [
+      105.3188,
+      61.524
+    ]
+  },
+  "Canada": {
+    "name": "Canada",
+    "num_countries_connected": 65,
+    "total_routes": 675,
+    "num_airports": 19,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 357
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 41
+      },
+      {
+        "country": "Mexico",
+        "routes": 27
+      },
+      {
+        "country": "Cuba",
+        "routes": 26
+      },
+      {
+        "country": "France",
+        "routes": 19
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Lester B. Pearson International Airport",
+        "iata": "YYZ",
+        "destinations": 147
+      },
+      {
+        "name": "Montreal / Pierre Elliott Trudeau International Airport",
+        "iata": "YUL",
+        "destinations": 93
+      },
+      {
+        "name": "Vancouver International Airport",
+        "iata": "YVR",
+        "destinations": 75
+      }
+    ],
+    "coords": [
+      -106.3468,
+      56.1304
+    ]
+  },
+  "China": {
+    "name": "China",
+    "num_countries_connected": 63,
+    "total_routes": 1174,
+    "num_airports": 50,
+    "top_destinations": [
+      {
+        "country": "Taiwan",
+        "routes": 187
+      },
+      {
+        "country": "South Korea",
+        "routes": 146
+      },
+      {
+        "country": "Japan",
+        "routes": 139
+      },
+      {
+        "country": "Hong Kong",
+        "routes": 112
+      },
+      {
+        "country": "Thailand",
+        "routes": 72
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Beijing Capital International Airport",
+        "iata": "PEK",
+        "destinations": 206
+      },
+      {
+        "name": "Shanghai Pudong International Airport",
+        "iata": "PVG",
+        "destinations": 152
+      },
+      {
+        "name": "Guangzhou Baiyun International Airport",
+        "iata": "CAN",
+        "destinations": 150
+      }
+    ],
+    "coords": [
+      104.1954,
+      35.8617
+    ]
+  },
+  "Qatar": {
+    "name": "Qatar",
+    "num_countries_connected": 62,
+    "total_routes": 189,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "India",
+        "routes": 17
+      },
+      {
+        "country": "Bahrain",
+        "routes": 12
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 11
+      },
+      {
+        "country": "United States",
+        "routes": 11
+      },
+      {
+        "country": "Germany",
+        "routes": 9
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Hamad International Airport",
+        "iata": "DOH",
+        "destinations": 116
+      }
+    ],
+    "coords": [
+      51.1839,
+      25.3548
+    ]
+  },
+  "Switzerland": {
+    "name": "Switzerland",
+    "num_countries_connected": 61,
+    "total_routes": 418,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Spain",
+        "routes": 42
+      },
+      {
+        "country": "Germany",
+        "routes": 41
+      },
+      {
+        "country": "Italy",
+        "routes": 38
+      },
+      {
+        "country": "United States",
+        "routes": 29
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 24
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Z\u00fcrich Airport",
+        "iata": "ZRH",
+        "destinations": 137
+      },
+      {
+        "name": "Geneva Cointrin International Airport",
+        "iata": "GVA",
+        "destinations": 101
+      },
+      {
+        "name": "Bern Belp Airport",
+        "iata": "BRN",
+        "destinations": 12
+      }
+    ],
+    "coords": [
+      8.2275,
+      46.8182
+    ]
+  },
+  "Austria": {
+    "name": "Austria",
+    "num_countries_connected": 58,
+    "total_routes": 373,
+    "num_airports": 6,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 67
+      },
+      {
+        "country": "Spain",
+        "routes": 40
+      },
+      {
+        "country": "Greece",
+        "routes": 36
+      },
+      {
+        "country": "Italy",
+        "routes": 28
+      },
+      {
+        "country": "Turkey",
+        "routes": 19
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Vienna International Airport",
+        "iata": "VIE",
+        "destinations": 137
+      },
+      {
+        "name": "Salzburg Airport",
+        "iata": "SZG",
+        "destinations": 19
+      },
+      {
+        "name": "Graz Airport",
+        "iata": "GRZ",
+        "destinations": 11
+      }
+    ],
+    "coords": [
+      14.5501,
+      47.5162
+    ]
+  },
+  "Belgium": {
+    "name": "Belgium",
+    "num_countries_connected": 58,
+    "total_routes": 407,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Spain",
+        "routes": 54
+      },
+      {
+        "country": "Italy",
+        "routes": 44
+      },
+      {
+        "country": "France",
+        "routes": 37
+      },
+      {
+        "country": "Morocco",
+        "routes": 22
+      },
+      {
+        "country": "United States",
+        "routes": 21
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Brussels Airport",
+        "iata": "BRU",
+        "destinations": 146
+      },
+      {
+        "name": "Brussels South Charleroi Airport",
+        "iata": "CRL",
+        "destinations": 83
+      },
+      {
+        "name": "Li\u00e8ge Airport",
+        "iata": "LGG",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      4.4699,
+      50.5039
+    ]
+  },
+  "Thailand": {
+    "name": "Thailand",
+    "num_countries_connected": 55,
+    "total_routes": 400,
+    "num_airports": 7,
+    "top_destinations": [
+      {
+        "country": "China",
+        "routes": 71
+      },
+      {
+        "country": "Malaysia",
+        "routes": 32
+      },
+      {
+        "country": "Singapore",
+        "routes": 28
+      },
+      {
+        "country": "Hong Kong",
+        "routes": 24
+      },
+      {
+        "country": "Japan",
+        "routes": 21
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Suvarnabhumi Airport",
+        "iata": "BKK",
+        "destinations": 121
+      },
+      {
+        "name": "Don Mueang International Airport",
+        "iata": "DMK",
+        "destinations": 48
+      },
+      {
+        "name": "Phuket International Airport",
+        "iata": "HKT",
+        "destinations": 32
+      }
+    ],
+    "coords": [
+      100.9925,
+      15.87
+    ]
+  },
+  "India": {
+    "name": "India",
+    "num_countries_connected": 49,
+    "total_routes": 446,
+    "num_airports": 22,
+    "top_destinations": [
+      {
+        "country": "United Arab Emirates",
+        "routes": 87
+      },
+      {
+        "country": "Saudi Arabia",
+        "routes": 39
+      },
+      {
+        "country": "Singapore",
+        "routes": 37
+      },
+      {
+        "country": "Sri Lanka",
+        "routes": 24
+      },
+      {
+        "country": "Oman",
+        "routes": 23
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Indira Gandhi International Airport",
+        "iata": "DEL",
+        "destinations": 97
+      },
+      {
+        "name": "Chhatrapati Shivaji International Airport",
+        "iata": "BOM",
+        "destinations": 83
+      },
+      {
+        "name": "Kempegowda International Airport",
+        "iata": "BLR",
+        "destinations": 40
+      }
+    ],
+    "coords": [
+      78.9629,
+      20.5937
+    ]
+  },
+  "Morocco": {
+    "name": "Morocco",
+    "num_countries_connected": 48,
+    "total_routes": 286,
+    "num_airports": 9,
+    "top_destinations": [
+      {
+        "country": "France",
+        "routes": 79
+      },
+      {
+        "country": "Spain",
+        "routes": 39
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 26
+      },
+      {
+        "country": "Belgium",
+        "routes": 21
+      },
+      {
+        "country": "Germany",
+        "routes": 21
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Mohammed V International Airport",
+        "iata": "CMN",
+        "destinations": 87
+      },
+      {
+        "name": "Menara Airport",
+        "iata": "RAK",
+        "destinations": 49
+      },
+      {
+        "name": "Al Massira Airport",
+        "iata": "AGA",
+        "destinations": 20
+      }
+    ],
+    "coords": [
+      -7.0926,
+      31.7917
+    ]
+  },
+  "Egypt": {
+    "name": "Egypt",
+    "num_countries_connected": 46,
+    "total_routes": 265,
+    "num_airports": 8,
+    "top_destinations": [
+      {
+        "country": "Saudi Arabia",
+        "routes": 56
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 34
+      },
+      {
+        "country": "Germany",
+        "routes": 18
+      },
+      {
+        "country": "Kuwait",
+        "routes": 16
+      },
+      {
+        "country": "Russia",
+        "routes": 11
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Cairo International Airport",
+        "iata": "CAI",
+        "destinations": 81
+      },
+      {
+        "name": "Hurghada International Airport",
+        "iata": "HRG",
+        "destinations": 26
+      },
+      {
+        "name": "Borg El Arab International Airport",
+        "iata": "HBE",
+        "destinations": 21
+      }
+    ],
+    "coords": [
+      30.8025,
+      26.8206
+    ]
+  },
+  "Ethiopia": {
+    "name": "Ethiopia",
+    "num_countries_connected": 46,
+    "total_routes": 93,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Saudi Arabia",
+        "routes": 9
+      },
+      {
+        "country": "China",
+        "routes": 6
+      },
+      {
+        "country": "Kenya",
+        "routes": 6
+      },
+      {
+        "country": "Djibouti",
+        "routes": 4
+      },
+      {
+        "country": "India",
+        "routes": 4
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Addis Ababa Bole International Airport",
+        "iata": "ADD",
+        "destinations": 67
+      }
+    ],
+    "coords": [
+      40.4897,
+      9.145
+    ]
+  },
+  "Denmark": {
+    "name": "Denmark",
+    "num_countries_connected": 45,
+    "total_routes": 284,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Spain",
+        "routes": 31
+      },
+      {
+        "country": "Norway",
+        "routes": 30
+      },
+      {
+        "country": "Germany",
+        "routes": 26
+      },
+      {
+        "country": "Italy",
+        "routes": 21
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 21
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Copenhagen Kastrup Airport",
+        "iata": "CPH",
+        "destinations": 121
+      },
+      {
+        "name": "Billund Airport",
+        "iata": "BLL",
+        "destinations": 39
+      },
+      {
+        "name": "Aalborg Airport",
+        "iata": "AAL",
+        "destinations": 13
+      }
+    ],
+    "coords": [
+      9.5018,
+      56.2639
+    ]
+  },
+  "Kenya": {
+    "name": "Kenya",
+    "num_countries_connected": 45,
+    "total_routes": 132,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Tanzania",
+        "routes": 17
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 9
+      },
+      {
+        "country": "Zambia",
+        "routes": 9
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 6
+      },
+      {
+        "country": "Somalia",
+        "routes": 6
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Jomo Kenyatta International Airport",
+        "iata": "NBO",
+        "destinations": 64
+      },
+      {
+        "name": "Nairobi Wilson Airport",
+        "iata": "WIL",
+        "destinations": 10
+      },
+      {
+        "name": "Mombasa Moi International Airport",
+        "iata": "MBA",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      37.9062,
+      -0.0236
+    ]
+  },
+  "South Korea": {
+    "name": "South Korea",
+    "num_countries_connected": 44,
+    "total_routes": 495,
+    "num_airports": 6,
+    "top_destinations": [
+      {
+        "country": "China",
+        "routes": 145
+      },
+      {
+        "country": "Japan",
+        "routes": 101
+      },
+      {
+        "country": "United States",
+        "routes": 39
+      },
+      {
+        "country": "Philippines",
+        "routes": 26
+      },
+      {
+        "country": "Thailand",
+        "routes": 21
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Incheon International Airport",
+        "iata": "ICN",
+        "destinations": 131
+      },
+      {
+        "name": "Gimhae International Airport",
+        "iata": "PUS",
+        "destinations": 36
+      },
+      {
+        "name": "Jeju International Airport",
+        "iata": "CJU",
+        "destinations": 33
+      }
+    ],
+    "coords": [
+      127.7669,
+      35.9078
+    ]
+  },
+  "Saudi Arabia": {
+    "name": "Saudi Arabia",
+    "num_countries_connected": 43,
+    "total_routes": 390,
+    "num_airports": 10,
+    "top_destinations": [
+      {
+        "country": "Egypt",
+        "routes": 53
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 45
+      },
+      {
+        "country": "Pakistan",
+        "routes": 40
+      },
+      {
+        "country": "India",
+        "routes": 38
+      },
+      {
+        "country": "Turkey",
+        "routes": 20
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "King Abdulaziz International Airport",
+        "iata": "JED",
+        "destinations": 109
+      },
+      {
+        "name": "King Khaled International Airport",
+        "iata": "RUH",
+        "destinations": 80
+      },
+      {
+        "name": "King Fahd International Airport",
+        "iata": "DMM",
+        "destinations": 48
+      }
+    ],
+    "coords": [
+      45.0792,
+      23.8859
+    ]
+  },
+  "Sweden": {
+    "name": "Sweden",
+    "num_countries_connected": 42,
+    "total_routes": 302,
+    "num_airports": 12,
+    "top_destinations": [
+      {
+        "country": "Spain",
+        "routes": 33
+      },
+      {
+        "country": "Germany",
+        "routes": 29
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 27
+      },
+      {
+        "country": "Finland",
+        "routes": 20
+      },
+      {
+        "country": "Italy",
+        "routes": 19
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Stockholm-Arlanda Airport",
+        "iata": "ARN",
+        "destinations": 123
+      },
+      {
+        "name": "Gothenburg-Landvetter Airport",
+        "iata": "GOT",
+        "destinations": 32
+      },
+      {
+        "name": "Stockholm Skavsta Airport",
+        "iata": "NYO",
+        "destinations": 31
+      }
+    ],
+    "coords": [
+      18.6435,
+      60.1282
+    ]
+  },
+  "Hong Kong": {
+    "name": "Hong Kong",
+    "num_countries_connected": 42,
+    "total_routes": 348,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "China",
+        "routes": 111
+      },
+      {
+        "country": "Japan",
+        "routes": 27
+      },
+      {
+        "country": "Thailand",
+        "routes": 24
+      },
+      {
+        "country": "South Korea",
+        "routes": 16
+      },
+      {
+        "country": "United States",
+        "routes": 16
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Hong Kong International Airport",
+        "iata": "HKG",
+        "destinations": 133
+      }
+    ],
+    "coords": [
+      114.1095,
+      22.3193
+    ]
+  },
+  "Greece": {
+    "name": "Greece",
+    "num_countries_connected": 42,
+    "total_routes": 552,
+    "num_airports": 18,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 166
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 95
+      },
+      {
+        "country": "Austria",
+        "routes": 36
+      },
+      {
+        "country": "France",
+        "routes": 30
+      },
+      {
+        "country": "Russia",
+        "routes": 28
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Eleftherios Venizelos International Airport",
+        "iata": "ATH",
+        "destinations": 104
+      },
+      {
+        "name": "Heraklion International Nikos Kazantzakis Airport",
+        "iata": "HER",
+        "destinations": 59
+      },
+      {
+        "name": "Thessaloniki Macedonia International Airport",
+        "iata": "SKG",
+        "destinations": 54
+      }
+    ],
+    "coords": [
+      21.8243,
+      39.0742
+    ]
+  },
+  "South Africa": {
+    "name": "South Africa",
+    "num_countries_connected": 40,
+    "total_routes": 144,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "Mozambique",
+        "routes": 14
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 10
+      },
+      {
+        "country": "Namibia",
+        "routes": 9
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 9
+      },
+      {
+        "country": "Zimbabwe",
+        "routes": 9
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "OR Tambo International Airport",
+        "iata": "JNB",
+        "destinations": 81
+      },
+      {
+        "name": "Cape Town International Airport",
+        "iata": "CPT",
+        "destinations": 23
+      },
+      {
+        "name": "King Shaka International Airport",
+        "iata": "DUR",
+        "destinations": 13
+      }
+    ],
+    "coords": [
+      22.9375,
+      -30.5595
+    ]
+  },
+  "Singapore": {
+    "name": "Singapore",
+    "num_countries_connected": 40,
+    "total_routes": 405,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Indonesia",
+        "routes": 62
+      },
+      {
+        "country": "China",
+        "routes": 44
+      },
+      {
+        "country": "Australia",
+        "routes": 42
+      },
+      {
+        "country": "India",
+        "routes": 37
+      },
+      {
+        "country": "Malaysia",
+        "routes": 36
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Singapore Changi Airport",
+        "iata": "SIN",
+        "destinations": 125
+      }
+    ],
+    "coords": [
+      103.8198,
+      1.3521
+    ]
+  },
+  "Israel": {
+    "name": "Israel",
+    "num_countries_connected": 40,
+    "total_routes": 133,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 12
+      },
+      {
+        "country": "Russia",
+        "routes": 10
+      },
+      {
+        "country": "France",
+        "routes": 9
+      },
+      {
+        "country": "Italy",
+        "routes": 9
+      },
+      {
+        "country": "United States",
+        "routes": 7
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Ben Gurion International Airport",
+        "iata": "TLV",
+        "destinations": 79
+      }
+    ],
+    "coords": [
+      34.8516,
+      31.0461
+    ]
+  },
+  "Japan": {
+    "name": "Japan",
+    "num_countries_connected": 40,
+    "total_routes": 652,
+    "num_airports": 24,
+    "top_destinations": [
+      {
+        "country": "China",
+        "routes": 139
+      },
+      {
+        "country": "South Korea",
+        "routes": 100
+      },
+      {
+        "country": "United States",
+        "routes": 78
+      },
+      {
+        "country": "Taiwan",
+        "routes": 66
+      },
+      {
+        "country": "Hong Kong",
+        "routes": 27
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Narita International Airport",
+        "iata": "NRT",
+        "destinations": 103
+      },
+      {
+        "name": "Tokyo Haneda International Airport",
+        "iata": "HND",
+        "destinations": 73
+      },
+      {
+        "name": "Kansai International Airport",
+        "iata": "KIX",
+        "destinations": 57
+      }
+    ],
+    "coords": [
+      138.2529,
+      36.2048
+    ]
+  },
+  "Poland": {
+    "name": "Poland",
+    "num_countries_connected": 40,
+    "total_routes": 339,
+    "num_airports": 11,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 67
+      },
+      {
+        "country": "Germany",
+        "routes": 44
+      },
+      {
+        "country": "Norway",
+        "routes": 31
+      },
+      {
+        "country": "Italy",
+        "routes": 29
+      },
+      {
+        "country": "Spain",
+        "routes": 22
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Warsaw Chopin Airport",
+        "iata": "WAW",
+        "destinations": 78
+      },
+      {
+        "name": "Krak\u00f3w John Paul II International Airport",
+        "iata": "KRK",
+        "destinations": 52
+      },
+      {
+        "name": "Gda\u0144sk Lech Wa\u0142\u0119sa Airport",
+        "iata": "GDN",
+        "destinations": 47
+      }
+    ],
+    "coords": [
+      19.1451,
+      51.9194
+    ]
+  },
+  "Finland": {
+    "name": "Finland",
+    "num_countries_connected": 38,
+    "total_routes": 160,
+    "num_airports": 6,
+    "top_destinations": [
+      {
+        "country": "Sweden",
+        "routes": 20
+      },
+      {
+        "country": "Germany",
+        "routes": 19
+      },
+      {
+        "country": "Spain",
+        "routes": 16
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 9
+      },
+      {
+        "country": "Russia",
+        "routes": 8
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Helsinki Vantaa Airport",
+        "iata": "HEL",
+        "destinations": 88
+      },
+      {
+        "name": "Tampere-Pirkkala Airport",
+        "iata": "TMP",
+        "destinations": 10
+      },
+      {
+        "name": "Turku Airport",
+        "iata": "TKU",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      25.7482,
+      61.9241
+    ]
+  },
+  "Norway": {
+    "name": "Norway",
+    "num_countries_connected": 38,
+    "total_routes": 338,
+    "num_airports": 11,
+    "top_destinations": [
+      {
+        "country": "Spain",
+        "routes": 51
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 41
+      },
+      {
+        "country": "Poland",
+        "routes": 31
+      },
+      {
+        "country": "Denmark",
+        "routes": 29
+      },
+      {
+        "country": "Germany",
+        "routes": 26
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Oslo Lufthavn",
+        "iata": "OSL",
+        "destinations": 104
+      },
+      {
+        "name": "Bergen Airport Flesland",
+        "iata": "BGO",
+        "destinations": 49
+      },
+      {
+        "name": "Stavanger Airport Sola",
+        "iata": "SVG",
+        "destinations": 37
+      }
+    ],
+    "coords": [
+      8.4689,
+      60.472
+    ]
+  },
+  "Malaysia": {
+    "name": "Malaysia",
+    "num_countries_connected": 38,
+    "total_routes": 299,
+    "num_airports": 11,
+    "top_destinations": [
+      {
+        "country": "Indonesia",
+        "routes": 43
+      },
+      {
+        "country": "Singapore",
+        "routes": 36
+      },
+      {
+        "country": "Thailand",
+        "routes": 32
+      },
+      {
+        "country": "China",
+        "routes": 29
+      },
+      {
+        "country": "India",
+        "routes": 22
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Kuala Lumpur International Airport",
+        "iata": "KUL",
+        "destinations": 112
+      },
+      {
+        "name": "Kota Kinabalu International Airport",
+        "iata": "BKI",
+        "destinations": 30
+      },
+      {
+        "name": "Miri Airport",
+        "iata": "MYY",
+        "destinations": 20
+      }
+    ],
+    "coords": [
+      101.9758,
+      4.2105
+    ]
+  },
+  "Czech Republic": {
+    "name": "Czech Republic",
+    "num_countries_connected": 38,
+    "total_routes": 187,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Russia",
+        "routes": 24
+      },
+      {
+        "country": "Italy",
+        "routes": 19
+      },
+      {
+        "country": "France",
+        "routes": 16
+      },
+      {
+        "country": "Spain",
+        "routes": 16
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 15
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "V\u00e1clav Havel Airport Prague",
+        "iata": "PRG",
+        "destinations": 94
+      },
+      {
+        "name": "Karlovy Vary International Airport",
+        "iata": "KLV",
+        "destinations": 3
+      },
+      {
+        "name": "Ostrava Leos Jan\u00e1\u010dek Airport",
+        "iata": "OSR",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      15.473,
+      49.8175
+    ]
+  },
+  "Portugal": {
+    "name": "Portugal",
+    "num_countries_connected": 38,
+    "total_routes": 426,
+    "num_airports": 5,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 81
+      },
+      {
+        "country": "Germany",
+        "routes": 62
+      },
+      {
+        "country": "France",
+        "routes": 51
+      },
+      {
+        "country": "Spain",
+        "routes": 43
+      },
+      {
+        "country": "Netherlands",
+        "routes": 22
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Humberto Delgado Airport (Lisbon Portela Airport)",
+        "iata": "LIS",
+        "destinations": 103
+      },
+      {
+        "name": "Faro Airport",
+        "iata": "FAO",
+        "destinations": 63
+      },
+      {
+        "name": "Francisco de S\u00e1 Carneiro Airport",
+        "iata": "OPO",
+        "destinations": 61
+      }
+    ],
+    "coords": [
+      -8.2245,
+      39.3999
+    ]
+  },
+  "Jordan": {
+    "name": "Jordan",
+    "num_countries_connected": 34,
+    "total_routes": 109,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Saudi Arabia",
+        "routes": 11
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 9
+      },
+      {
+        "country": "Iraq",
+        "routes": 8
+      },
+      {
+        "country": "Germany",
+        "routes": 7
+      },
+      {
+        "country": "Libya",
+        "routes": 6
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Queen Alia International Airport",
+        "iata": "AMM",
+        "destinations": 57
+      }
+    ],
+    "coords": [
+      36.2384,
+      30.5852
+    ]
+  },
+  "Ukraine": {
+    "name": "Ukraine",
+    "num_countries_connected": 34,
+    "total_routes": 182,
+    "num_airports": 8,
+    "top_destinations": [
+      {
+        "country": "Russia",
+        "routes": 37
+      },
+      {
+        "country": "Turkey",
+        "routes": 20
+      },
+      {
+        "country": "Germany",
+        "routes": 12
+      },
+      {
+        "country": "Spain",
+        "routes": 11
+      },
+      {
+        "country": "Austria",
+        "routes": 10
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Boryspil International Airport",
+        "iata": "KBP",
+        "destinations": 62
+      },
+      {
+        "name": "Kiev Zhuliany International Airport",
+        "iata": "IEV",
+        "destinations": 20
+      },
+      {
+        "name": "Lviv International Airport",
+        "iata": "LWO",
+        "destinations": 16
+      }
+    ],
+    "coords": [
+      31.1656,
+      48.3794
+    ]
+  },
+  "Ireland": {
+    "name": "Ireland",
+    "num_countries_connected": 34,
+    "total_routes": 289,
+    "num_airports": 6,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 62
+      },
+      {
+        "country": "Spain",
+        "routes": 52
+      },
+      {
+        "country": "United States",
+        "routes": 35
+      },
+      {
+        "country": "France",
+        "routes": 23
+      },
+      {
+        "country": "Germany",
+        "routes": 19
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Dublin Airport",
+        "iata": "DUB",
+        "destinations": 144
+      },
+      {
+        "name": "Cork Airport",
+        "iata": "ORK",
+        "destinations": 30
+      },
+      {
+        "name": "Shannon Airport",
+        "iata": "SNN",
+        "destinations": 26
+      }
+    ],
+    "coords": [
+      -8.2439,
+      53.4129
+    ]
+  },
+  "Australia": {
+    "name": "Australia",
+    "num_countries_connected": 34,
+    "total_routes": 332,
+    "num_airports": 8,
+    "top_destinations": [
+      {
+        "country": "New Zealand",
+        "routes": 75
+      },
+      {
+        "country": "Singapore",
+        "routes": 42
+      },
+      {
+        "country": "United States",
+        "routes": 26
+      },
+      {
+        "country": "Indonesia",
+        "routes": 25
+      },
+      {
+        "country": "China",
+        "routes": 17
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Sydney Kingsford Smith International Airport",
+        "iata": "SYD",
+        "destinations": 85
+      },
+      {
+        "name": "Brisbane International Airport",
+        "iata": "BNE",
+        "destinations": 60
+      },
+      {
+        "name": "Melbourne International Airport",
+        "iata": "MEL",
+        "destinations": 55
+      }
+    ],
+    "coords": [
+      133.7751,
+      -25.2744
+    ]
+  },
+  "Hungary": {
+    "name": "Hungary",
+    "num_countries_connected": 33,
+    "total_routes": 100,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 15
+      },
+      {
+        "country": "Germany",
+        "routes": 12
+      },
+      {
+        "country": "Italy",
+        "routes": 11
+      },
+      {
+        "country": "France",
+        "routes": 5
+      },
+      {
+        "country": "Spain",
+        "routes": 5
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Budapest Liszt Ferenc International Airport",
+        "iata": "BUD",
+        "destinations": 77
+      },
+      {
+        "name": "Debrecen International Airport",
+        "iata": "DEB",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      19.5033,
+      47.1625
+    ]
+  },
+  "Brazil": {
+    "name": "Brazil",
+    "num_countries_connected": 33,
+    "total_routes": 197,
+    "num_airports": 13,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 58
+      },
+      {
+        "country": "Argentina",
+        "routes": 29
+      },
+      {
+        "country": "Peru",
+        "routes": 10
+      },
+      {
+        "country": "Portugal",
+        "routes": 10
+      },
+      {
+        "country": "Uruguay",
+        "routes": 9
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Guarulhos - Governador Andr\u00e9 Franco Montoro International Airport",
+        "iata": "GRU",
+        "destinations": 92
+      },
+      {
+        "name": "Rio Gale\u00e3o \u2013 Tom Jobim International Airport",
+        "iata": "GIG",
+        "destinations": 49
+      },
+      {
+        "name": "Presidente Juscelino Kubistschek International Airport",
+        "iata": "BSB",
+        "destinations": 44
+      }
+    ],
+    "coords": [
+      -51.9253,
+      -14.235
+    ]
+  },
+  "Nigeria": {
+    "name": "Nigeria",
+    "num_countries_connected": 32,
+    "total_routes": 63,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "Ghana",
+        "routes": 6
+      },
+      {
+        "country": "Cote d'Ivoire",
+        "routes": 4
+      },
+      {
+        "country": "France",
+        "routes": 4
+      },
+      {
+        "country": "Germany",
+        "routes": 4
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 4
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Murtala Muhammed International Airport",
+        "iata": "LOS",
+        "destinations": 43
+      },
+      {
+        "name": "Nnamdi Azikiwe International Airport",
+        "iata": "ABV",
+        "destinations": 25
+      },
+      {
+        "name": "Mallam Aminu International Airport",
+        "iata": "KAN",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      8.6753,
+      9.082
+    ]
+  },
+  "Latvia": {
+    "name": "Latvia",
+    "num_countries_connected": 32,
+    "total_routes": 101,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 14
+      },
+      {
+        "country": "Norway",
+        "routes": 10
+      },
+      {
+        "country": "Italy",
+        "routes": 9
+      },
+      {
+        "country": "Russia",
+        "routes": 8
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 7
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Riga International Airport",
+        "iata": "RIX",
+        "destinations": 68
+      }
+    ],
+    "coords": [
+      24.6032,
+      56.8796
+    ]
+  },
+  "Cyprus": {
+    "name": "Cyprus",
+    "num_countries_connected": 31,
+    "total_routes": 148,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 50
+      },
+      {
+        "country": "Turkey",
+        "routes": 13
+      },
+      {
+        "country": "Greece",
+        "routes": 12
+      },
+      {
+        "country": "Russia",
+        "routes": 11
+      },
+      {
+        "country": "Germany",
+        "routes": 8
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Larnaca International Airport",
+        "iata": "LCA",
+        "destinations": 53
+      },
+      {
+        "name": "Paphos International Airport",
+        "iata": "PFO",
+        "destinations": 25
+      },
+      {
+        "name": "Ercan International Airport",
+        "iata": "ECN",
+        "destinations": 8
+      }
+    ],
+    "coords": [
+      33.4299,
+      35.1264
+    ]
+  },
+  "Panama": {
+    "name": "Panama",
+    "num_countries_connected": 30,
+    "total_routes": 101,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 30
+      },
+      {
+        "country": "Mexico",
+        "routes": 8
+      },
+      {
+        "country": "Brazil",
+        "routes": 7
+      },
+      {
+        "country": "Colombia",
+        "routes": 6
+      },
+      {
+        "country": "Venezuela",
+        "routes": 6
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Tocumen International Airport",
+        "iata": "PTY",
+        "destinations": 72
+      }
+    ],
+    "coords": [
+      -80.7821,
+      8.538
+    ]
+  },
+  "Lebanon": {
+    "name": "Lebanon",
+    "num_countries_connected": 30,
+    "total_routes": 67,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Saudi Arabia",
+        "routes": 7
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 6
+      },
+      {
+        "country": "Iraq",
+        "routes": 5
+      },
+      {
+        "country": "Italy",
+        "routes": 4
+      },
+      {
+        "country": "Egypt",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Beirut Rafic Hariri International Airport",
+        "iata": "BEY",
+        "destinations": 45
+      }
+    ],
+    "coords": [
+      35.8623,
+      33.8547
+    ]
+  },
+  "Tunisia": {
+    "name": "Tunisia",
+    "num_countries_connected": 30,
+    "total_routes": 175,
+    "num_airports": 5,
+    "top_destinations": [
+      {
+        "country": "France",
+        "routes": 43
+      },
+      {
+        "country": "Germany",
+        "routes": 32
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 22
+      },
+      {
+        "country": "Libya",
+        "routes": 20
+      },
+      {
+        "country": "Italy",
+        "routes": 8
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Tunis Carthage International Airport",
+        "iata": "TUN",
+        "destinations": 60
+      },
+      {
+        "name": "Enfidha - Hammamet International Airport",
+        "iata": "NBE",
+        "destinations": 25
+      },
+      {
+        "name": "Djerba Zarzis International Airport",
+        "iata": "DJE",
+        "destinations": 24
+      }
+    ],
+    "coords": [
+      9.5375,
+      33.8869
+    ]
+  },
+  "Iran": {
+    "name": "Iran",
+    "num_countries_connected": 29,
+    "total_routes": 112,
+    "num_airports": 11,
+    "top_destinations": [
+      {
+        "country": "United Arab Emirates",
+        "routes": 20
+      },
+      {
+        "country": "Turkey",
+        "routes": 13
+      },
+      {
+        "country": "Kuwait",
+        "routes": 11
+      },
+      {
+        "country": "Saudi Arabia",
+        "routes": 7
+      },
+      {
+        "country": "Afghanistan",
+        "routes": 5
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Imam Khomeini International Airport",
+        "iata": "IKA",
+        "destinations": 43
+      },
+      {
+        "name": "Mashhad International Airport",
+        "iata": "MHD",
+        "destinations": 39
+      },
+      {
+        "name": "Shiraz Shahid Dastghaib International Airport",
+        "iata": "SYZ",
+        "destinations": 26
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Algeria": {
+    "name": "Algeria",
+    "num_countries_connected": 28,
+    "total_routes": 127,
+    "num_airports": 9,
+    "top_destinations": [
+      {
+        "country": "France",
+        "routes": 66
+      },
+      {
+        "country": "Spain",
+        "routes": 14
+      },
+      {
+        "country": "Turkey",
+        "routes": 6
+      },
+      {
+        "country": "Italy",
+        "routes": 4
+      },
+      {
+        "country": "Germany",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Houari Boumediene Airport",
+        "iata": "ALG",
+        "destinations": 65
+      },
+      {
+        "name": "Es Senia Airport",
+        "iata": "ORN",
+        "destinations": 23
+      },
+      {
+        "name": "Mohamed Boudiaf International Airport",
+        "iata": "CZL",
+        "destinations": 12
+      }
+    ],
+    "coords": [
+      1.6596,
+      28.0339
+    ]
+  },
+  "Belarus": {
+    "name": "Belarus",
+    "num_countries_connected": 28,
+    "total_routes": 54,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Russia",
+        "routes": 12
+      },
+      {
+        "country": "Germany",
+        "routes": 4
+      },
+      {
+        "country": "Georgia",
+        "routes": 3
+      },
+      {
+        "country": "Austria",
+        "routes": 2
+      },
+      {
+        "country": "Czech Republic",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Minsk National Airport",
+        "iata": "MSQ",
+        "destinations": 41
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Serbia": {
+    "name": "Serbia",
+    "num_countries_connected": 28,
+    "total_routes": 106,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 25
+      },
+      {
+        "country": "Switzerland",
+        "routes": 9
+      },
+      {
+        "country": "Italy",
+        "routes": 6
+      },
+      {
+        "country": "Sweden",
+        "routes": 6
+      },
+      {
+        "country": "Turkey",
+        "routes": 6
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Belgrade Nikola Tesla Airport",
+        "iata": "BEG",
+        "destinations": 52
+      },
+      {
+        "name": "Pri\u0161tina International Airport",
+        "iata": "PRN",
+        "destinations": 17
+      }
+    ],
+    "coords": [
+      21.0059,
+      44.0165
+    ]
+  },
+  "Romania": {
+    "name": "Romania",
+    "num_countries_connected": 28,
+    "total_routes": 147,
+    "num_airports": 7,
+    "top_destinations": [
+      {
+        "country": "Italy",
+        "routes": 33
+      },
+      {
+        "country": "Germany",
+        "routes": 16
+      },
+      {
+        "country": "Spain",
+        "routes": 15
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 11
+      },
+      {
+        "country": "Austria",
+        "routes": 8
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Henri Coand\u0103 International Airport",
+        "iata": "OTP",
+        "destinations": 66
+      },
+      {
+        "name": "Cluj-Napoca International Airport",
+        "iata": "CLJ",
+        "destinations": 18
+      },
+      {
+        "name": "Timi\u015foara Traian Vuia Airport",
+        "iata": "TSR",
+        "destinations": 12
+      }
+    ],
+    "coords": [
+      24.9668,
+      45.9432
+    ]
+  },
+  "Dominican Republic": {
+    "name": "Dominican Republic",
+    "num_countries_connected": 27,
+    "total_routes": 159,
+    "num_airports": 7,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 61
+      },
+      {
+        "country": "Canada",
+        "routes": 17
+      },
+      {
+        "country": "France",
+        "routes": 10
+      },
+      {
+        "country": "Puerto Rico",
+        "routes": 9
+      },
+      {
+        "country": "Germany",
+        "routes": 7
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Punta Cana International Airport",
+        "iata": "PUJ",
+        "destinations": 46
+      },
+      {
+        "name": "Las Am\u00e9ricas International Airport",
+        "iata": "SDQ",
+        "destinations": 27
+      },
+      {
+        "name": "Gregorio Luperon International Airport",
+        "iata": "POP",
+        "destinations": 14
+      }
+    ],
+    "coords": [
+      -70.1627,
+      18.7357
+    ]
+  },
+  "Lithuania": {
+    "name": "Lithuania",
+    "num_countries_connected": 26,
+    "total_routes": 80,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 10
+      },
+      {
+        "country": "Norway",
+        "routes": 8
+      },
+      {
+        "country": "Germany",
+        "routes": 7
+      },
+      {
+        "country": "Italy",
+        "routes": 7
+      },
+      {
+        "country": "Belgium",
+        "routes": 5
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Vilnius International Airport",
+        "iata": "VNO",
+        "destinations": 46
+      },
+      {
+        "name": "Kaunas International Airport",
+        "iata": "KUN",
+        "destinations": 19
+      },
+      {
+        "name": "Palanga International Airport",
+        "iata": "PLQ",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      23.8813,
+      55.1694
+    ]
+  },
+  "Kuwait": {
+    "name": "Kuwait",
+    "num_countries_connected": 26,
+    "total_routes": 120,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Saudi Arabia",
+        "routes": 18
+      },
+      {
+        "country": "Egypt",
+        "routes": 16
+      },
+      {
+        "country": "Iran",
+        "routes": 11
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 11
+      },
+      {
+        "country": "India",
+        "routes": 9
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Kuwait International Airport",
+        "iata": "KWI",
+        "destinations": 57
+      }
+    ],
+    "coords": [
+      47.4818,
+      29.3117
+    ]
+  },
+  "Malta": {
+    "name": "Malta",
+    "num_countries_connected": 26,
+    "total_routes": 113,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 28
+      },
+      {
+        "country": "Italy",
+        "routes": 15
+      },
+      {
+        "country": "France",
+        "routes": 11
+      },
+      {
+        "country": "Germany",
+        "routes": 8
+      },
+      {
+        "country": "Austria",
+        "routes": 4
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Malta International Airport",
+        "iata": "MLA",
+        "destinations": 76
+      }
+    ],
+    "coords": [
+      14.3754,
+      35.9375
+    ]
+  },
+  "Mexico": {
+    "name": "Mexico",
+    "num_countries_connected": 25,
+    "total_routes": 473,
+    "num_airports": 24,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 363
+      },
+      {
+        "country": "Canada",
+        "routes": 30
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 12
+      },
+      {
+        "country": "Panama",
+        "routes": 8
+      },
+      {
+        "country": "Spain",
+        "routes": 8
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Licenciado Benito Juarez International Airport",
+        "iata": "MEX",
+        "destinations": 94
+      },
+      {
+        "name": "Canc\u00fan International Airport",
+        "iata": "CUN",
+        "destinations": 78
+      },
+      {
+        "name": "Don Miguel Hidalgo Y Costilla International Airport",
+        "iata": "GDL",
+        "destinations": 41
+      }
+    ],
+    "coords": [
+      -102.5528,
+      23.6345
+    ]
+  },
+  "Oman": {
+    "name": "Oman",
+    "num_countries_connected": 25,
+    "total_routes": 107,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "India",
+        "routes": 24
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 20
+      },
+      {
+        "country": "Pakistan",
+        "routes": 13
+      },
+      {
+        "country": "Saudi Arabia",
+        "routes": 7
+      },
+      {
+        "country": "Qatar",
+        "routes": 6
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Muscat International Airport",
+        "iata": "MCT",
+        "destinations": 54
+      },
+      {
+        "name": "Salalah Airport",
+        "iata": "SLL",
+        "destinations": 6
+      }
+    ],
+    "coords": [
+      55.9233,
+      21.4735
+    ]
+  },
+  "Senegal": {
+    "name": "Senegal",
+    "num_countries_connected": 25,
+    "total_routes": 66,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Guinea",
+        "routes": 8
+      },
+      {
+        "country": "Spain",
+        "routes": 8
+      },
+      {
+        "country": "Belgium",
+        "routes": 5
+      },
+      {
+        "country": "Mali",
+        "routes": 5
+      },
+      {
+        "country": "Gambia",
+        "routes": 4
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "L\u00e9opold S\u00e9dar Senghor International Airport",
+        "iata": "DKR",
+        "destinations": 31
+      }
+    ],
+    "coords": [
+      -14.4524,
+      14.4974
+    ]
+  },
+  "Croatia": {
+    "name": "Croatia",
+    "num_countries_connected": 25,
+    "total_routes": 181,
+    "num_airports": 6,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 55
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 34
+      },
+      {
+        "country": "France",
+        "routes": 12
+      },
+      {
+        "country": "Norway",
+        "routes": 9
+      },
+      {
+        "country": "Sweden",
+        "routes": 9
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Dubrovnik Airport",
+        "iata": "DBV",
+        "destinations": 41
+      },
+      {
+        "name": "Split Airport",
+        "iata": "SPU",
+        "destinations": 36
+      },
+      {
+        "name": "Zagreb Airport",
+        "iata": "ZAG",
+        "destinations": 27
+      }
+    ],
+    "coords": [
+      15.2,
+      45.1
+    ]
+  },
+  "Ghana": {
+    "name": "Ghana",
+    "num_countries_connected": 24,
+    "total_routes": 44,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Cote d'Ivoire",
+        "routes": 8
+      },
+      {
+        "country": "Liberia",
+        "routes": 5
+      },
+      {
+        "country": "Nigeria",
+        "routes": 5
+      },
+      {
+        "country": "Senegal",
+        "routes": 3
+      },
+      {
+        "country": "Sierra Leone",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Kotoka International Airport",
+        "iata": "ACC",
+        "destinations": 30
+      }
+    ],
+    "coords": [
+      -1.0232,
+      7.9465
+    ]
+  },
+  "Bulgaria": {
+    "name": "Bulgaria",
+    "num_countries_connected": 24,
+    "total_routes": 83,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 11
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 10
+      },
+      {
+        "country": "Russia",
+        "routes": 8
+      },
+      {
+        "country": "Spain",
+        "routes": 8
+      },
+      {
+        "country": "Italy",
+        "routes": 7
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Sofia Airport",
+        "iata": "SOF",
+        "destinations": 41
+      },
+      {
+        "name": "Burgas Airport",
+        "iata": "BOJ",
+        "destinations": 11
+      },
+      {
+        "name": "Varna Airport",
+        "iata": "VAR",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      25.4858,
+      42.7339
+    ]
+  },
+  "Philippines": {
+    "name": "Philippines",
+    "num_countries_connected": 24,
+    "total_routes": 154,
+    "num_airports": 6,
+    "top_destinations": [
+      {
+        "country": "South Korea",
+        "routes": 27
+      },
+      {
+        "country": "Singapore",
+        "routes": 17
+      },
+      {
+        "country": "Japan",
+        "routes": 15
+      },
+      {
+        "country": "China",
+        "routes": 13
+      },
+      {
+        "country": "Hong Kong",
+        "routes": 11
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Ninoy Aquino International Airport",
+        "iata": "MNL",
+        "destinations": 78
+      },
+      {
+        "name": "Mactan Cebu International Airport",
+        "iata": "CEB",
+        "destinations": 29
+      },
+      {
+        "name": "Francisco Bangoy International Airport",
+        "iata": "DVO",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      121.774,
+      12.8797
+    ]
+  },
+  "Kazakhstan": {
+    "name": "Kazakhstan",
+    "num_countries_connected": 24,
+    "total_routes": 96,
+    "num_airports": 8,
+    "top_destinations": [
+      {
+        "country": "Russia",
+        "routes": 33
+      },
+      {
+        "country": "China",
+        "routes": 7
+      },
+      {
+        "country": "Turkey",
+        "routes": 7
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 7
+      },
+      {
+        "country": "Azerbaijan",
+        "routes": 4
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Almaty Airport",
+        "iata": "ALA",
+        "destinations": 45
+      },
+      {
+        "name": "Astana International Airport",
+        "iata": "TSE",
+        "destinations": 34
+      },
+      {
+        "name": "Aktau Airport",
+        "iata": "SCO",
+        "destinations": 17
+      }
+    ],
+    "coords": [
+      66.9237,
+      48.0196
+    ]
+  },
+  "Taiwan": {
+    "name": "Taiwan",
+    "num_countries_connected": 24,
+    "total_routes": 381,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "China",
+        "routes": 187
+      },
+      {
+        "country": "Japan",
+        "routes": 67
+      },
+      {
+        "country": "South Korea",
+        "routes": 18
+      },
+      {
+        "country": "United States",
+        "routes": 14
+      },
+      {
+        "country": "Vietnam",
+        "routes": 13
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Taiwan Taoyuan International Airport",
+        "iata": "TPE",
+        "destinations": 103
+      },
+      {
+        "name": "Kaohsiung International Airport",
+        "iata": "KHH",
+        "destinations": 37
+      },
+      {
+        "name": "Taichung Ching Chuang Kang Airport",
+        "iata": "RMQ",
+        "destinations": 23
+      }
+    ],
+    "coords": [
+      120.9605,
+      23.6978
+    ]
+  },
+  "Netherlands Antilles": {
+    "name": "Netherlands Antilles",
+    "num_countries_connected": 24,
+    "total_routes": 86,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 23
+      },
+      {
+        "country": "France",
+        "routes": 7
+      },
+      {
+        "country": "Dominican Republic",
+        "routes": 6
+      },
+      {
+        "country": "Dominica",
+        "routes": 5
+      },
+      {
+        "country": "Venezuela",
+        "routes": 5
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Princess Juliana International Airport",
+        "iata": "SXM",
+        "destinations": 33
+      },
+      {
+        "name": "Hato International Airport",
+        "iata": "CUR",
+        "destinations": 19
+      },
+      {
+        "name": "Flamingo International Airport",
+        "iata": "BON",
+        "destinations": 6
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Sri Lanka": {
+    "name": "Sri Lanka",
+    "num_countries_connected": 23,
+    "total_routes": 100,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "India",
+        "routes": 22
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 12
+      },
+      {
+        "country": "Saudi Arabia",
+        "routes": 11
+      },
+      {
+        "country": "Maldives",
+        "routes": 10
+      },
+      {
+        "country": "China",
+        "routes": 5
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Bandaranaike International Colombo Airport",
+        "iata": "CMB",
+        "destinations": 41
+      },
+      {
+        "name": "Mattala Rajapaksa International Airport",
+        "iata": "HRI",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      80.7718,
+      7.8731
+    ]
+  },
+  "Cuba": {
+    "name": "Cuba",
+    "num_countries_connected": 23,
+    "total_routes": 77,
+    "num_airports": 7,
+    "top_destinations": [
+      {
+        "country": "Canada",
+        "routes": 29
+      },
+      {
+        "country": "Mexico",
+        "routes": 8
+      },
+      {
+        "country": "Germany",
+        "routes": 4
+      },
+      {
+        "country": "Italy",
+        "routes": 4
+      },
+      {
+        "country": "Colombia",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Jos\u00e9 Mart\u00ed International Airport",
+        "iata": "HAV",
+        "destinations": 31
+      },
+      {
+        "name": "Juan Gualberto Gomez International Airport",
+        "iata": "VRA",
+        "destinations": 9
+      },
+      {
+        "name": "Frank Pais International Airport",
+        "iata": "HOG",
+        "destinations": 8
+      }
+    ],
+    "coords": [
+      -77.7812,
+      21.5218
+    ]
+  },
+  "Bahrain": {
+    "name": "Bahrain",
+    "num_countries_connected": 23,
+    "total_routes": 84,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United Arab Emirates",
+        "routes": 16
+      },
+      {
+        "country": "Qatar",
+        "routes": 10
+      },
+      {
+        "country": "Saudi Arabia",
+        "routes": 8
+      },
+      {
+        "country": "India",
+        "routes": 7
+      },
+      {
+        "country": "Pakistan",
+        "routes": 6
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Bahrain International Airport",
+        "iata": "BAH",
+        "destinations": 40
+      }
+    ],
+    "coords": [
+      50.5577,
+      26.0667
+    ]
+  },
+  "Pakistan": {
+    "name": "Pakistan",
+    "num_countries_connected": 23,
+    "total_routes": 163,
+    "num_airports": 8,
+    "top_destinations": [
+      {
+        "country": "United Arab Emirates",
+        "routes": 49
+      },
+      {
+        "country": "Saudi Arabia",
+        "routes": 39
+      },
+      {
+        "country": "Oman",
+        "routes": 12
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 7
+      },
+      {
+        "country": "Bahrain",
+        "routes": 6
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "New Islamabad International Airport",
+        "iata": "ISB",
+        "destinations": 37
+      },
+      {
+        "name": "Jinnah International Airport",
+        "iata": "KHI",
+        "destinations": 36
+      },
+      {
+        "name": "Alama Iqbal International Airport",
+        "iata": "LHE",
+        "destinations": 31
+      }
+    ],
+    "coords": [
+      69.3451,
+      30.3753
+    ]
+  },
+  "Uzbekistan": {
+    "name": "Uzbekistan",
+    "num_countries_connected": 22,
+    "total_routes": 119,
+    "num_airports": 10,
+    "top_destinations": [
+      {
+        "country": "Russia",
+        "routes": 81
+      },
+      {
+        "country": "China",
+        "routes": 4
+      },
+      {
+        "country": "Kazakhstan",
+        "routes": 4
+      },
+      {
+        "country": "South Korea",
+        "routes": 3
+      },
+      {
+        "country": "Czech Republic",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Tashkent International Airport",
+        "iata": "TAS",
+        "destinations": 57
+      },
+      {
+        "name": "Namangan Airport",
+        "iata": "NMA",
+        "destinations": 9
+      },
+      {
+        "name": "Samarkand Airport",
+        "iata": "SKD",
+        "destinations": 6
+      }
+    ],
+    "coords": [
+      64.5853,
+      41.3775
+    ]
+  },
+  "Colombia": {
+    "name": "Colombia",
+    "num_countries_connected": 22,
+    "total_routes": 114,
+    "num_airports": 5,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 48
+      },
+      {
+        "country": "Ecuador",
+        "routes": 10
+      },
+      {
+        "country": "Mexico",
+        "routes": 6
+      },
+      {
+        "country": "Panama",
+        "routes": 6
+      },
+      {
+        "country": "Spain",
+        "routes": 5
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "El Dorado International Airport",
+        "iata": "BOG",
+        "destinations": 74
+      },
+      {
+        "name": "Alfonso Bonilla Aragon International Airport",
+        "iata": "CLO",
+        "destinations": 18
+      },
+      {
+        "name": "Jose Maria C\u00f3rdova International Airport",
+        "iata": "MDE",
+        "destinations": 18
+      }
+    ],
+    "coords": [
+      -74.2973,
+      4.5709
+    ]
+  },
+  "Azerbaijan": {
+    "name": "Azerbaijan",
+    "num_countries_connected": 22,
+    "total_routes": 68,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "Russia",
+        "routes": 20
+      },
+      {
+        "country": "Turkey",
+        "routes": 6
+      },
+      {
+        "country": "Italy",
+        "routes": 4
+      },
+      {
+        "country": "Kazakhstan",
+        "routes": 4
+      },
+      {
+        "country": "Germany",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Heydar Aliyev International Airport",
+        "iata": "GYD",
+        "destinations": 39
+      },
+      {
+        "name": "Ganja Airport",
+        "iata": "KVD",
+        "destinations": 4
+      },
+      {
+        "name": "Lankaran International Airport",
+        "iata": "LLK",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      47.5769,
+      40.1431
+    ]
+  },
+  "Venezuela": {
+    "name": "Venezuela",
+    "num_countries_connected": 21,
+    "total_routes": 64,
+    "num_airports": 6,
+    "top_destinations": [
+      {
+        "country": "Aruba",
+        "routes": 11
+      },
+      {
+        "country": "United States",
+        "routes": 9
+      },
+      {
+        "country": "Panama",
+        "routes": 6
+      },
+      {
+        "country": "Colombia",
+        "routes": 5
+      },
+      {
+        "country": "Netherlands Antilles",
+        "routes": 5
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Sim\u00f3n Bol\u00edvar International Airport",
+        "iata": "CCS",
+        "destinations": 47
+      },
+      {
+        "name": "Del Caribe Santiago Mari\u00f1o International Airport",
+        "iata": "PMV",
+        "destinations": 14
+      },
+      {
+        "name": "La Chinita International Airport",
+        "iata": "MAR",
+        "destinations": 8
+      }
+    ],
+    "coords": [
+      -66.5897,
+      6.4238
+    ]
+  },
+  "Vietnam": {
+    "name": "Vietnam",
+    "num_countries_connected": 21,
+    "total_routes": 159,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "China",
+        "routes": 23
+      },
+      {
+        "country": "Japan",
+        "routes": 20
+      },
+      {
+        "country": "Cambodia",
+        "routes": 14
+      },
+      {
+        "country": "South Korea",
+        "routes": 13
+      },
+      {
+        "country": "Taiwan",
+        "routes": 13
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Tan Son Nhat International Airport",
+        "iata": "SGN",
+        "destinations": 54
+      },
+      {
+        "name": "Noi Bai International Airport",
+        "iata": "HAN",
+        "destinations": 46
+      },
+      {
+        "name": "Da Nang International Airport",
+        "iata": "DAD",
+        "destinations": 20
+      }
+    ],
+    "coords": [
+      108.2772,
+      14.0583
+    ]
+  },
+  "Argentina": {
+    "name": "Argentina",
+    "num_countries_connected": 20,
+    "total_routes": 87,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Brazil",
+        "routes": 28
+      },
+      {
+        "country": "United States",
+        "routes": 10
+      },
+      {
+        "country": "Uruguay",
+        "routes": 9
+      },
+      {
+        "country": "Chile",
+        "routes": 8
+      },
+      {
+        "country": "Paraguay",
+        "routes": 4
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Jorge Newbery Airpark",
+        "iata": "AEP",
+        "destinations": 43
+      },
+      {
+        "name": "Ministro Pistarini International Airport",
+        "iata": "EZE",
+        "destinations": 40
+      },
+      {
+        "name": "Ingeniero Ambrosio Taravella Airport",
+        "iata": "COR",
+        "destinations": 11
+      }
+    ],
+    "coords": [
+      -63.6167,
+      -38.4161
+    ]
+  },
+  "Peru": {
+    "name": "Peru",
+    "num_countries_connected": 20,
+    "total_routes": 80,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 21
+      },
+      {
+        "country": "Brazil",
+        "routes": 10
+      },
+      {
+        "country": "Bolivia",
+        "routes": 6
+      },
+      {
+        "country": "Chile",
+        "routes": 6
+      },
+      {
+        "country": "Ecuador",
+        "routes": 6
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Jorge Ch\u00e1vez International Airport",
+        "iata": "LIM",
+        "destinations": 57
+      }
+    ],
+    "coords": [
+      -75.0152,
+      -9.19
+    ]
+  },
+  "Angola": {
+    "name": "Angola",
+    "num_countries_connected": 20,
+    "total_routes": 32,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Congo (Kinshasa)",
+        "routes": 4
+      },
+      {
+        "country": "Portugal",
+        "routes": 3
+      },
+      {
+        "country": "South Africa",
+        "routes": 3
+      },
+      {
+        "country": "Brazil",
+        "routes": 2
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Quatro de Fevereiro Airport",
+        "iata": "LAD",
+        "destinations": 36
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Luxembourg": {
+    "name": "Luxembourg",
+    "num_countries_connected": 20,
+    "total_routes": 70,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Spain",
+        "routes": 12
+      },
+      {
+        "country": "Germany",
+        "routes": 9
+      },
+      {
+        "country": "Italy",
+        "routes": 8
+      },
+      {
+        "country": "France",
+        "routes": 7
+      },
+      {
+        "country": "Portugal",
+        "routes": 7
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Luxembourg-Findel International Airport",
+        "iata": "LUX",
+        "destinations": 54
+      }
+    ],
+    "coords": [
+      6.1296,
+      49.8153
+    ]
+  },
+  "Indonesia": {
+    "name": "Indonesia",
+    "num_countries_connected": 19,
+    "total_routes": 216,
+    "num_airports": 15,
+    "top_destinations": [
+      {
+        "country": "Singapore",
+        "routes": 63
+      },
+      {
+        "country": "Malaysia",
+        "routes": 43
+      },
+      {
+        "country": "Australia",
+        "routes": 25
+      },
+      {
+        "country": "China",
+        "routes": 13
+      },
+      {
+        "country": "Japan",
+        "routes": 13
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Soekarno-Hatta International Airport",
+        "iata": "CGK",
+        "destinations": 64
+      },
+      {
+        "name": "Ngurah Rai (Bali) International Airport",
+        "iata": "DPS",
+        "destinations": 42
+      },
+      {
+        "name": "Hasanuddin International Airport",
+        "iata": "UPG",
+        "destinations": 26
+      }
+    ],
+    "coords": [
+      113.9213,
+      -0.7893
+    ]
+  },
+  "Georgia": {
+    "name": "Georgia",
+    "num_countries_connected": 19,
+    "total_routes": 45,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "Ukraine",
+        "routes": 7
+      },
+      {
+        "country": "Turkey",
+        "routes": 5
+      },
+      {
+        "country": "Russia",
+        "routes": 4
+      },
+      {
+        "country": "Belarus",
+        "routes": 3
+      },
+      {
+        "country": "Israel",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Tbilisi International Airport",
+        "iata": "TBS",
+        "destinations": 24
+      },
+      {
+        "name": "Kopitnari Airport",
+        "iata": "KUT",
+        "destinations": 8
+      },
+      {
+        "name": "Batumi International Airport",
+        "iata": "BUS",
+        "destinations": 5
+      }
+    ],
+    "coords": [
+      43.3569,
+      42.3154
+    ]
+  },
+  "Cote d'Ivoire": {
+    "name": "Cote d'Ivoire",
+    "num_countries_connected": 19,
+    "total_routes": 48,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Burkina Faso",
+        "routes": 7
+      },
+      {
+        "country": "Ghana",
+        "routes": 7
+      },
+      {
+        "country": "Togo",
+        "routes": 5
+      },
+      {
+        "country": "Nigeria",
+        "routes": 4
+      },
+      {
+        "country": "Belgium",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Port Bouet Airport",
+        "iata": "ABJ",
+        "destinations": 21
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Bangladesh": {
+    "name": "Bangladesh",
+    "num_countries_connected": 19,
+    "total_routes": 71,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "India",
+        "routes": 12
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 9
+      },
+      {
+        "country": "Saudi Arabia",
+        "routes": 7
+      },
+      {
+        "country": "Thailand",
+        "routes": 7
+      },
+      {
+        "country": "Malaysia",
+        "routes": 6
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Hazrat Shahjalal International Airport",
+        "iata": "DAC",
+        "destinations": 33
+      },
+      {
+        "name": "Shah Amanat International Airport",
+        "iata": "CGP",
+        "destinations": 10
+      },
+      {
+        "name": "Osmany International Airport",
+        "iata": "ZYL",
+        "destinations": 1
+      }
+    ],
+    "coords": [
+      90.3563,
+      23.685
+    ]
+  },
+  "Estonia": {
+    "name": "Estonia",
+    "num_countries_connected": 19,
+    "total_routes": 37,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Norway",
+        "routes": 6
+      },
+      {
+        "country": "Finland",
+        "routes": 3
+      },
+      {
+        "country": "Lithuania",
+        "routes": 3
+      },
+      {
+        "country": "Russia",
+        "routes": 3
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Lennart Meri Tallinn Airport",
+        "iata": "TLL",
+        "destinations": 28
+      },
+      {
+        "name": "Tartu Airport",
+        "iata": "TAY",
+        "destinations": 1
+      }
+    ],
+    "coords": [
+      25.0136,
+      58.5953
+    ]
+  },
+  "Slovenia": {
+    "name": "Slovenia",
+    "num_countries_connected": 18,
+    "total_routes": 33,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 4
+      },
+      {
+        "country": "Belgium",
+        "routes": 3
+      },
+      {
+        "country": "Austria",
+        "routes": 2
+      },
+      {
+        "country": "Denmark",
+        "routes": 2
+      },
+      {
+        "country": "France",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Ljubljana Jo\u017ee Pu\u010dnik Airport",
+        "iata": "LJU",
+        "destinations": 22
+      }
+    ],
+    "coords": [
+      14.9955,
+      46.1512
+    ]
+  },
+  "Puerto Rico": {
+    "name": "Puerto Rico",
+    "num_countries_connected": 18,
+    "total_routes": 101,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 53
+      },
+      {
+        "country": "Dominican Republic",
+        "routes": 9
+      },
+      {
+        "country": "British Virgin Islands",
+        "routes": 7
+      },
+      {
+        "country": "Virgin Islands",
+        "routes": 7
+      },
+      {
+        "country": "Dominica",
+        "routes": 4
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Luis Munoz Marin International Airport",
+        "iata": "SJU",
+        "destinations": 49
+      },
+      {
+        "name": "Rafael Hernandez Airport",
+        "iata": "BQN",
+        "destinations": 4
+      },
+      {
+        "name": "Mercedita Airport",
+        "iata": "PSE",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      -66.5901,
+      18.2208
+    ]
+  },
+  "Chile": {
+    "name": "Chile",
+    "num_countries_connected": 18,
+    "total_routes": 55,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 10
+      },
+      {
+        "country": "Argentina",
+        "routes": 8
+      },
+      {
+        "country": "Brazil",
+        "routes": 6
+      },
+      {
+        "country": "Peru",
+        "routes": 6
+      },
+      {
+        "country": "Mexico",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Comodoro Arturo Merino Ben\u00edtez International Airport",
+        "iata": "SCL",
+        "destinations": 40
+      },
+      {
+        "name": "Diego Aracena Airport",
+        "iata": "IQQ",
+        "destinations": 5
+      }
+    ],
+    "coords": [
+      -71.543,
+      -35.6751
+    ]
+  },
+  "Cameroon": {
+    "name": "Cameroon",
+    "num_countries_connected": 17,
+    "total_routes": 52,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Belgium",
+        "routes": 9
+      },
+      {
+        "country": "Congo (Brazzaville)",
+        "routes": 5
+      },
+      {
+        "country": "Equatorial Guinea",
+        "routes": 5
+      },
+      {
+        "country": "Gabon",
+        "routes": 5
+      },
+      {
+        "country": "Benin",
+        "routes": 4
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Douala International Airport",
+        "iata": "DLA",
+        "destinations": 21
+      },
+      {
+        "name": "Yaound\u00e9 Nsimalen International Airport",
+        "iata": "NSI",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Tanzania": {
+    "name": "Tanzania",
+    "num_countries_connected": 17,
+    "total_routes": 42,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Kenya",
+        "routes": 16
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 4
+      },
+      {
+        "country": "Uganda",
+        "routes": 4
+      },
+      {
+        "country": "Netherlands",
+        "routes": 3
+      },
+      {
+        "country": "Rwanda",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Julius Nyerere International Airport",
+        "iata": "DAR",
+        "destinations": 22
+      },
+      {
+        "name": "Kilimanjaro International Airport",
+        "iata": "JRO",
+        "destinations": 9
+      },
+      {
+        "name": "Abeid Amani Karume International Airport",
+        "iata": "ZNZ",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      34.8888,
+      -6.369
+    ]
+  },
+  "New Zealand": {
+    "name": "New Zealand",
+    "num_countries_connected": 17,
+    "total_routes": 104,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Australia",
+        "routes": 64
+      },
+      {
+        "country": "Singapore",
+        "routes": 5
+      },
+      {
+        "country": "French Polynesia",
+        "routes": 4
+      },
+      {
+        "country": "United States",
+        "routes": 4
+      },
+      {
+        "country": "China",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Auckland International Airport",
+        "iata": "AKL",
+        "destinations": 45
+      },
+      {
+        "name": "Wellington International Airport",
+        "iata": "WLG",
+        "destinations": 21
+      },
+      {
+        "name": "Christchurch International Airport",
+        "iata": "CHC",
+        "destinations": 20
+      }
+    ],
+    "coords": [
+      174.886,
+      -40.9006
+    ]
+  },
+  "Mauritius": {
+    "name": "Mauritius",
+    "num_countries_connected": 16,
+    "total_routes": 40,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Reunion",
+        "routes": 7
+      },
+      {
+        "country": "India",
+        "routes": 6
+      },
+      {
+        "country": "South Africa",
+        "routes": 5
+      },
+      {
+        "country": "France",
+        "routes": 3
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Sir Seewoosagur Ramgoolam International Airport",
+        "iata": "MRU",
+        "destinations": 25
+      }
+    ],
+    "coords": [
+      57.5522,
+      -20.3484
+    ]
+  },
+  "Antigua and Barbuda": {
+    "name": "Antigua and Barbuda",
+    "num_countries_connected": 16,
+    "total_routes": 35,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 7
+      },
+      {
+        "country": "Saint Kitts and Nevis",
+        "routes": 4
+      },
+      {
+        "country": "Dominican Republic",
+        "routes": 3
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 3
+      },
+      {
+        "country": "Barbados",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "V.C. Bird International Airport",
+        "iata": "ANU",
+        "destinations": 22
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Uganda": {
+    "name": "Uganda",
+    "num_countries_connected": 16,
+    "total_routes": 31,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Rwanda",
+        "routes": 5
+      },
+      {
+        "country": "Belgium",
+        "routes": 4
+      },
+      {
+        "country": "Tanzania",
+        "routes": 4
+      },
+      {
+        "country": "Kenya",
+        "routes": 3
+      },
+      {
+        "country": "Netherlands",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Entebbe International Airport",
+        "iata": "EBB",
+        "destinations": 20
+      }
+    ],
+    "coords": [
+      32.2903,
+      1.3733
+    ]
+  },
+  "Yemen": {
+    "name": "Yemen",
+    "num_countries_connected": 16,
+    "total_routes": 58,
+    "num_airports": 6,
+    "top_destinations": [
+      {
+        "country": "Saudi Arabia",
+        "routes": 16
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 12
+      },
+      {
+        "country": "Egypt",
+        "routes": 6
+      },
+      {
+        "country": "Jordan",
+        "routes": 5
+      },
+      {
+        "country": "Kuwait",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Sana'a International Airport",
+        "iata": "SAH",
+        "destinations": 22
+      },
+      {
+        "name": "Aden International Airport",
+        "iata": "ADE",
+        "destinations": 18
+      },
+      {
+        "name": "Mukalla International Airport",
+        "iata": "RIY",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Mali": {
+    "name": "Mali",
+    "num_countries_connected": 15,
+    "total_routes": 28,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Senegal",
+        "routes": 5
+      },
+      {
+        "country": "Benin",
+        "routes": 3
+      },
+      {
+        "country": "Burkina Faso",
+        "routes": 3
+      },
+      {
+        "country": "Cote d'Ivoire",
+        "routes": 3
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Modibo Keita International Airport",
+        "iata": "BKO",
+        "destinations": 16
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Maldives": {
+    "name": "Maldives",
+    "num_countries_connected": 15,
+    "total_routes": 38,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Sri Lanka",
+        "routes": 12
+      },
+      {
+        "country": "China",
+        "routes": 4
+      },
+      {
+        "country": "India",
+        "routes": 4
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 4
+      },
+      {
+        "country": "Hong Kong",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Mal\u00e9 International Airport",
+        "iata": "MLE",
+        "destinations": 29
+      }
+    ],
+    "coords": [
+      73.2207,
+      3.2028
+    ]
+  },
+  "Moldova": {
+    "name": "Moldova",
+    "num_countries_connected": 15,
+    "total_routes": 34,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Italy",
+        "routes": 12
+      },
+      {
+        "country": "Russia",
+        "routes": 5
+      },
+      {
+        "country": "Romania",
+        "routes": 3
+      },
+      {
+        "country": "Germany",
+        "routes": 2
+      },
+      {
+        "country": "Turkey",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Chi\u015fin\u0103u International Airport",
+        "iata": "KIV",
+        "destinations": 25
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Benin": {
+    "name": "Benin",
+    "num_countries_connected": 15,
+    "total_routes": 40,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Cote d'Ivoire",
+        "routes": 8
+      },
+      {
+        "country": "Congo (Brazzaville)",
+        "routes": 7
+      },
+      {
+        "country": "Cameroon",
+        "routes": 4
+      },
+      {
+        "country": "Gabon",
+        "routes": 3
+      },
+      {
+        "country": "Mali",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Cadjehoun Airport",
+        "iata": "COO",
+        "destinations": 18
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Jamaica": {
+    "name": "Jamaica",
+    "num_countries_connected": 15,
+    "total_routes": 72,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 41
+      },
+      {
+        "country": "Canada",
+        "routes": 12
+      },
+      {
+        "country": "Panama",
+        "routes": 3
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 3
+      },
+      {
+        "country": "Cayman Islands",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Sangster International Airport",
+        "iata": "MBJ",
+        "destinations": 26
+      },
+      {
+        "name": "Norman Manley International Airport",
+        "iata": "KIN",
+        "destinations": 19
+      }
+    ],
+    "coords": [
+      -77.2975,
+      18.1096
+    ]
+  },
+  "Nepal": {
+    "name": "Nepal",
+    "num_countries_connected": 14,
+    "total_routes": 33,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "India",
+        "routes": 7
+      },
+      {
+        "country": "Bangladesh",
+        "routes": 4
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 4
+      },
+      {
+        "country": "China",
+        "routes": 3
+      },
+      {
+        "country": "Malaysia",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Tribhuvan International Airport",
+        "iata": "KTM",
+        "destinations": 32
+      }
+    ],
+    "coords": [
+      84.124,
+      28.3949
+    ]
+  },
+  "Cape Verde": {
+    "name": "Cape Verde",
+    "num_countries_connected": 14,
+    "total_routes": 37,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 9
+      },
+      {
+        "country": "Portugal",
+        "routes": 8
+      },
+      {
+        "country": "Germany",
+        "routes": 5
+      },
+      {
+        "country": "France",
+        "routes": 3
+      },
+      {
+        "country": "Netherlands",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Am\u00edlcar Cabral International Airport",
+        "iata": "SID",
+        "destinations": 15
+      },
+      {
+        "name": "Praia International Airport",
+        "iata": "RAI",
+        "destinations": 15
+      },
+      {
+        "name": "Rabil Airport",
+        "iata": "BVC",
+        "destinations": 6
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Barbados": {
+    "name": "Barbados",
+    "num_countries_connected": 14,
+    "total_routes": 22,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 5
+      },
+      {
+        "country": "United States",
+        "routes": 3
+      },
+      {
+        "country": "Antigua and Barbuda",
+        "routes": 2
+      },
+      {
+        "country": "Canada",
+        "routes": 2
+      },
+      {
+        "country": "Brazil",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Sir Grantley Adams International Airport",
+        "iata": "BGI",
+        "destinations": 17
+      }
+    ],
+    "coords": [
+      -59.5432,
+      13.1939
+    ]
+  },
+  "Gabon": {
+    "name": "Gabon",
+    "num_countries_connected": 14,
+    "total_routes": 24,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Congo (Brazzaville)",
+        "routes": 5
+      },
+      {
+        "country": "Cameroon",
+        "routes": 4
+      },
+      {
+        "country": "Benin",
+        "routes": 3
+      },
+      {
+        "country": "Nigeria",
+        "routes": 2
+      },
+      {
+        "country": "Congo (Kinshasa)",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Libreville Leon M'ba International Airport",
+        "iata": "LBV",
+        "destinations": 16
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "El Salvador": {
+    "name": "El Salvador",
+    "num_countries_connected": 14,
+    "total_routes": 53,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 29
+      },
+      {
+        "country": "Colombia",
+        "routes": 3
+      },
+      {
+        "country": "Honduras",
+        "routes": 3
+      },
+      {
+        "country": "Mexico",
+        "routes": 3
+      },
+      {
+        "country": "Costa Rica",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Monse\u00f1or \u00d3scar Arnulfo Romero International Airport",
+        "iata": "SAL",
+        "destinations": 32
+      }
+    ],
+    "coords": [
+      -88.8965,
+      13.7942
+    ]
+  },
+  "Iceland": {
+    "name": "Iceland",
+    "num_countries_connected": 14,
+    "total_routes": 45,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 10
+      },
+      {
+        "country": "United States",
+        "routes": 7
+      },
+      {
+        "country": "Norway",
+        "routes": 5
+      },
+      {
+        "country": "Denmark",
+        "routes": 4
+      },
+      {
+        "country": "France",
+        "routes": 4
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Keflavik International Airport",
+        "iata": "KEF",
+        "destinations": 32
+      }
+    ],
+    "coords": [
+      -19.0208,
+      64.9631
+    ]
+  },
+  "Burkina Faso": {
+    "name": "Burkina Faso",
+    "num_countries_connected": 14,
+    "total_routes": 32,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Cote d'Ivoire",
+        "routes": 7
+      },
+      {
+        "country": "Niger",
+        "routes": 7
+      },
+      {
+        "country": "Belgium",
+        "routes": 4
+      },
+      {
+        "country": "Mali",
+        "routes": 3
+      },
+      {
+        "country": "Togo",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Ouagadougou Airport",
+        "iata": "OUA",
+        "destinations": 15
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Iraq": {
+    "name": "Iraq",
+    "num_countries_connected": 14,
+    "total_routes": 76,
+    "num_airports": 6,
+    "top_destinations": [
+      {
+        "country": "Turkey",
+        "routes": 16
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 15
+      },
+      {
+        "country": "Jordan",
+        "routes": 9
+      },
+      {
+        "country": "Sweden",
+        "routes": 7
+      },
+      {
+        "country": "Germany",
+        "routes": 5
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Erbil International Airport",
+        "iata": "EBL",
+        "destinations": 20
+      },
+      {
+        "name": "Baghdad International Airport",
+        "iata": "BGW",
+        "destinations": 13
+      },
+      {
+        "name": "Al Najaf International Airport",
+        "iata": "NJF",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Trinidad and Tobago": {
+    "name": "Trinidad and Tobago",
+    "num_countries_connected": 14,
+    "total_routes": 37,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 11
+      },
+      {
+        "country": "Saint Lucia",
+        "routes": 4
+      },
+      {
+        "country": "Grenada",
+        "routes": 3
+      },
+      {
+        "country": "Netherlands Antilles",
+        "routes": 3
+      },
+      {
+        "country": "Suriname",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Piarco International Airport",
+        "iata": "POS",
+        "destinations": 21
+      },
+      {
+        "name": "Tobago-Crown Point Airport",
+        "iata": "TAB",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      -61.2225,
+      10.6918
+    ]
+  },
+  "Sudan": {
+    "name": "Sudan",
+    "num_countries_connected": 13,
+    "total_routes": 35,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United Arab Emirates",
+        "routes": 10
+      },
+      {
+        "country": "Saudi Arabia",
+        "routes": 8
+      },
+      {
+        "country": "Egypt",
+        "routes": 3
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 2
+      },
+      {
+        "country": "Jordan",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Khartoum International Airport",
+        "iata": "KRT",
+        "destinations": 22
+      },
+      {
+        "name": "Port Sudan New International Airport",
+        "iata": "PZU",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Burma": {
+    "name": "Burma",
+    "num_countries_connected": 13,
+    "total_routes": 41,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "Thailand",
+        "routes": 12
+      },
+      {
+        "country": "China",
+        "routes": 8
+      },
+      {
+        "country": "Singapore",
+        "routes": 6
+      },
+      {
+        "country": "Malaysia",
+        "routes": 3
+      },
+      {
+        "country": "South Korea",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Yangon International Airport",
+        "iata": "RGN",
+        "destinations": 28
+      },
+      {
+        "name": "Mandalay International Airport",
+        "iata": "MDL",
+        "destinations": 8
+      },
+      {
+        "name": "Naypyidaw Airport",
+        "iata": "NYT",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Macedonia": {
+    "name": "Macedonia",
+    "num_countries_connected": 13,
+    "total_routes": 23,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 5
+      },
+      {
+        "country": "Italy",
+        "routes": 3
+      },
+      {
+        "country": "Sweden",
+        "routes": 3
+      },
+      {
+        "country": "Switzerland",
+        "routes": 2
+      },
+      {
+        "country": "Turkey",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Skopje Alexander the Great Airport",
+        "iata": "SKP",
+        "destinations": 23
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Ecuador": {
+    "name": "Ecuador",
+    "num_countries_connected": 13,
+    "total_routes": 40,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Colombia",
+        "routes": 10
+      },
+      {
+        "country": "United States",
+        "routes": 8
+      },
+      {
+        "country": "Peru",
+        "routes": 5
+      },
+      {
+        "country": "Spain",
+        "routes": 4
+      },
+      {
+        "country": "Panama",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Mariscal Sucre International Airport",
+        "iata": "UIO",
+        "destinations": 23
+      },
+      {
+        "name": "Jos\u00e9 Joaqu\u00edn de Olmedo International Airport",
+        "iata": "GYE",
+        "destinations": 19
+      }
+    ],
+    "coords": [
+      -78.1834,
+      -1.8312
+    ]
+  },
+  "Rwanda": {
+    "name": "Rwanda",
+    "num_countries_connected": 13,
+    "total_routes": 39,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Uganda",
+        "routes": 11
+      },
+      {
+        "country": "Kenya",
+        "routes": 8
+      },
+      {
+        "country": "Burundi",
+        "routes": 7
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 2
+      },
+      {
+        "country": "South Africa",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Kigali International Airport",
+        "iata": "KGL",
+        "destinations": 16
+      }
+    ],
+    "coords": [
+      29.8739,
+      -1.9403
+    ]
+  },
+  "Fiji": {
+    "name": "Fiji",
+    "num_countries_connected": 13,
+    "total_routes": 40,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Australia",
+        "routes": 11
+      },
+      {
+        "country": "New Zealand",
+        "routes": 7
+      },
+      {
+        "country": "United States",
+        "routes": 6
+      },
+      {
+        "country": "Kiribati",
+        "routes": 3
+      },
+      {
+        "country": "Hong Kong",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Nadi International Airport",
+        "iata": "NAN",
+        "destinations": 24
+      },
+      {
+        "name": "Nausori International Airport",
+        "iata": "SUV",
+        "destinations": 12
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Togo": {
+    "name": "Togo",
+    "num_countries_connected": 13,
+    "total_routes": 20,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Belgium",
+        "routes": 3
+      },
+      {
+        "country": "Benin",
+        "routes": 2
+      },
+      {
+        "country": "Burkina Faso",
+        "routes": 2
+      },
+      {
+        "country": "Cote d'Ivoire",
+        "routes": 2
+      },
+      {
+        "country": "Ghana",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Lom\u00e9-Tokoin Airport",
+        "iata": "LFW",
+        "destinations": 14
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Armenia": {
+    "name": "Armenia",
+    "num_countries_connected": 13,
+    "total_routes": 45,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Russia",
+        "routes": 26
+      },
+      {
+        "country": "Austria",
+        "routes": 3
+      },
+      {
+        "country": "France",
+        "routes": 3
+      },
+      {
+        "country": "Czech Republic",
+        "routes": 2
+      },
+      {
+        "country": "Ukraine",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Zvartnots International Airport",
+        "iata": "EVN",
+        "destinations": 33
+      }
+    ],
+    "coords": [
+      45.0382,
+      40.0691
+    ]
+  },
+  "Libya": {
+    "name": "Libya",
+    "num_countries_connected": 12,
+    "total_routes": 62,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Tunisia",
+        "routes": 21
+      },
+      {
+        "country": "Egypt",
+        "routes": 10
+      },
+      {
+        "country": "Jordan",
+        "routes": 6
+      },
+      {
+        "country": "Turkey",
+        "routes": 6
+      },
+      {
+        "country": "Morocco",
+        "routes": 5
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Tripoli International Airport",
+        "iata": "TIP",
+        "destinations": 25
+      },
+      {
+        "name": "Benina International Airport",
+        "iata": "BEN",
+        "destinations": 12
+      },
+      {
+        "name": "Gamal Abdel Nasser Airport",
+        "iata": "TOB",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      17.2283,
+      26.3351
+    ]
+  },
+  "Costa Rica": {
+    "name": "Costa Rica",
+    "num_countries_connected": 12,
+    "total_routes": 65,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 36
+      },
+      {
+        "country": "Honduras",
+        "routes": 5
+      },
+      {
+        "country": "Panama",
+        "routes": 5
+      },
+      {
+        "country": "Guatemala",
+        "routes": 4
+      },
+      {
+        "country": "Canada",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Juan Santamaria International Airport",
+        "iata": "SJO",
+        "destinations": 38
+      },
+      {
+        "name": "Daniel Oduber Quiros International Airport",
+        "iata": "LIR",
+        "destinations": 15
+      }
+    ],
+    "coords": [
+      -83.7534,
+      9.7489
+    ]
+  },
+  "Cambodia": {
+    "name": "Cambodia",
+    "num_countries_connected": 11,
+    "total_routes": 65,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Vietnam",
+        "routes": 14
+      },
+      {
+        "country": "China",
+        "routes": 10
+      },
+      {
+        "country": "Singapore",
+        "routes": 9
+      },
+      {
+        "country": "South Korea",
+        "routes": 8
+      },
+      {
+        "country": "Thailand",
+        "routes": 8
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Siem Reap International Airport",
+        "iata": "REP",
+        "destinations": 20
+      },
+      {
+        "name": "Phnom Penh International Airport",
+        "iata": "PNH",
+        "destinations": 15
+      }
+    ],
+    "coords": [
+      104.991,
+      12.5657
+    ]
+  },
+  "Zambia": {
+    "name": "Zambia",
+    "num_countries_connected": 11,
+    "total_routes": 40,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "Zimbabwe",
+        "routes": 10
+      },
+      {
+        "country": "Kenya",
+        "routes": 6
+      },
+      {
+        "country": "Malawi",
+        "routes": 6
+      },
+      {
+        "country": "South Africa",
+        "routes": 6
+      },
+      {
+        "country": "Netherlands",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Kenneth Kaunda International Airport Lusaka",
+        "iata": "LUN",
+        "destinations": 18
+      },
+      {
+        "name": "Simon Mwansa Kapwepwe International Airport",
+        "iata": "NLA",
+        "destinations": 7
+      },
+      {
+        "name": "Livingstone Airport",
+        "iata": "LVI",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      27.8493,
+      -13.1339
+    ]
+  },
+  "Montenegro": {
+    "name": "Montenegro",
+    "num_countries_connected": 11,
+    "total_routes": 27,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Russia",
+        "routes": 7
+      },
+      {
+        "country": "Serbia",
+        "routes": 4
+      },
+      {
+        "country": "Austria",
+        "routes": 2
+      },
+      {
+        "country": "Belgium",
+        "routes": 2
+      },
+      {
+        "country": "France",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Podgorica Airport",
+        "iata": "TGD",
+        "destinations": 12
+      },
+      {
+        "name": "Tivat Airport",
+        "iata": "TIV",
+        "destinations": 6
+      }
+    ],
+    "coords": [
+      19.3744,
+      42.7087
+    ]
+  },
+  "Congo (Brazzaville)": {
+    "name": "Congo (Brazzaville)",
+    "num_countries_connected": 11,
+    "total_routes": 33,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Benin",
+        "routes": 7
+      },
+      {
+        "country": "Gabon",
+        "routes": 5
+      },
+      {
+        "country": "Cameroon",
+        "routes": 4
+      },
+      {
+        "country": "France",
+        "routes": 4
+      },
+      {
+        "country": "Congo (Kinshasa)",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Maya-Maya Airport",
+        "iata": "BZV",
+        "destinations": 13
+      },
+      {
+        "name": "Pointe Noire Airport",
+        "iata": "PNR",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Guam": {
+    "name": "Guam",
+    "num_countries_connected": 10,
+    "total_routes": 33,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Japan",
+        "routes": 19
+      },
+      {
+        "country": "South Korea",
+        "routes": 4
+      },
+      {
+        "country": "Philippines",
+        "routes": 2
+      },
+      {
+        "country": "Taiwan",
+        "routes": 2
+      },
+      {
+        "country": "Australia",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Antonio B. Won Pat International Airport",
+        "iata": "GUM",
+        "destinations": 19
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Saint Lucia": {
+    "name": "Saint Lucia",
+    "num_countries_connected": 10,
+    "total_routes": 30,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 7
+      },
+      {
+        "country": "Martinique",
+        "routes": 5
+      },
+      {
+        "country": "Trinidad and Tobago",
+        "routes": 4
+      },
+      {
+        "country": "Grenada",
+        "routes": 3
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Hewanorra International Airport",
+        "iata": "UVF",
+        "destinations": 11
+      },
+      {
+        "name": "George F. L. Charles Airport",
+        "iata": "SLU",
+        "destinations": 6
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Brunei": {
+    "name": "Brunei",
+    "num_countries_connected": 10,
+    "total_routes": 23,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Malaysia",
+        "routes": 7
+      },
+      {
+        "country": "Indonesia",
+        "routes": 4
+      },
+      {
+        "country": "Hong Kong",
+        "routes": 2
+      },
+      {
+        "country": "Philippines",
+        "routes": 2
+      },
+      {
+        "country": "Singapore",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Brunei International Airport",
+        "iata": "BWN",
+        "destinations": 13
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Martinique": {
+    "name": "Martinique",
+    "num_countries_connected": 10,
+    "total_routes": 23,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "France",
+        "routes": 4
+      },
+      {
+        "country": "Guadeloupe",
+        "routes": 4
+      },
+      {
+        "country": "Saint Lucia",
+        "routes": 4
+      },
+      {
+        "country": "Dominican Republic",
+        "routes": 2
+      },
+      {
+        "country": "French Guiana",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Martinique Aim\u00e9 C\u00e9saire International Airport",
+        "iata": "FDF",
+        "destinations": 11
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Guadeloupe": {
+    "name": "Guadeloupe",
+    "num_countries_connected": 10,
+    "total_routes": 26,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "France",
+        "routes": 5
+      },
+      {
+        "country": "Martinique",
+        "routes": 5
+      },
+      {
+        "country": "Dominica",
+        "routes": 3
+      },
+      {
+        "country": "Dominican Republic",
+        "routes": 3
+      },
+      {
+        "country": "Antigua and Barbuda",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Pointe-\u00e0-Pitre Le Raizet",
+        "iata": "PTP",
+        "destinations": 12
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Aruba": {
+    "name": "Aruba",
+    "num_countries_connected": 9,
+    "total_routes": 44,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 21
+      },
+      {
+        "country": "Venezuela",
+        "routes": 11
+      },
+      {
+        "country": "Netherlands Antilles",
+        "routes": 3
+      },
+      {
+        "country": "Canada",
+        "routes": 2
+      },
+      {
+        "country": "Colombia",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Queen Beatrix International Airport",
+        "iata": "AUA",
+        "destinations": 25
+      }
+    ],
+    "coords": [
+      -69.9683,
+      12.5211
+    ]
+  },
+  "Guatemala": {
+    "name": "Guatemala",
+    "num_countries_connected": 9,
+    "total_routes": 37,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 17
+      },
+      {
+        "country": "Honduras",
+        "routes": 8
+      },
+      {
+        "country": "El Salvador",
+        "routes": 3
+      },
+      {
+        "country": "Belize",
+        "routes": 2
+      },
+      {
+        "country": "Costa Rica",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "La Aurora Airport",
+        "iata": "GUA",
+        "destinations": 19
+      },
+      {
+        "name": "Mundo Maya International Airport",
+        "iata": "FRS",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      -90.2308,
+      15.7835
+    ]
+  },
+  "Bolivia": {
+    "name": "Bolivia",
+    "num_countries_connected": 9,
+    "total_routes": 20,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Peru",
+        "routes": 6
+      },
+      {
+        "country": "Argentina",
+        "routes": 2
+      },
+      {
+        "country": "Brazil",
+        "routes": 2
+      },
+      {
+        "country": "Chile",
+        "routes": 2
+      },
+      {
+        "country": "Paraguay",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "El Alto International Airport",
+        "iata": "LPB",
+        "destinations": 16
+      },
+      {
+        "name": "Viru Viru International Airport",
+        "iata": "VVI",
+        "destinations": 12
+      }
+    ],
+    "coords": [
+      -63.5887,
+      -16.2902
+    ]
+  },
+  "Bosnia and Herzegovina": {
+    "name": "Bosnia and Herzegovina",
+    "num_countries_connected": 9,
+    "total_routes": 19,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "Germany",
+        "routes": 4
+      },
+      {
+        "country": "Turkey",
+        "routes": 4
+      },
+      {
+        "country": "Serbia",
+        "routes": 3
+      },
+      {
+        "country": "Sweden",
+        "routes": 3
+      },
+      {
+        "country": "Austria",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Sarajevo International Airport",
+        "iata": "SJJ",
+        "destinations": 13
+      },
+      {
+        "name": "Banja Luka International Airport",
+        "iata": "BNX",
+        "destinations": 3
+      },
+      {
+        "name": "Tuzla International Airport",
+        "iata": "TZL",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      17.6791,
+      43.9159
+    ]
+  },
+  "Macau": {
+    "name": "Macau",
+    "num_countries_connected": 9,
+    "total_routes": 79,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "China",
+        "routes": 46
+      },
+      {
+        "country": "Taiwan",
+        "routes": 8
+      },
+      {
+        "country": "Japan",
+        "routes": 6
+      },
+      {
+        "country": "South Korea",
+        "routes": 6
+      },
+      {
+        "country": "Philippines",
+        "routes": 5
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Macau International Airport",
+        "iata": "MFM",
+        "destinations": 38
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Turkmenistan": {
+    "name": "Turkmenistan",
+    "num_countries_connected": 9,
+    "total_routes": 15,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Azerbaijan",
+        "routes": 2
+      },
+      {
+        "country": "India",
+        "routes": 2
+      },
+      {
+        "country": "Russia",
+        "routes": 2
+      },
+      {
+        "country": "Turkey",
+        "routes": 2
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Ashgabat International Airport",
+        "iata": "ASB",
+        "destinations": 11
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Congo (Kinshasa)": {
+    "name": "Congo (Kinshasa)",
+    "num_countries_connected": 9,
+    "total_routes": 26,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Cameroon",
+        "routes": 5
+      },
+      {
+        "country": "Belgium",
+        "routes": 4
+      },
+      {
+        "country": "Congo (Brazzaville)",
+        "routes": 4
+      },
+      {
+        "country": "Kenya",
+        "routes": 4
+      },
+      {
+        "country": "South Africa",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Ndjili International Airport",
+        "iata": "FIH",
+        "destinations": 16
+      },
+      {
+        "name": "Lubumbashi International Airport",
+        "iata": "FBM",
+        "destinations": 6
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Djibouti": {
+    "name": "Djibouti",
+    "num_countries_connected": 9,
+    "total_routes": 22,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Somalia",
+        "routes": 5
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 4
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 4
+      },
+      {
+        "country": "Yemen",
+        "routes": 3
+      },
+      {
+        "country": "Kenya",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Djibouti-Ambouli Airport",
+        "iata": "JIB",
+        "destinations": 12
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Sierra Leone": {
+    "name": "Sierra Leone",
+    "num_countries_connected": 9,
+    "total_routes": 22,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Liberia",
+        "routes": 8
+      },
+      {
+        "country": "Ghana",
+        "routes": 3
+      },
+      {
+        "country": "France",
+        "routes": 2
+      },
+      {
+        "country": "Gambia",
+        "routes": 2
+      },
+      {
+        "country": "Senegal",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Lungi International Airport",
+        "iata": "FNA",
+        "destinations": 11
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Tajikistan": {
+    "name": "Tajikistan",
+    "num_countries_connected": 9,
+    "total_routes": 94,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "Russia",
+        "routes": 71
+      },
+      {
+        "country": "Kazakhstan",
+        "routes": 6
+      },
+      {
+        "country": "China",
+        "routes": 4
+      },
+      {
+        "country": "Iran",
+        "routes": 3
+      },
+      {
+        "country": "Turkey",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Dushanbe Airport",
+        "iata": "DYU",
+        "destinations": 30
+      },
+      {
+        "name": "Khudzhand Airport",
+        "iata": "LBD",
+        "destinations": 19
+      },
+      {
+        "name": "Qurghonteppa International Airport",
+        "iata": "KQT",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Slovakia": {
+    "name": "Slovakia",
+    "num_countries_connected": 9,
+    "total_routes": 23,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 6
+      },
+      {
+        "country": "Czech Republic",
+        "routes": 5
+      },
+      {
+        "country": "Italy",
+        "routes": 4
+      },
+      {
+        "country": "Spain",
+        "routes": 3
+      },
+      {
+        "country": "Austria",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "M. R. \u0160tef\u00e1nik Airport",
+        "iata": "BTS",
+        "destinations": 18
+      },
+      {
+        "name": "Ko\u0161ice Airport",
+        "iata": "KSC",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      19.699,
+      48.669
+    ]
+  },
+  "Virgin Islands": {
+    "name": "Virgin Islands",
+    "num_countries_connected": 8,
+    "total_routes": 38,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 20
+      },
+      {
+        "country": "Puerto Rico",
+        "routes": 8
+      },
+      {
+        "country": "British Virgin Islands",
+        "routes": 3
+      },
+      {
+        "country": "Netherlands Antilles",
+        "routes": 3
+      },
+      {
+        "country": "Anguilla",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Cyril E. King Airport",
+        "iata": "STT",
+        "destinations": 18
+      },
+      {
+        "name": "Henry E Rohlsen Airport",
+        "iata": "STX",
+        "destinations": 5
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Uruguay": {
+    "name": "Uruguay",
+    "num_countries_connected": 8,
+    "total_routes": 26,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Argentina",
+        "routes": 9
+      },
+      {
+        "country": "Brazil",
+        "routes": 9
+      },
+      {
+        "country": "Chile",
+        "routes": 2
+      },
+      {
+        "country": "United States",
+        "routes": 2
+      },
+      {
+        "country": "Panama",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Carrasco International /General C L Berisso Airport",
+        "iata": "MVD",
+        "destinations": 12
+      },
+      {
+        "name": "Capitan Corbeta CA Curbelo International Airport",
+        "iata": "PDP",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      -55.7658,
+      -32.5228
+    ]
+  },
+  "Paraguay": {
+    "name": "Paraguay",
+    "num_countries_connected": 8,
+    "total_routes": 18,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Brazil",
+        "routes": 5
+      },
+      {
+        "country": "Argentina",
+        "routes": 4
+      },
+      {
+        "country": "Bolivia",
+        "routes": 2
+      },
+      {
+        "country": "Chile",
+        "routes": 2
+      },
+      {
+        "country": "United States",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Silvio Pettirossi International Airport",
+        "iata": "ASU",
+        "destinations": 10
+      },
+      {
+        "name": "Guarani International Airport",
+        "iata": "AGT",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      -58.4438,
+      -23.4425
+    ]
+  },
+  "Papua New Guinea": {
+    "name": "Papua New Guinea",
+    "num_countries_connected": 8,
+    "total_routes": 16,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Australia",
+        "routes": 8
+      },
+      {
+        "country": "Philippines",
+        "routes": 2
+      },
+      {
+        "country": "Fiji",
+        "routes": 1
+      },
+      {
+        "country": "Hong Kong",
+        "routes": 1
+      },
+      {
+        "country": "Indonesia",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Port Moresby Jacksons International Airport",
+        "iata": "POM",
+        "destinations": 35
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Afghanistan": {
+    "name": "Afghanistan",
+    "num_countries_connected": 8,
+    "total_routes": 29,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "India",
+        "routes": 7
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 7
+      },
+      {
+        "country": "Iran",
+        "routes": 5
+      },
+      {
+        "country": "Pakistan",
+        "routes": 4
+      },
+      {
+        "country": "Turkey",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Hamid Karzai International Airport",
+        "iata": "KBL",
+        "destinations": 15
+      },
+      {
+        "name": "Herat Airport",
+        "iata": "HEA",
+        "destinations": 4
+      },
+      {
+        "name": "Kandahar Airport",
+        "iata": "KDH",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Zimbabwe": {
+    "name": "Zimbabwe",
+    "num_countries_connected": 8,
+    "total_routes": 31,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "Zambia",
+        "routes": 11
+      },
+      {
+        "country": "South Africa",
+        "routes": 9
+      },
+      {
+        "country": "Kenya",
+        "routes": 3
+      },
+      {
+        "country": "Botswana",
+        "routes": 2
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Robert Gabriel Mugabe International Airport",
+        "iata": "HRE",
+        "destinations": 11
+      },
+      {
+        "name": "Victoria Falls International Airport",
+        "iata": "VFA",
+        "destinations": 5
+      },
+      {
+        "name": "Joshua Mqabuko Nkomo International Airport",
+        "iata": "BUQ",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      29.1549,
+      -19.0154
+    ]
+  },
+  "Madagascar": {
+    "name": "Madagascar",
+    "num_countries_connected": 8,
+    "total_routes": 24,
+    "num_airports": 5,
+    "top_destinations": [
+      {
+        "country": "Reunion",
+        "routes": 6
+      },
+      {
+        "country": "France",
+        "routes": 5
+      },
+      {
+        "country": "Mayotte",
+        "routes": 5
+      },
+      {
+        "country": "Mauritius",
+        "routes": 2
+      },
+      {
+        "country": "South Africa",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Ivato Airport",
+        "iata": "TNR",
+        "destinations": 21
+      },
+      {
+        "name": "Toamasina Airport",
+        "iata": "TMM",
+        "destinations": 6
+      },
+      {
+        "name": "Arrachart Airport",
+        "iata": "DIE",
+        "destinations": 5
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Bahamas": {
+    "name": "Bahamas",
+    "num_countries_connected": 8,
+    "total_routes": 83,
+    "num_airports": 9,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 70
+      },
+      {
+        "country": "Turks and Caicos Islands",
+        "routes": 4
+      },
+      {
+        "country": "Canada",
+        "routes": 3
+      },
+      {
+        "country": "Cuba",
+        "routes": 2
+      },
+      {
+        "country": "Cayman Islands",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Lynden Pindling International Airport",
+        "iata": "NAS",
+        "destinations": 39
+      },
+      {
+        "name": "Grand Bahama International Airport",
+        "iata": "FPO",
+        "destinations": 10
+      },
+      {
+        "name": "Leonard M Thompson International Airport",
+        "iata": "MHH",
+        "destinations": 6
+      }
+    ],
+    "coords": [
+      -77.3963,
+      25.0343
+    ]
+  },
+  "Niger": {
+    "name": "Niger",
+    "num_countries_connected": 8,
+    "total_routes": 17,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Burkina Faso",
+        "routes": 8
+      },
+      {
+        "country": "France",
+        "routes": 3
+      },
+      {
+        "country": "Algeria",
+        "routes": 1
+      },
+      {
+        "country": "Benin",
+        "routes": 1
+      },
+      {
+        "country": "Chad",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Diori Hamani International Airport",
+        "iata": "NIM",
+        "destinations": 8
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Guinea": {
+    "name": "Guinea",
+    "num_countries_connected": 8,
+    "total_routes": 18,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Senegal",
+        "routes": 8
+      },
+      {
+        "country": "Cote d'Ivoire",
+        "routes": 2
+      },
+      {
+        "country": "Guinea-Bissau",
+        "routes": 2
+      },
+      {
+        "country": "Mali",
+        "routes": 2
+      },
+      {
+        "country": "France",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Conakry International Airport",
+        "iata": "CKY",
+        "destinations": 8
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Honduras": {
+    "name": "Honduras",
+    "num_countries_connected": 8,
+    "total_routes": 44,
+    "num_airports": 4,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 19
+      },
+      {
+        "country": "Guatemala",
+        "routes": 10
+      },
+      {
+        "country": "Costa Rica",
+        "routes": 5
+      },
+      {
+        "country": "El Salvador",
+        "routes": 3
+      },
+      {
+        "country": "Belize",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Ram\u00f3n Villeda Morales International Airport",
+        "iata": "SAP",
+        "destinations": 15
+      },
+      {
+        "name": "Toncont\u00edn International Airport",
+        "iata": "TGU",
+        "destinations": 11
+      },
+      {
+        "name": "Juan Manuel Galvez International Airport",
+        "iata": "RTB",
+        "destinations": 10
+      }
+    ],
+    "coords": [
+      -86.2419,
+      15.2
+    ]
+  },
+  "Kyrgyzstan": {
+    "name": "Kyrgyzstan",
+    "num_countries_connected": 8,
+    "total_routes": 69,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Russia",
+        "routes": 50
+      },
+      {
+        "country": "China",
+        "routes": 5
+      },
+      {
+        "country": "Turkey",
+        "routes": 5
+      },
+      {
+        "country": "Kazakhstan",
+        "routes": 3
+      },
+      {
+        "country": "Tajikistan",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Manas International Airport",
+        "iata": "FRU",
+        "destinations": 22
+      },
+      {
+        "name": "Osh Airport",
+        "iata": "OSS",
+        "destinations": 13
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Dominica": {
+    "name": "Dominica",
+    "num_countries_connected": 8,
+    "total_routes": 17,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Netherlands Antilles",
+        "routes": 4
+      },
+      {
+        "country": "Puerto Rico",
+        "routes": 4
+      },
+      {
+        "country": "Guadeloupe",
+        "routes": 3
+      },
+      {
+        "country": "British Virgin Islands",
+        "routes": 2
+      },
+      {
+        "country": "Antigua and Barbuda",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Douglas-Charles Airport",
+        "iata": "DOM",
+        "destinations": 8
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Laos": {
+    "name": "Laos",
+    "num_countries_connected": 7,
+    "total_routes": 27,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "Thailand",
+        "routes": 9
+      },
+      {
+        "country": "Cambodia",
+        "routes": 5
+      },
+      {
+        "country": "Vietnam",
+        "routes": 5
+      },
+      {
+        "country": "China",
+        "routes": 4
+      },
+      {
+        "country": "South Korea",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Wattay International Airport",
+        "iata": "VTE",
+        "destinations": 17
+      },
+      {
+        "name": "Luang Phabang International Airport",
+        "iata": "LPQ",
+        "destinations": 7
+      },
+      {
+        "name": "Pakse International Airport",
+        "iata": "PKZ",
+        "destinations": 5
+      }
+    ],
+    "coords": [
+      102.4955,
+      19.8563
+    ]
+  },
+  "Suriname": {
+    "name": "Suriname",
+    "num_countries_connected": 7,
+    "total_routes": 10,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Trinidad and Tobago",
+        "routes": 3
+      },
+      {
+        "country": "Netherlands",
+        "routes": 2
+      },
+      {
+        "country": "Aruba",
+        "routes": 1
+      },
+      {
+        "country": "Brazil",
+        "routes": 1
+      },
+      {
+        "country": "French Guiana",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Johan Adolf Pengel International Airport",
+        "iata": "PBM",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Haiti": {
+    "name": "Haiti",
+    "num_countries_connected": 7,
+    "total_routes": 25,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 13
+      },
+      {
+        "country": "Dominican Republic",
+        "routes": 3
+      },
+      {
+        "country": "Turks and Caicos Islands",
+        "routes": 3
+      },
+      {
+        "country": "Guadeloupe",
+        "routes": 2
+      },
+      {
+        "country": "Panama",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Toussaint Louverture International Airport",
+        "iata": "PAP",
+        "destinations": 12
+      },
+      {
+        "name": "Cap Haitien International Airport",
+        "iata": "CAP",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Seychelles": {
+    "name": "Seychelles",
+    "num_countries_connected": 7,
+    "total_routes": 12,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United Arab Emirates",
+        "routes": 4
+      },
+      {
+        "country": "South Africa",
+        "routes": 2
+      },
+      {
+        "country": "Sri Lanka",
+        "routes": 2
+      },
+      {
+        "country": "Germany",
+        "routes": 1
+      },
+      {
+        "country": "Kenya",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Seychelles International Airport",
+        "iata": "SEZ",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      55.492,
+      -4.6796
+    ]
+  },
+  "Jersey": {
+    "name": "Jersey",
+    "num_countries_connected": 7,
+    "total_routes": 38,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 25
+      },
+      {
+        "country": "Germany",
+        "routes": 4
+      },
+      {
+        "country": "Guernsey",
+        "routes": 3
+      },
+      {
+        "country": "Ireland",
+        "routes": 2
+      },
+      {
+        "country": "Switzerland",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Jersey Airport",
+        "iata": "JER",
+        "destinations": 30
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Equatorial Guinea": {
+    "name": "Equatorial Guinea",
+    "num_countries_connected": 7,
+    "total_routes": 13,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Cameroon",
+        "routes": 5
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 2
+      },
+      {
+        "country": "Gabon",
+        "routes": 2
+      },
+      {
+        "country": "Benin",
+        "routes": 1
+      },
+      {
+        "country": "Morocco",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Malabo Airport",
+        "iata": "SSG",
+        "destinations": 8
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Turks and Caicos Islands": {
+    "name": "Turks and Caicos Islands",
+    "num_countries_connected": 7,
+    "total_routes": 28,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 14
+      },
+      {
+        "country": "Bahamas",
+        "routes": 3
+      },
+      {
+        "country": "Canada",
+        "routes": 3
+      },
+      {
+        "country": "Dominican Republic",
+        "routes": 3
+      },
+      {
+        "country": "Haiti",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Providenciales Airport",
+        "iata": "PLS",
+        "destinations": 20
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Albania": {
+    "name": "Albania",
+    "num_countries_connected": 7,
+    "total_routes": 36,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Italy",
+        "routes": 27
+      },
+      {
+        "country": "Germany",
+        "routes": 2
+      },
+      {
+        "country": "Greece",
+        "routes": 2
+      },
+      {
+        "country": "Turkey",
+        "routes": 2
+      },
+      {
+        "country": "Austria",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Tirana International Airport Mother Teresa",
+        "iata": "TIA",
+        "destinations": 18
+      }
+    ],
+    "coords": [
+      20.1683,
+      41.1533
+    ]
+  },
+  "Grenada": {
+    "name": "Grenada",
+    "num_countries_connected": 7,
+    "total_routes": 14,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 4
+      },
+      {
+        "country": "Trinidad and Tobago",
+        "routes": 3
+      },
+      {
+        "country": "Canada",
+        "routes": 2
+      },
+      {
+        "country": "Saint Lucia",
+        "routes": 2
+      },
+      {
+        "country": "Barbados",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Point Salines International Airport",
+        "iata": "GND",
+        "destinations": 8
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "South Sudan": {
+    "name": "South Sudan",
+    "num_countries_connected": 7,
+    "total_routes": 12,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Egypt",
+        "routes": 2
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 2
+      },
+      {
+        "country": "Kenya",
+        "routes": 2
+      },
+      {
+        "country": "Sudan",
+        "routes": 2
+      },
+      {
+        "country": "Uganda",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Juba International Airport",
+        "iata": "JUB",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Namibia": {
+    "name": "Namibia",
+    "num_countries_connected": 7,
+    "total_routes": 18,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "South Africa",
+        "routes": 9
+      },
+      {
+        "country": "Angola",
+        "routes": 2
+      },
+      {
+        "country": "Zambia",
+        "routes": 2
+      },
+      {
+        "country": "Zimbabwe",
+        "routes": 2
+      },
+      {
+        "country": "Botswana",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Hosea Kutako International Airport",
+        "iata": "WDH",
+        "destinations": 12
+      },
+      {
+        "name": "Walvis Bay Airport",
+        "iata": "WVB",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Reunion": {
+    "name": "Reunion",
+    "num_countries_connected": 7,
+    "total_routes": 21,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Mauritius",
+        "routes": 7
+      },
+      {
+        "country": "France",
+        "routes": 5
+      },
+      {
+        "country": "Madagascar",
+        "routes": 5
+      },
+      {
+        "country": "Comoros",
+        "routes": 1
+      },
+      {
+        "country": "India",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Roland Garros Airport",
+        "iata": "RUN",
+        "destinations": 13
+      },
+      {
+        "name": "Pierrefonds Airport",
+        "iata": "ZSE",
+        "destinations": 1
+      }
+    ],
+    "coords": [
+      55.5364,
+      -21.1151
+    ]
+  },
+  "Mauritania": {
+    "name": "Mauritania",
+    "num_countries_connected": 7,
+    "total_routes": 12,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Senegal",
+        "routes": 3
+      },
+      {
+        "country": "Spain",
+        "routes": 3
+      },
+      {
+        "country": "Morocco",
+        "routes": 2
+      },
+      {
+        "country": "France",
+        "routes": 1
+      },
+      {
+        "country": "Guinea",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Nouakchott\u2013Oumtounsy International Airport",
+        "iata": "NKC",
+        "destinations": 9
+      },
+      {
+        "name": "Nouadhibou International Airport",
+        "iata": "NDB",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "New Caledonia": {
+    "name": "New Caledonia",
+    "num_countries_connected": 7,
+    "total_routes": 13,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Australia",
+        "routes": 4
+      },
+      {
+        "country": "Japan",
+        "routes": 2
+      },
+      {
+        "country": "New Zealand",
+        "routes": 2
+      },
+      {
+        "country": "Vanuatu",
+        "routes": 2
+      },
+      {
+        "country": "Fiji",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "La Tontouta International Airport",
+        "iata": "NOU",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Mongolia": {
+    "name": "Mongolia",
+    "num_countries_connected": 7,
+    "total_routes": 13,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "China",
+        "routes": 4
+      },
+      {
+        "country": "Hong Kong",
+        "routes": 2
+      },
+      {
+        "country": "Russia",
+        "routes": 2
+      },
+      {
+        "country": "South Korea",
+        "routes": 2
+      },
+      {
+        "country": "Japan",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Chinggis Khaan International Airport",
+        "iata": "ULN",
+        "destinations": 15
+      },
+      {
+        "name": "Choibalsan Airport",
+        "iata": "COQ",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      103.8467,
+      46.8625
+    ]
+  },
+  "Malawi": {
+    "name": "Malawi",
+    "num_countries_connected": 6,
+    "total_routes": 15,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Zambia",
+        "routes": 5
+      },
+      {
+        "country": "Kenya",
+        "routes": 4
+      },
+      {
+        "country": "South Africa",
+        "routes": 3
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 1
+      },
+      {
+        "country": "Tanzania",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Lilongwe International Airport",
+        "iata": "LLW",
+        "destinations": 6
+      },
+      {
+        "name": "Chileka International Airport",
+        "iata": "BLZ",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Palau": {
+    "name": "Palau",
+    "num_countries_connected": 6,
+    "total_routes": 10,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Japan",
+        "routes": 3
+      },
+      {
+        "country": "South Korea",
+        "routes": 2
+      },
+      {
+        "country": "Taiwan",
+        "routes": 2
+      },
+      {
+        "country": "Guam",
+        "routes": 1
+      },
+      {
+        "country": "Micronesia",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Babelthuap Airport",
+        "iata": "ROR",
+        "destinations": 6
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Somalia": {
+    "name": "Somalia",
+    "num_countries_connected": 6,
+    "total_routes": 14,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "Kenya",
+        "routes": 5
+      },
+      {
+        "country": "Djibouti",
+        "routes": 4
+      },
+      {
+        "country": "United Arab Emirates",
+        "routes": 2
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 1
+      },
+      {
+        "country": "Uganda",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Aden Adde International Airport",
+        "iata": "MGQ",
+        "destinations": 7
+      },
+      {
+        "name": "Berbera Airport",
+        "iata": "BBO",
+        "destinations": 6
+      },
+      {
+        "name": "Egal International Airport",
+        "iata": "HGA",
+        "destinations": 5
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Gambia": {
+    "name": "Gambia",
+    "num_countries_connected": 6,
+    "total_routes": 13,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Senegal",
+        "routes": 4
+      },
+      {
+        "country": "Spain",
+        "routes": 4
+      },
+      {
+        "country": "Sierra Leone",
+        "routes": 2
+      },
+      {
+        "country": "Cape Verde",
+        "routes": 1
+      },
+      {
+        "country": "Guinea-Bissau",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Banjul International Airport",
+        "iata": "BJL",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Eritrea": {
+    "name": "Eritrea",
+    "num_countries_connected": 6,
+    "total_routes": 7,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Yemen",
+        "routes": 2
+      },
+      {
+        "country": "Egypt",
+        "routes": 1
+      },
+      {
+        "country": "Kenya",
+        "routes": 1
+      },
+      {
+        "country": "Saudi Arabia",
+        "routes": 1
+      },
+      {
+        "country": "South Sudan",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Asmara International Airport",
+        "iata": "ASM",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Mozambique": {
+    "name": "Mozambique",
+    "num_countries_connected": 6,
+    "total_routes": 22,
+    "num_airports": 6,
+    "top_destinations": [
+      {
+        "country": "South Africa",
+        "routes": 14
+      },
+      {
+        "country": "Kenya",
+        "routes": 4
+      },
+      {
+        "country": "Angola",
+        "routes": 1
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 1
+      },
+      {
+        "country": "Portugal",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Maputo Airport",
+        "iata": "MPM",
+        "destinations": 15
+      },
+      {
+        "name": "Nampula Airport",
+        "iata": "APL",
+        "destinations": 7
+      },
+      {
+        "name": "Beira Airport",
+        "iata": "BEW",
+        "destinations": 6
+      }
+    ],
+    "coords": [
+      35.5296,
+      -18.6657
+    ]
+  },
+  "Liberia": {
+    "name": "Liberia",
+    "num_countries_connected": 6,
+    "total_routes": 18,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Sierra Leone",
+        "routes": 7
+      },
+      {
+        "country": "Ghana",
+        "routes": 5
+      },
+      {
+        "country": "Belgium",
+        "routes": 3
+      },
+      {
+        "country": "Cote d'Ivoire",
+        "routes": 1
+      },
+      {
+        "country": "Morocco",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Roberts International Airport",
+        "iata": "ROB",
+        "destinations": 6
+      },
+      {
+        "name": "Spriggs Payne Airport",
+        "iata": "MLW",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Comoros": {
+    "name": "Comoros",
+    "num_countries_connected": 6,
+    "total_routes": 10,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Kenya",
+        "routes": 4
+      },
+      {
+        "country": "Mayotte",
+        "routes": 2
+      },
+      {
+        "country": "Djibouti",
+        "routes": 1
+      },
+      {
+        "country": "Madagascar",
+        "routes": 1
+      },
+      {
+        "country": "Reunion",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Prince Said Ibrahim International Airport",
+        "iata": "HAH",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Chad": {
+    "name": "Chad",
+    "num_countries_connected": 6,
+    "total_routes": 8,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Cameroon",
+        "routes": 2
+      },
+      {
+        "country": "Nigeria",
+        "routes": 2
+      },
+      {
+        "country": "Ethiopia",
+        "routes": 1
+      },
+      {
+        "country": "France",
+        "routes": 1
+      },
+      {
+        "country": "Niger",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "N'Djamena International Airport",
+        "iata": "NDJ",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Cayman Islands": {
+    "name": "Cayman Islands",
+    "num_countries_connected": 6,
+    "total_routes": 23,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 16
+      },
+      {
+        "country": "Canada",
+        "routes": 2
+      },
+      {
+        "country": "Honduras",
+        "routes": 2
+      },
+      {
+        "country": "Bahamas",
+        "routes": 1
+      },
+      {
+        "country": "Cuba",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Owen Roberts International Airport",
+        "iata": "GCM",
+        "destinations": 18
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Saint Kitts and Nevis": {
+    "name": "Saint Kitts and Nevis",
+    "num_countries_connected": 6,
+    "total_routes": 15,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Antigua and Barbuda",
+        "routes": 4
+      },
+      {
+        "country": "Puerto Rico",
+        "routes": 4
+      },
+      {
+        "country": "Netherlands Antilles",
+        "routes": 3
+      },
+      {
+        "country": "United States",
+        "routes": 2
+      },
+      {
+        "country": "Bahamas",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Robert L. Bradshaw International Airport",
+        "iata": "SKB",
+        "destinations": 6
+      },
+      {
+        "name": "Vance W. Amory International Airport",
+        "iata": "NEV",
+        "destinations": 5
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Botswana": {
+    "name": "Botswana",
+    "num_countries_connected": 5,
+    "total_routes": 13,
+    "num_airports": 3,
+    "top_destinations": [
+      {
+        "country": "South Africa",
+        "routes": 8
+      },
+      {
+        "country": "Zimbabwe",
+        "routes": 2
+      },
+      {
+        "country": "Kenya",
+        "routes": 1
+      },
+      {
+        "country": "Namibia",
+        "routes": 1
+      },
+      {
+        "country": "Zambia",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Sir Seretse Khama International Airport",
+        "iata": "GBE",
+        "destinations": 8
+      },
+      {
+        "name": "Maun Airport",
+        "iata": "MUB",
+        "destinations": 6
+      },
+      {
+        "name": "Kasane Airport",
+        "iata": "BBK",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Vanuatu": {
+    "name": "Vanuatu",
+    "num_countries_connected": 5,
+    "total_routes": 16,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Australia",
+        "routes": 7
+      },
+      {
+        "country": "Solomon Islands",
+        "routes": 3
+      },
+      {
+        "country": "Fiji",
+        "routes": 2
+      },
+      {
+        "country": "New Caledonia",
+        "routes": 2
+      },
+      {
+        "country": "New Zealand",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Bauerfield International Airport",
+        "iata": "VLI",
+        "destinations": 20
+      },
+      {
+        "name": "Santo Pekoa International Airport",
+        "iata": "SON",
+        "destinations": 10
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "British Virgin Islands": {
+    "name": "British Virgin Islands",
+    "num_countries_connected": 5,
+    "total_routes": 16,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Puerto Rico",
+        "routes": 6
+      },
+      {
+        "country": "Netherlands Antilles",
+        "routes": 4
+      },
+      {
+        "country": "Virgin Islands",
+        "routes": 3
+      },
+      {
+        "country": "Dominica",
+        "routes": 2
+      },
+      {
+        "country": "Saint Kitts and Nevis",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Terrance B. Lettsome International Airport",
+        "iata": "EIS",
+        "destinations": 5
+      },
+      {
+        "name": "Virgin Gorda Airport",
+        "iata": "VIJ",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "French Polynesia": {
+    "name": "French Polynesia",
+    "num_countries_connected": 5,
+    "total_routes": 16,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 7
+      },
+      {
+        "country": "New Zealand",
+        "routes": 4
+      },
+      {
+        "country": "Cook Islands",
+        "routes": 2
+      },
+      {
+        "country": "Japan",
+        "routes": 2
+      },
+      {
+        "country": "New Caledonia",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Faa'a International Airport",
+        "iata": "PPT",
+        "destinations": 28
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Belize": {
+    "name": "Belize",
+    "num_countries_connected": 5,
+    "total_routes": 17,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 10
+      },
+      {
+        "country": "Guatemala",
+        "routes": 2
+      },
+      {
+        "country": "Honduras",
+        "routes": 2
+      },
+      {
+        "country": "Mexico",
+        "routes": 2
+      },
+      {
+        "country": "El Salvador",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Philip S. W. Goldson International Airport",
+        "iata": "BZE",
+        "destinations": 20
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Guinea-Bissau": {
+    "name": "Guinea-Bissau",
+    "num_countries_connected": 5,
+    "total_routes": 7,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Guinea",
+        "routes": 2
+      },
+      {
+        "country": "Senegal",
+        "routes": 2
+      },
+      {
+        "country": "Cape Verde",
+        "routes": 1
+      },
+      {
+        "country": "Gambia",
+        "routes": 1
+      },
+      {
+        "country": "Morocco",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Osvaldo Vieira International Airport",
+        "iata": "OXB",
+        "destinations": 5
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Guernsey": {
+    "name": "Guernsey",
+    "num_countries_connected": 5,
+    "total_routes": 17,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 10
+      },
+      {
+        "country": "Jersey",
+        "routes": 4
+      },
+      {
+        "country": "France",
+        "routes": 1
+      },
+      {
+        "country": "Germany",
+        "routes": 1
+      },
+      {
+        "country": "Netherlands",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Guernsey Airport",
+        "iata": "GCI",
+        "destinations": 14
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Guyana": {
+    "name": "Guyana",
+    "num_countries_connected": 5,
+    "total_routes": 7,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Canada",
+        "routes": 2
+      },
+      {
+        "country": "United States",
+        "routes": 2
+      },
+      {
+        "country": "Jamaica",
+        "routes": 1
+      },
+      {
+        "country": "Suriname",
+        "routes": 1
+      },
+      {
+        "country": "Trinidad and Tobago",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Cheddi Jagan International Airport",
+        "iata": "GEO",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Nicaragua": {
+    "name": "Nicaragua",
+    "num_countries_connected": 5,
+    "total_routes": 15,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 6
+      },
+      {
+        "country": "Costa Rica",
+        "routes": 4
+      },
+      {
+        "country": "El Salvador",
+        "routes": 2
+      },
+      {
+        "country": "Panama",
+        "routes": 2
+      },
+      {
+        "country": "Guatemala",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Augusto C. Sandino (Managua) International Airport",
+        "iata": "MGA",
+        "destinations": 8
+      }
+    ],
+    "coords": [
+      -85.2072,
+      12.8654
+    ]
+  },
+  "Northern Mariana Islands": {
+    "name": "Northern Mariana Islands",
+    "num_countries_connected": 4,
+    "total_routes": 9,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "China",
+        "routes": 3
+      },
+      {
+        "country": "Japan",
+        "routes": 3
+      },
+      {
+        "country": "South Korea",
+        "routes": 2
+      },
+      {
+        "country": "Guam",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Saipan International Airport",
+        "iata": "SPN",
+        "destinations": 10
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Anguilla": {
+    "name": "Anguilla",
+    "num_countries_connected": 4,
+    "total_routes": 6,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Netherlands Antilles",
+        "routes": 2
+      },
+      {
+        "country": "Puerto Rico",
+        "routes": 2
+      },
+      {
+        "country": "Antigua and Barbuda",
+        "routes": 1
+      },
+      {
+        "country": "Virgin Islands",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Clayton J Lloyd International Airport",
+        "iata": "AXA",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Solomon Islands": {
+    "name": "Solomon Islands",
+    "num_countries_connected": 4,
+    "total_routes": 8,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Vanuatu",
+        "routes": 3
+      },
+      {
+        "country": "Australia",
+        "routes": 2
+      },
+      {
+        "country": "Fiji",
+        "routes": 2
+      },
+      {
+        "country": "Papua New Guinea",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Honiara International Airport",
+        "iata": "HIR",
+        "destinations": 21
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "French Guiana": {
+    "name": "French Guiana",
+    "num_countries_connected": 4,
+    "total_routes": 7,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "France",
+        "routes": 3
+      },
+      {
+        "country": "Martinique",
+        "routes": 2
+      },
+      {
+        "country": "Brazil",
+        "routes": 1
+      },
+      {
+        "country": "Suriname",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Cayenne-Rochambeau Airport",
+        "iata": "CAY",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Kiribati": {
+    "name": "Kiribati",
+    "num_countries_connected": 4,
+    "total_routes": 7,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Fiji",
+        "routes": 3
+      },
+      {
+        "country": "United States",
+        "routes": 2
+      },
+      {
+        "country": "Marshall Islands",
+        "routes": 1
+      },
+      {
+        "country": "Nauru",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Bonriki International Airport",
+        "iata": "TRW",
+        "destinations": 3
+      },
+      {
+        "name": "Cassidy International Airport",
+        "iata": "CXI",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Mayotte": {
+    "name": "Mayotte",
+    "num_countries_connected": 4,
+    "total_routes": 15,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Madagascar",
+        "routes": 7
+      },
+      {
+        "country": "Comoros",
+        "routes": 5
+      },
+      {
+        "country": "Reunion",
+        "routes": 2
+      },
+      {
+        "country": "Tanzania",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Dzaoudzi Pamandzi International Airport",
+        "iata": "DZA",
+        "destinations": 7
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Cook Islands": {
+    "name": "Cook Islands",
+    "num_countries_connected": 4,
+    "total_routes": 8,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "New Zealand",
+        "routes": 3
+      },
+      {
+        "country": "French Polynesia",
+        "routes": 2
+      },
+      {
+        "country": "United States",
+        "routes": 2
+      },
+      {
+        "country": "Australia",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Rarotonga International Airport",
+        "iata": "RAR",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Saint Vincent and the Grenadines": {
+    "name": "Saint Vincent and the Grenadines",
+    "num_countries_connected": 4,
+    "total_routes": 4,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Barbados",
+        "routes": 1
+      },
+      {
+        "country": "Grenada",
+        "routes": 1
+      },
+      {
+        "country": "Saint Lucia",
+        "routes": 1
+      },
+      {
+        "country": "Trinidad and Tobago",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Argyle International Airport",
+        "iata": "SVD",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Marshall Islands": {
+    "name": "Marshall Islands",
+    "num_countries_connected": 3,
+    "total_routes": 3,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Kiribati",
+        "routes": 1
+      },
+      {
+        "country": "Nauru",
+        "routes": 1
+      },
+      {
+        "country": "United States",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Marshall Islands International Airport",
+        "iata": "MAJ",
+        "destinations": 4
+      },
+      {
+        "name": "Bucholz Army Air Field",
+        "iata": "KWA",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Bermuda": {
+    "name": "Bermuda",
+    "num_countries_connected": 3,
+    "total_routes": 15,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United States",
+        "routes": 11
+      },
+      {
+        "country": "Canada",
+        "routes": 2
+      },
+      {
+        "country": "United Kingdom",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "L.F. Wade International International Airport",
+        "iata": "BDA",
+        "destinations": 8
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Bhutan": {
+    "name": "Bhutan",
+    "num_countries_connected": 3,
+    "total_routes": 5,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "India",
+        "routes": 3
+      },
+      {
+        "country": "Bangladesh",
+        "routes": 1
+      },
+      {
+        "country": "Nepal",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Paro Airport",
+        "iata": "PBH",
+        "destinations": 5
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Nauru": {
+    "name": "Nauru",
+    "num_countries_connected": 3,
+    "total_routes": 3,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Australia",
+        "routes": 1
+      },
+      {
+        "country": "Kiribati",
+        "routes": 1
+      },
+      {
+        "country": "Marshall Islands",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Nauru International Airport",
+        "iata": "INU",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Burundi": {
+    "name": "Burundi",
+    "num_countries_connected": 3,
+    "total_routes": 13,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Kenya",
+        "routes": 6
+      },
+      {
+        "country": "Rwanda",
+        "routes": 6
+      },
+      {
+        "country": "Uganda",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Bujumbura International Airport",
+        "iata": "BJM",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "North Korea": {
+    "name": "North Korea",
+    "num_countries_connected": 3,
+    "total_routes": 5,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "China",
+        "routes": 3
+      },
+      {
+        "country": "Malaysia",
+        "routes": 1
+      },
+      {
+        "country": "Russia",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Pyongyang Sunan International Airport",
+        "iata": "FNJ",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Samoa": {
+    "name": "Samoa",
+    "num_countries_connected": 3,
+    "total_routes": 5,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "New Zealand",
+        "routes": 3
+      },
+      {
+        "country": "Fiji",
+        "routes": 1
+      },
+      {
+        "country": "United States",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Faleolo International Airport",
+        "iata": "APW",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Sao Tome and Principe": {
+    "name": "Sao Tome and Principe",
+    "num_countries_connected": 3,
+    "total_routes": 3,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Angola",
+        "routes": 1
+      },
+      {
+        "country": "Cape Verde",
+        "routes": 1
+      },
+      {
+        "country": "Portugal",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "S\u00e3o Tom\u00e9 International Airport",
+        "iata": "TMS",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "East Timor": {
+    "name": "East Timor",
+    "num_countries_connected": 3,
+    "total_routes": 4,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Australia",
+        "routes": 2
+      },
+      {
+        "country": "Indonesia",
+        "routes": 1
+      },
+      {
+        "country": "Singapore",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Presidente Nicolau Lobato International Airport",
+        "iata": "DIL",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Tonga": {
+    "name": "Tonga",
+    "num_countries_connected": 3,
+    "total_routes": 5,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Fiji",
+        "routes": 2
+      },
+      {
+        "country": "New Zealand",
+        "routes": 2
+      },
+      {
+        "country": "Australia",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Fua'amotu International Airport",
+        "iata": "TBU",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Central African Republic": {
+    "name": "Central African Republic",
+    "num_countries_connected": 2,
+    "total_routes": 3,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Cameroon",
+        "routes": 2
+      },
+      {
+        "country": "Morocco",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Bangui M'Poko International Airport",
+        "iata": "BGF",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Micronesia": {
+    "name": "Micronesia",
+    "num_countries_connected": 2,
+    "total_routes": 2,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Guam",
+        "routes": 1
+      },
+      {
+        "country": "Palau",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Yap International Airport",
+        "iata": "YAP",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Isle of Man": {
+    "name": "Isle of Man",
+    "num_countries_connected": 2,
+    "total_routes": 10,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 9
+      },
+      {
+        "country": "Ireland",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Isle of Man Airport",
+        "iata": "IOM",
+        "destinations": 10
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Faroe Islands": {
+    "name": "Faroe Islands",
+    "num_countries_connected": 2,
+    "total_routes": 4,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Denmark",
+        "routes": 2
+      },
+      {
+        "country": "Norway",
+        "routes": 2
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Vagar Airport",
+        "iata": "FAE",
+        "destinations": 4
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Wallis and Futuna": {
+    "name": "Wallis and Futuna",
+    "num_countries_connected": 2,
+    "total_routes": 2,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Fiji",
+        "routes": 1
+      },
+      {
+        "country": "New Caledonia",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Hihifo Airport",
+        "iata": "WLS",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Western Sahara": {
+    "name": "Western Sahara",
+    "num_countries_connected": 2,
+    "total_routes": 7,
+    "num_airports": 2,
+    "top_destinations": [
+      {
+        "country": "Morocco",
+        "routes": 4
+      },
+      {
+        "country": "Spain",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Dakhla Airport",
+        "iata": "VIL",
+        "destinations": 3
+      },
+      {
+        "name": "Hassan I Airport",
+        "iata": "EUN",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Norfolk Island": {
+    "name": "Norfolk Island",
+    "num_countries_connected": 2,
+    "total_routes": 3,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Australia",
+        "routes": 2
+      },
+      {
+        "country": "New Zealand",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Norfolk Island International Airport",
+        "iata": "NLK",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Saint Pierre and Miquelon": {
+    "name": "Saint Pierre and Miquelon",
+    "num_countries_connected": 1,
+    "total_routes": 3,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Canada",
+        "routes": 3
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "St Pierre Airport",
+        "iata": "FSP",
+        "destinations": 3
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Greenland": {
+    "name": "Greenland",
+    "num_countries_connected": 1,
+    "total_routes": 1,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Iceland",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Godthaab / Nuuk Airport",
+        "iata": "GOH",
+        "destinations": 9
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Gibraltar": {
+    "name": "Gibraltar",
+    "num_countries_connected": 1,
+    "total_routes": 6,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "United Kingdom",
+        "routes": 6
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Gibraltar Airport",
+        "iata": "GIB",
+        "destinations": 5
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  },
+  "Christmas Island": {
+    "name": "Christmas Island",
+    "num_countries_connected": 1,
+    "total_routes": 1,
+    "num_airports": 1,
+    "top_destinations": [
+      {
+        "country": "Australia",
+        "routes": 1
+      }
+    ],
+    "top_airports": [
+      {
+        "name": "Christmas Island Airport",
+        "iata": "XCH",
+        "destinations": 2
+      }
+    ],
+    "coords": [
+      0,
+      0
+    ]
+  }
+}

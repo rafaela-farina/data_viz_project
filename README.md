@@ -1,55 +1,143 @@
-SUPSI 2024-25  
-Data Visualization course, C-D3202E 
-Teacher Giovanni Profeta
+# The Passenger Experience
+## Global Aviation Connectivity - Interactive Data Visualization
 
+A scrollytelling web experience that explores international flight connectivity from a tourism perspective, answering the question: *"How easy is it to travel from one country to another?"*
 
-# Project title
-Authors: [Author n. 1](https://github.com/giovannipro), [Author n. 2](https://github.com/giovannipro), [Author n. 3](https://github.com/giovannipro)
+---
 
-[Project title](https://dataviz-supsi.github.io/2024/template/)
+## Project Overview
 
+This project visualizes global aviation route data to help travelers understand connectivity patterns between countries. Through an immersive narrative structure inspired by the passenger experience (looking through an airplane window), users explore:
 
-## Abstract
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat ac felis donec. Nisi est sit amet facilisis magna etiam tempor. Nisl nisi scelerisque eu ultrices vitae. Id aliquet lectus proin nibh nisl. Urna nec tincidunt praesent semper feugiat nibh. Imperdiet dui accumsan sit amet nulla facilisi morbi. Aliquet enim tortor at auctor urna nunc. Id cursus metus aliquam eleifend mi. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Odio morbi quis commodo odio aenean sed. Turpis cursus in hac habitasse. Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscing commodo. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Ipsum faucibus vitae aliquet nec ullamcorper sit. Tempus quam pellentesque nec nam aliquam sem et tortor. Turpis egestas sed tempus urna et pharetra pharetra massa. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
+- **The most connected countries** — Where can you reach the most destinations?
+- **Hidden gems** — Surprisingly well-connected countries ideal for regional exploration
+- **Remote destinations** — The hardest places to reach by air
 
+### Key Features
 
-## Introduction
-Dolor sit amet consectetur adipiscing elit duis tristique. Sociis natoque penatibus et magnis dis parturient montes nascetur. Est sit amet facilisis magna. Tellus rutrum tellus pellentesque eu. Dictum sit amet justo donec enim. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed faucibus turpis in eu mi bibendum neque egestas congue. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Dolor magna eget est lorem ipsum dolor. Sit amet mattis vulputate enim nulla. Elit pellentesque habitant morbi tristique senectus et. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.
+- **Interactive D3.js world map** with clickable countries and animated route arcs
+- **Scroll-driven storytelling** using GSAP ScrollTrigger animations
+- **Responsive design** optimized for desktop and mobile devices
+- **Glassmorphism UI** with aviation-themed visual design
+- **Data transparency** — Each visualization includes dataset downloads and methodology documentation
 
+---
 
-## Data sources
-Facilisis magna etiam tempor orci eu. Felis donec et odio pellentesque diam volutpat commodo. Dis parturient montes nascetur ridiculus mus mauris vitae. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Accumsan sit amet nulla facilisi. Ultricies leo integer malesuada nunc vel risus. Est lorem ipsum dolor sit. Ultrices neque ornare aenean euismod elementum nisi. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Placerat duis ultricies lacus sed turpis tincidunt id aliquet. Arcu dictum varius duis at consectetur lorem donec massa sapien. Pellentesque habitant morbi tristique senectus. Turpis massa sed elementum tempus egestas sed sed risus pretium. Eros donec ac odio tempor orci. Pellentesque id nibh tortor id aliquet lectus. Risus feugiat in ante metus dictum at. Quam pellentesque nec nam aliquam sem et tortor consequat id. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Sit amet dictum sit amet justo donec enim.
+## Live Demo
 
-[Main datasource](https://www.kaggle.com/datasets/zafarali27/netflix-movies-and-tv-shows)
+Open `index.html` in a modern web browser. For local development, use a local server to avoid CORS restrictions:
 
-## Data pre-processing
-Nunc consequat interdum varius sit amet mattis vulputate. Vehicula ipsum a arcu cursus vitae congue. Odio ut sem nulla pharetra. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Quisque egestas diam in arcu cursus. Eget nulla facilisi etiam dignissim diam. Aenean sed adipiscing diam donec adipiscing tristique. Porttitor massa id neque aliquam. Sem viverra aliquet eget sit amet tellus cras. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed turpis tincidunt id aliquet risus feugiat.
+```bash
+# Using Python
+python -m http.server 8000
 
+# Using Node.js
+npx http-server
 
-```Python
-import pandas as pd
-
-df = pd.read_csv('file.tsv', sep='\t')
-print(df.columns)
+# Then open http://localhost:8000
 ```
 
-## Data visualizations
-Sed enim ut sem viverra aliquet eget sit. Iaculis at erat pellentesque adipiscing commodo. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Ipsum faucibus vitae aliquet nec ullamcorper sit. Tempus quam pellentesque nec nam aliquam sem et tortor. Turpis egestas sed tempus urna et pharetra pharetra massa. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel.
+---
 
-### Title of the data visualization n. 1 
-Accumsan lacus vel facilisis volutpat est velit egestas dui id. Quisque egestas diam in arcu cursus. Eget nulla facilisi etiam dignissim diam. Aenean sed adipiscing diam donec adipiscing tristique. Porttitor massa id neque aliquam. Sem viverra aliquet eget sit amet tellus cras. Scelerisque eu ultrices vitae auctor eu augue ut lectus.
+## Project Structure
 
-[<img src="assets/images/03.png" width="800" alt="Placeholder image">]()
+```
+aviation-project/
+│
+├── index.html                 # Main HTML file
+│
+├── assets/
+│   ├── style/
+│   │   ├── passenger-experience.css   # Main stylesheet
+│   │   └── window-elements.css        # Airplane window & screen components
+│   │
+│   └── script/
+│       ├── map-controller.js          # D3.js map logic & interactions
+│       └── passenger-scroll.js        # GSAP scroll animations
+│
+├── processed_data/
+│   ├── country_connections_geo.json   # Route connections between countries
+│   └── country_stats.json             # Country-level statistics
+│
+├── protocols/                 # Methodology documentation for each visualization
+│   ├── viz_global_map.html
+│   ├── viz_connected.html
+│   ├── viz_gems.html
+│   ├── viz_remote.html
+│   └── viz_teammate.html
+│
+└── README.md
+```
 
-### Title of the data visualization n. 2
-Accumsan lacus vel facilisis volutpat est velit egestas dui id. Quisque egestas diam in arcu cursus. Eget nulla facilisi etiam dignissim diam. Aenean sed adipiscing diam donec adipiscing tristique. Porttitor massa id neque aliquam. Sem viverra aliquet eget sit amet tellus cras. Scelerisque eu ultrices vitae auctor eu augue ut lectus.
+---
 
-[<img src="assets/images/04.png" width="800" alt="Placeholder image">]()
+## Technologies Used
 
+| Technology | Purpose |
+|------------|---------|
+| **D3.js v7** | Interactive map visualization |
+| **TopoJSON** | Efficient geographic data format |
+| **GSAP ScrollTrigger** | Scroll-based animations |
+| **CSS Grid & Flexbox** | Responsive layout |
+| **CSS backdrop-filter** | Glassmorphism effects |
+| **Google Fonts** | Typography (Playfair Display, Source Sans Pro) |
 
-## Key findings
-Accumsan lacus vel facilisis volutpat est velit egestas dui id. Quisque egestas diam in arcu cursus. Eget nulla facilisi etiam dignissim diam. Aenean sed adipiscing diam donec adipiscing tristique. Porttitor massa id neque aliquam. Sem viverra aliquet eget sit amet tellus cras. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Lacus sed turpis tincidunt id aliquet risus feugiat.
+No build process required — pure HTML, CSS, and JavaScript.
 
-## Next steps
-Tellus rutrum tellus pellentesque eu. Dictum sit amet justo donec enim. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Sed faucibus turpis in eu mi bibendum neque egestas congue. Tellus in metus vulputate eu scelerisque felis imperdiet proin. Dolor magna eget est lorem ipsum dolor. Sit amet mattis vulputate enim nulla. Elit pellentesque habitant morbi tristique senectus et.
+---
 
+## Data Sources
+
+- **Flight routes**: OpenFlights.org database
+- **Geographic boundaries**: Natural Earth (via world-atlas TopoJSON)
+- **Processing**: Routes filtered to international connections only, aggregated by country pairs
+
+See individual protocol files in `/protocols/` for detailed methodology.
+
+---
+
+## Narrative Structure
+
+| Section | Content |
+|---------|---------|
+| 01 - Hero | Airplane window with animated clouds |
+| 02 - Introduction | Project context and key statistics |
+| 03 - Interactive Map | D3 world map with country selection |
+| 04 - Most Connected | Top 10 countries by connectivity |
+| 05 - Hidden Gems | Underrated travel hubs (Qatar, Portugal, Kenya, Panama) |
+| 06 - Remote Destinations | Hardest to reach places |
+| 07 - Teammate Visualization | Reserved for additional analysis |
+| 08 - Key Findings | Summary insights |
+| 09 - Finale | Credits and closing |
+
+---
+
+## Authors
+
+- **Alan Dominguez**
+- **Rafaela Dos Santos Farina**
+- **Colin Augustine**
+
+**Supervisor**: Professor Giovanni Profeta
+
+---
+
+## Course Information
+
+**Institution**: SUPSI (Scuola Universitaria Professionale della Svizzera Italiana)  
+**Course**: Data Visualization  
+**Date**: December 2025
+
+---
+
+## License
+
+This project was created for academic purposes as part of the SUPSI Data Visualization course.
+
+---
+
+## Acknowledgments
+
+- OpenFlights.org for the route database
+- D3.js community for visualization examples
+- Natural Earth for geographic data

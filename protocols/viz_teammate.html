@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teammate Visualization | Data Visualization Protocol</title>
+    <meta name="description" content="Protocol template for teammate visualization">
+    <meta name="author" content="Rafaela Farina">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent: #06b6d4;
+            --border: rgba(148, 163, 184, 0.2);
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Source Sans Pro', -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .topbar {
+            background: var(--bg-card);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .topbar a { color: var(--accent); text-decoration: none; font-size: 0.875rem; }
+        .topbar a:hover { text-decoration: underline; }
+        
+        main { max-width: 800px; margin: 0 auto; padding: 2rem; }
+        
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        header .back {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        section {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+        }
+        
+        h4 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        h4:first-child { margin-top: 0; }
+        
+        p, li { color: var(--text-secondary); }
+        a { color: var(--accent); }
+        
+        .placeholder-note {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px dashed #fbbf24;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .placeholder-note h3 {
+            color: #fbbf24;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        ol { padding-left: 1.5rem; margin-top: 0.5rem; }
+        li { margin-bottom: 0.75rem; }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <nav>
+            <a href="../index.html">← Back to Global Aviation Connectivity</a>
+        </nav>
+    </div>
+    
+    <main>
+        <header>
+            <a href="../index.html" class="back">← Back to visualization</a>
+            <h1>Population vs. Infrastructure Analysis</h1>
+            <h2>Visualization Protocol</h2>
+        </header>
+        
+        <article>
+            <section>
+                <div class="placeholder-note">
+                    <h3>Template for Teammate</h3>
+                    <p>This protocol file is a template. Please fill in the details for your visualization including data sources, methodology, and any limitations.</p>
+                </div>
+                
+                <h4>Timestamp</h4>
+                <p>[Date of visualization creation]</p>
+                
+                <h4>Author</h4>
+                <p>Rafaela Dos Santos Farina</p>
+                
+                <h4>Data Source</h4>
+                <p>
+                    [Link to your data source]<br>
+                    [Description of the data]
+                </p>
+                
+                <h4>Dataset</h4>
+                <p>
+                    [Add download link to your dataset]
+                </p>
+                
+                <h4>Protocol / Methodology</h4>
+                <ol>
+                    <li>[Step 1: Describe your data collection process]</li>
+                    <li>[Step 2: Describe data cleaning/transformation]</li>
+                    <li>[Step 3: Describe analysis methodology]</li>
+                    <li>[Step 4: Describe visualization approach]</li>
+                    <li>[Add more steps as needed]</li>
+                </ol>
+                
+                <h4>Visualization Technology</h4>
+                <p>[List the tools/libraries used: Tableau, D3.js, Python, etc.]</p>
+                
+                <h4>Limitations</h4>
+                <p>[Describe any limitations or caveats of your analysis]</p>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

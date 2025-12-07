@@ -1,176 +1,823 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Title | Data visualization course</title>
-		<meta name="description"content="Project description">
-		<meta name="author" content="Authors' name and ssurname">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- allow webpage to be run in full-screen mode -->
-		<meta name="mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<!-- set nav bar color -->
-		<meta name="theme-color" content="black"> <!-- Chrome, Firefox OS and Opera -->
-		<meta name="msapplication-navbutton-color" content="black"> <!-- Windows Phone -->
-		<meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- iOS Safari -->
-		<link type="text/css" rel="stylesheet" href="assets/style/style.css">
-	
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-	
-		<script src="assets/script/script.js" defer></script>
-	</head>
-	<body>
-		<div id="topbar">
-			<nav>
-				<div class="go_home">
-					<a href="https://dataviz-supsi.github.io/2025/" title="Go back home">
-						<span>
-							←
-						</span>
-						<span>
-							Data visualization course
-						</span>
-					</a>
-				</div>
-			</nav>
-		</div>
-		<main>
-			<header>
-				<h1>
-					This is the project title 
-				</h1>
-				<h2>This is the project subtitle</h2>
-				<h3>Author n. 1, Author n. 2, Author n. 3</h3>
-			</header>
-			<section class="no_margin">
-				<a name="highlight"></a>
-				<figure>
-					<object type="image/svg+xml" data="assets/dataviz/viz_01.svg" id="dataviz_01"></object>
-					<figcaption>Data visualization caption</figcaption>
-				</figure>
-				<div class="download download_big">
-					<div>
-						<a href="assets/dataviz/protocols/01" title="Download visualization protocol" >
-							Read the visualization protocol
-						</a>
-					</div>
-					<div>
-						<a href="assets/dataviz/dataset+metadata.zip" title="Download dataset">
-							↓ Download the dataset (1MB)
-						</a>
-					</div>
-				</div>
-			</section>
-			<article>
-				<section id="abstract">
-					<p>
-						Donec fringilla dignissim dolor, a volutpat leo porta eget. Sed ultrices suscipit est non semper. Sed at rutrum risus, eget imperdiet erat. Nulla blandit tincidunt nisl, sed euismod ligula consectetur ut. Suspendisse ornare eu lacus eget tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ac consectetur purus. Aenean tortor massa, rutrum sed aliquet at, cursus a massa. Nam interdum ut velit at porta. Proin ullamcorper turpis in nulla finibus, a auctor felis congue. Curabitur eu blandit diam. Morbi et mi tellus. Donec rhoncus odio quis placerat auctor. Sed metus arcu, tincidunt euismod tristique eget, lacinia nec neque.
-					</p>
-				</section>
-				<section>
-					<h4>
-						Paragraph title
-					</h4>
-					<p>
-						Donec fringilla dignissim dolor, a volutpat leo porta eget. Sed ultrices suscipit est non semper. Sed at rutrum risus, eget imperdiet erat. Nulla blandit tincidunt nisl, sed euismod ligula consectetur ut. Suspendisse ornare eu lacus eget tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ac consectetur purus. Aenean tortor massa, rutrum sed aliquet at, cursus a massa. Nam interdum ut velit at porta. Proin ullamcorper turpis in nulla finibus, a auctor felis congue. Curabitur eu blandit diam. Morbi et mi tellus. Donec rhoncus odio quis placerat auctor. Sed metus arcu, tincidunt euismod tristique eget, lacinia nec neque.
-					</p>
-					<p>
-						Aenean commodo vehicula massa, id pellentesque sapien volutpat id. Nunc leo turpis, condimentum non nisl id, rutrum ultricies ex. In purus risus, accumsan in dictum at, mattis malesuada mi. Aliquam pulvinar sagittis auctor. In ut lorem mollis, interdum massa dictum, posuere libero. Aliquam at feugiat diam, in dapibus lacus. Maecenas porta efficitur elit quis ullamcorper. Quisque blandit turpis ut ante venenatis mattis. Proin tincidunt nunc vitae ante viverra, vitae vehicula tortor consectetur. Vivamus porttitor rhoncus ante ac congue. Pellentesque nec ipsum nisl. Integer sodales dignissim arcu, ac sagittis lectus malesuada a. Nunc imperdiet nisi non vulputate pulvinar. Donec interdum condimentum nunc eu ultrices.
-					</p>
-					
-					<div>
-						<button id="button-id1" style="opacity: 0.4">DV 1</button>
-						<button id="button-id2">DV 2</button>
-					</div>
-					
-					<figure class="figure">
-						<img src="assets/images/01.png" id="dv-box" alt="The Rhythm of Food, by Moritz Stefaner" width="1280" height="720">
-						<figcaption id="dv-caption">The Rhythm of Food, by Moritz Stefaner</figcaption>
-					</figure>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Aviation Connectivity - The Passenger Experience</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/style/passenger-experience.css">
+    <link rel="stylesheet" href="assets/style/window-elements.css">
+</head>
+<body>
+    
+    <!-- ============================================ -->
+    <!-- SCROLL PROGRESS INDICATOR                   -->
+    <!-- ============================================ -->
+    <div class="scroll-progress">
+        <div class="progress-bar"></div>
+    </div>
 
+    <!-- ============================================ -->
+    <!-- MAIN CONTENT                                -->
+    <!-- ============================================ -->
+    <main class="passenger-journey">
+        
+        <!-- ======================================== -->
+        <!-- SECTION 1: HERO WINDOW                  -->
+        <!-- ======================================== -->
+        <section id="hero-window" class="window-section">
+            <div class="window-container">
+                <div class="airplane-window">
+                    <div class="window-frame">
+                        <div class="rivet rivet-tl"></div>
+                        <div class="rivet rivet-tr"></div>
+                        <div class="rivet rivet-bl"></div>
+                        <div class="rivet rivet-br"></div>
+                    </div>
+                    <div class="window-view sky-gradient">
+                        <!-- Emoji clouds with blur effect -->
+                        <div class="clouds-layer">
+                            <div class="emoji-cloud cloud-1">☁️</div>
+                            <div class="emoji-cloud cloud-2">☁️</div>
+                            <div class="emoji-cloud cloud-3">☁️</div>
+                            <div class="emoji-cloud cloud-4">☁️</div>
+                            <div class="emoji-cloud cloud-5">☁️</div>
+                        </div>
+                        
+                        <!-- Title content -->
+                        <div class="window-content">
+                            <h1 class="hero-title">Where Can<br>You Fly?</h1>
+                            <p class="hero-subtitle">Exploring Global Tourism Connectivity</p>
+                            <div class="hero-meta">
+                                <span>SUPSI Data Visualization</span>
+                                <span class="separator"></span>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12l7 7 7-7"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
 
-					<div class="download download_small">
-						<div>
-							<a href="assets/dataviz/protocols/02" title="Download visualization protocol" >
-								Read the visualization protocol
-							</a>
-						</div>
-						<div>
-							<a href="assets/dataviz/dataset+metadata.zip" title="Download dataset">
-								↓ Download the dataset (1MB)
-							</a>
-						</div>
-					</div>
-				</section>
-				<section>
-					<h4>
-						Paragraph title
-					</h4>
-					<p>
-						Donec fringilla dignissim dolor, a volutpat leo porta eget. Sed ultrices suscipit est non semper. Sed at rutrum risus, eget imperdiet erat. Nulla blandit tincidunt nisl, sed euismod ligula consectetur ut. Suspendisse ornare eu lacus eget tempus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ac consectetur purus. Aenean tortor massa, rutrum sed aliquet at, cursus a massa. Nam interdum ut velit at porta. Proin ullamcorper turpis in nulla finibus, a auctor felis congue. Curabitur eu blandit diam. Morbi et mi tellus. Donec rhoncus odio quis placerat auctor. Sed metus arcu, tincidunt euismod tristique eget, lacinia nec neque.
-					</p>
-					<div>
-						<div class='tableauPlaceholder' id='viz1764075904211' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;US-superstore_17320224289620&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='US-superstore_17320224289620&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;US&#47;US-superstore_17320224289620&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1764075904211');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-					</div>
-					<div class="download download_small">
-						<div>
-							<a href="assets/dataviz/protocols/03" title="Download visualization protocol" >
-								Read the visualization protocol
-							</a>
-						</div>
-						<div>
-							<a href="assets/dataviz/dataset+metadata.zip" title="Download dataset">
-								↓ Download the dataset (1MB)
-							</a>
-						</div>
-					</div>
-				</section>
-				<section>
-					<h4>
-						Paragraph title
-					</h4>
-					<p>
-						Aenean commodo vehicula massa, id pellentesque sapien volutpat id. Nunc leo turpis, condimentum non nisl id, rutrum ultricies ex. In purus risus, accumsan in dictum at, mattis malesuada mi. Aliquam pulvinar sagittis auctor. In ut lorem mollis, interdum massa dictum, posuere libero. Aliquam at feugiat diam, in dapibus lacus. Maecenas porta efficitur elit quis ullamcorper. Quisque blandit turpis ut ante venenatis mattis. Proin tincidunt nunc vitae ante viverra, vitae vehicula tortor consectetur. Vivamus porttitor rhoncus ante ac congue. Pellentesque nec ipsum nisl. Integer sodales dignissim arcu, ac sagittis lectus malesuada a. Nunc imperdiet nisi non vulputate pulvinar. Donec interdum condimentum nunc eu ultrices.
-					</p>
-					<p>
-						Nam suscipit viverra libero, et accumsan ipsum dictum vitae. Quisque nec felis ac quam faucibus accumsan. Vestibulum pharetra, augue at interdum euismod, ligula nibh gravida sem, at pretium dolor lacus ut augue. Donec lobortis, enim consectetur finibus facilisis, justo felis malesuada nunc, at convallis justo est eget libero. Suspendisse potenti. Donec id lobortis lectus. Sed felis ante, convallis in orci eu, commodo elementum velit. Donec accumsan elit nisl, non ornare orci euismod ut. Morbi ipsum ligula, vehicula eu magna auctor, dapibus laoreet justo. Donec rhoncus mi sed interdum tincidunt. Mauris pellentesque efficitur nisl non hendrerit.
-					</p>
-					<div class="flourish-embed flourish-map" data-src="visualisation/26448872"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/26448872/thumbnail" width="100%" alt="map visualization" /></noscript></div>
-					<div class="download download_small">
-						<div>
-							<a href="assets/dataviz/protocols/04" title="Download visualization protocol" >
-								Read the visualization protocol
-							</a>
-						</div>
-						<div>
-							<a href="assets/dataviz/dataset+metadata.zip" title="Download dataset">
-								↓ Download the dataset (1MB)
-							</a>
-						</div>
-					</div>
-				</section>
-			</article>
-			
-			<footer>
-				<section>
-					<div>
-						<strong>Project title</strong><br/>
-						Project subtitle<br/><br/>
-						Author n. 1<br/>
-						Author n. 2<br/>
-						Author n. 3
-					</div>
-					<div>
-						<strong>SUPSI</strong><br/>
-						Bachelor in Data Science and Artificial Intelligence<br/>
-						Data visualization course<br/><br/>
-						Teacher: Giovanni Profeta<br/>
-						Academic year: 2025-2026
-					</div>
-				</section>
-			</footer>
-		</main>
-	</body>
+        <!-- ======================================== -->
+        <!-- SECTION 2: INTRODUCTION                 -->
+        <!-- ======================================== -->
+        <section id="intro-section" class="content-section">
+            <div class="section-inner">
+                <div class="content-card glass-card">
+                    <span class="section-number">01</span>
+                    <h2>The World at Your Fingertips</h2>
+                    <p class="lead-text">
+                        Planning your next trip? The world has never been more accessible. 
+                        International airports connect travelers to destinations across 
+                        every continent, but not all countries are created equal when it 
+                        comes to connectivity.
+                    </p>
+                    <p>
+                        We analyzed flight route data from international airports worldwide 
+                        to answer a simple question: <strong>how easy is it to travel from 
+                        one country to another?</strong> The results reveal surprising patterns 
+                        about which destinations are travel hubs, which are hidden gems, 
+                        and which remain beautifully remote.
+                    </p>
+                </div>
+                
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="195">0</span>
+                        <span class="stat-label">Countries Analyzed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="4000">0</span>
+                        <span class="stat-label">International Airports</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" data-count="21000">0</span>
+                        <span class="stat-label">Route Connections</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- SECTION 3: INTERACTIVE MAP              -->
+        <!-- ======================================== -->
+        <section id="global-map-section" class="viz-section" data-scene="global">
+            <div class="section-inner">
+                
+                <div class="content-card glass-card intro-card">
+                    <span class="section-number">02</span>
+                    <h2>Explore the Network</h2>
+                    <p>
+                        Click on any country to see where you can fly from there. 
+                        The arcs show direct international connections — the more routes, 
+                        the easier it is to reach that destination from around the world.
+                    </p>
+                </div>
+                
+                <!-- Map Controls (outside bezel, take care of this for Tableau's visualizations) -->
+                <div class="map-controls-bar">
+                    <div class="control-group">
+                        <label for="country-select">Select Country:</label>
+                        <select id="country-select">
+                            <option value="">Choose a destination...</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="max-routes">Show top routes:</label>
+                        <input type="range" id="max-routes" min="5" max="50" value="20">
+                        <span id="routes-value">20</span>
+                    </div>
+                    <div class="control-group buttons">
+                        <button id="zoom-in" class="control-btn" title="Zoom In">+</button>
+                        <button id="zoom-out" class="control-btn" title="Zoom Out">-</button>
+                        <button id="zoom-reset" class="control-btn" title="Reset View">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                                <path d="M3 3v5h5"/>
+                            </svg>
+                        </button>
+                        <button id="reset-btn" class="control-btn text-btn">Clear</button>
+                    </div>
+                </div>
+                
+                <div class="seat-screen">
+                    <div class="screen-bezel">
+                        <div id="d3-map-container" class="map-display">
+                            <div class="loading-indicator">
+                                <div class="loader"></div>
+                                <span>Loading map data...</span>
+                            </div>
+                        </div>
+                        <div id="info-panel" class="info-panel"></div>
+                    </div>
+                </div>
+                
+                <div class="data-links">
+                    <a href="processed_data/country_connections_geo.json" class="data-link" download>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Dataset
+                    </a>
+                    <a href="protocols/viz_global_map.html" class="data-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                        Metadata &amp; Protocol
+                    </a>
+                </div>
+                
+                <div class="content-card glass-card analysis-card">
+                    <h3>Reading the Map</h3>
+                    <div class="insight-grid">
+                        <div class="insight-item">
+                            <div class="insight-icon color-yellow"></div>
+                            <div class="insight-text">
+                                <strong>Selected Country</strong>
+                                <span>Your chosen origin appears highlighted in gold</span>
+                            </div>
+                        </div>
+                        <div class="insight-item">
+                            <div class="insight-icon color-teal"></div>
+                            <div class="insight-text">
+                                <strong>Destinations</strong>
+                                <span>Countries with direct flights appear in teal</span>
+                            </div>
+                        </div>
+                        <div class="insight-item">
+                            <div class="insight-icon color-cyan"></div>
+                            <div class="insight-text">
+                                <strong>Arc Color</strong>
+                                <span>Cyan to orange gradient shows route ranking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- SECTION 4: BEST CONNECTED               -->
+        <!-- ======================================== -->
+        <section id="connected-section" class="viz-section" data-scene="connected">
+            <div class="section-inner">
+                
+                <div class="content-card glass-card intro-card">
+                    <span class="section-number">03</span>
+                    <h2>The Most Connected</h2>
+                    <p class="lead-text">
+                        If you're looking to maximize your travel options, these countries 
+                        offer the most international connections. From here, the world is 
+                        truly at your doorstep.
+                    </p>
+                </div>
+                
+                <div class="seat-screen mini-screen">
+                    <div class="screen-bezel">
+                        <div class="ranking-display">
+                            <div class="ranking-header">
+                                <h4>Top 10 Most Connected Countries</h4>
+                                <span class="ranking-subtitle">By number of countries reachable via direct flights</span>
+                            </div>
+                            <div class="ranking-list">
+                                <div class="ranking-item" data-country="France">
+                                    <span class="rank">1</span>
+                                    <span class="country-name">France</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 100%"></div>
+                                    </div>
+                                    <span class="value">115 countries</span>
+                                </div>
+                                <div class="ranking-item" data-country="United Kingdom">
+                                    <span class="rank">2</span>
+                                    <span class="country-name">United Kingdom</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 86%"></div>
+                                    </div>
+                                    <span class="value">99 countries</span>
+                                </div>
+                                <div class="ranking-item" data-country="Germany">
+                                    <span class="rank">3</span>
+                                    <span class="country-name">Germany</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 84%"></div>
+                                    </div>
+                                    <span class="value">97 countries</span>
+                                </div>
+                                <div class="ranking-item" data-country="United States">
+                                    <span class="rank">4</span>
+                                    <span class="country-name">United States</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 80%"></div>
+                                    </div>
+                                    <span class="value">92 countries</span>
+                                </div>
+                                <div class="ranking-item" data-country="United Arab Emirates">
+                                    <span class="rank">5</span>
+                                    <span class="country-name">United Arab Emirates</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 79%"></div>
+                                    </div>
+                                    <span class="value">91 countries</span>
+                                </div>
+                                <div class="ranking-item" data-country="Turkey">
+                                    <span class="rank">6</span>
+                                    <span class="country-name">Turkey</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 78%"></div>
+                                    </div>
+                                    <span class="value">90 countries</span>
+                                </div>
+                                <div class="ranking-item" data-country="Netherlands">
+                                    <span class="rank">7</span>
+                                    <span class="country-name">Netherlands</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 70%"></div>
+                                    </div>
+                                    <span class="value">81 countries</span>
+                                </div>
+                                <div class="ranking-item" data-country="Italy">
+                                    <span class="rank">8</span>
+                                    <span class="country-name">Italy</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 67%"></div>
+                                    </div>
+                                    <span class="value">77 countries</span>
+                                </div>
+                                <div class="ranking-item" data-country="Spain">
+                                    <span class="rank">9</span>
+                                    <span class="country-name">Spain</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 63%"></div>
+                                    </div>
+                                    <span class="value">73 countries</span>
+                                </div>
+                                <div class="ranking-item" data-country="Russia">
+                                    <span class="rank">10</span>
+                                    <span class="country-name">Russia</span>
+                                    <div class="bar-container">
+                                        <div class="bar" style="width: 61%"></div>
+                                    </div>
+                                    <span class="value">70 countries</span>
+                                </div>
+                            </div>
+                            <p class="ranking-note">Click any country to view it on the map above</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="data-links">
+                    <a href="processed_data/country_stats.json" class="data-link" download>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Dataset
+                    </a>
+                    <a href="protocols/viz_connected.html" class="data-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                        Metadata &amp; Protocol
+                    </a>
+                </div>
+                
+                <div class="content-card glass-card analysis-card">
+                    <h3>What This Means for Travelers</h3>
+                    <p>
+                        <strong>France</strong> leads the world in connectivity, reaching 115 countries 
+                        directly. This makes Paris (CDG) an ideal hub for travelers seeking maximum 
+                        flexibility. Interestingly, <strong>small countries</strong> like the Netherlands 
+                        and UAE punch well above their weight — Amsterdam and Dubai serve as crucial 
+                        crossroads connecting continents.
+                    </p>
+                    <p>
+                        Notice that connectivity isn't just about size: Turkey and UAE, despite smaller 
+                        populations, leverage their geographic position between Europe, Asia, and Africa 
+                        to become global travel hubs.
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- SECTION 5: HIDDEN GEMS                  -->
+        <!-- ======================================== -->
+        <section id="gems-section" class="viz-section" data-scene="gems">
+            <div class="section-inner">
+                
+                <div class="content-card glass-card intro-card">
+                    <span class="section-number">04</span>
+                    <h2>Hidden Gems</h2>
+                    <p class="lead-text">
+                        Some destinations are more accessible than you might think. 
+                        These countries offer surprising connectivity, making them 
+                        excellent bases for exploring their regions.
+                    </p>
+                </div>
+                
+                <div class="seat-screen mini-screen">
+                    <div class="screen-bezel">
+                        <div class="gems-display">
+                            <div class="gem-grid">
+                                <div class="gem-card" data-country="Qatar">
+                                    <div class="gem-header">
+                                        <span class="gem-region">Middle East</span>
+                                        <h4>Qatar</h4>
+                                    </div>
+                                    <div class="gem-stats">
+                                        <div class="gem-stat">
+                                            <span class="gem-value">68</span>
+                                            <span class="gem-label">countries</span>
+                                        </div>
+                                        <div class="gem-stat">
+                                            <span class="gem-value">1</span>
+                                            <span class="gem-label">airport</span>
+                                        </div>
+                                    </div>
+                                    <p class="gem-insight">
+                                        A single airport (Doha) connects to 68 countries — 
+                                        one of the highest ratios in the world.
+                                    </p>
+                                </div>
+                                
+                                <div class="gem-card" data-country="Portugal">
+                                    <div class="gem-header">
+                                        <span class="gem-region">Europe</span>
+                                        <h4>Portugal</h4>
+                                    </div>
+                                    <div class="gem-stats">
+                                        <div class="gem-stat">
+                                            <span class="gem-value">56</span>
+                                            <span class="gem-label">countries</span>
+                                        </div>
+                                        <div class="gem-stat">
+                                            <span class="gem-value">5</span>
+                                            <span class="gem-label">airports</span>
+                                        </div>
+                                    </div>
+                                    <p class="gem-insight">
+                                        Gateway to both Europe and former colonies in Africa 
+                                        and South America. Ideal for multi-continent trips.
+                                    </p>
+                                </div>
+                                
+                                <div class="gem-card" data-country="Kenya">
+                                    <div class="gem-header">
+                                        <span class="gem-region">Africa</span>
+                                        <h4>Kenya</h4>
+                                    </div>
+                                    <div class="gem-stats">
+                                        <div class="gem-stat">
+                                            <span class="gem-value">34</span>
+                                            <span class="gem-label">countries</span>
+                                        </div>
+                                        <div class="gem-stat">
+                                            <span class="gem-value">3</span>
+                                            <span class="gem-label">airports</span>
+                                        </div>
+                                    </div>
+                                    <p class="gem-insight">
+                                        East Africa's main hub. Nairobi connects the continent 
+                                        to Europe, Middle East, and Asia.
+                                    </p>
+                                </div>
+                                
+                                <div class="gem-card" data-country="Panama">
+                                    <div class="gem-header">
+                                        <span class="gem-region">Central America</span>
+                                        <h4>Panama</h4>
+                                    </div>
+                                    <div class="gem-stats">
+                                        <div class="gem-stat">
+                                            <span class="gem-value">35</span>
+                                            <span class="gem-label">countries</span>
+                                        </div>
+                                        <div class="gem-stat">
+                                            <span class="gem-value">2</span>
+                                            <span class="gem-label">airports</span>
+                                        </div>
+                                    </div>
+                                    <p class="gem-insight">
+                                        The "Hub of the Americas" — connects North and South 
+                                        America like no other Central American nation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="data-links">
+                    <a href="processed_data/country_stats.json" class="data-link" download>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Dataset
+                    </a>
+                    <a href="protocols/viz_gems.html" class="data-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                        Metadata &amp; Protocol
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- SECTION 6: REMOTE DESTINATIONS          -->
+        <!-- ======================================== -->
+        <section id="remote-section" class="viz-section" data-scene="remote">
+            <div class="section-inner">
+                
+                <div class="content-card glass-card intro-card">
+                    <span class="section-number">05</span>
+                    <h2>Off the Beaten Path</h2>
+                    <p class="lead-text">
+                        For travelers seeking true remoteness, these destinations require 
+                        more planning — but reward with unique experiences far from the crowds.
+                    </p>
+                </div>
+                
+                <div class="seat-screen mini-screen">
+                    <div class="screen-bezel">
+                        <div class="remote-display">
+                            <div class="remote-intro">
+                                <p>
+                                    Some countries have only <strong>1-3 international connections</strong>, 
+                                    making them among the most isolated places on Earth. Getting there 
+                                    is an adventure in itself.
+                                </p>
+                            </div>
+                            <div class="remote-list">
+                                <div class="remote-item">
+                                    <div class="remote-info">
+                                        <h4>Greenland</h4>
+                                        <span class="remote-connections">1 country (Iceland)</span>
+                                    </div>
+                                    <p>The world's largest island has just one international gateway — through Reykjavik.</p>
+                                </div>
+                                <div class="remote-item">
+                                    <div class="remote-info">
+                                        <h4>Faroe Islands</h4>
+                                        <span class="remote-connections">2 countries (Denmark, Norway)</span>
+                                    </div>
+                                    <p>This Nordic archipelago remains beautifully isolated in the North Atlantic.</p>
+                                </div>
+                                <div class="remote-item">
+                                    <div class="remote-info">
+                                        <h4>Tonga</h4>
+                                        <span class="remote-connections">3 countries (Fiji, New Zealand, Australia)</span>
+                                    </div>
+                                    <p>The last Polynesian kingdom, accessible only through select Pacific routes.</p>
+                                </div>
+                                <div class="remote-item">
+                                    <div class="remote-info">
+                                        <h4>East Timor</h4>
+                                        <span class="remote-connections">3 countries (Australia, Indonesia, Singapore)</span>
+                                    </div>
+                                    <p>Southeast Asia's youngest nation remains off most tourist radars.</p>
+                                </div>
+                            </div>
+                            <div class="remote-note">
+                                <p>
+                                    <strong>Travel tip:</strong> Limited connections mean fewer flight options 
+                                    and potentially higher prices. Plan ahead and be flexible with dates.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="data-links">
+                    <a href="processed_data/country_stats.json" class="data-link" download>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Dataset
+                    </a>
+                    <a href="protocols/viz_remote.html" class="data-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                        Metadata &amp; Protocol
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- SECTION 7: TEAMMATE VISUALIZATION       -->
+        <!-- ======================================== -->
+        <section id="teammate-section" class="viz-section" data-scene="teammate">
+            <div class="section-inner">
+                
+                <div class="content-card glass-card intro-card">
+                    <span class="section-number">06</span>
+                    <h2>Population vs. Infrastructure</h2>
+                    <p>
+                        Is airport connectivity fairly distributed? We compared population 
+                        sizes with the number of international airports to reveal which 
+                        regions are over-served and which lack adequate air travel infrastructure.
+                    </p>
+                </div>
+                
+                <div class="seat-screen teammate-viz">
+                    <div class="screen-bezel">
+                        <div class="screen-header-simple">
+                            <span class="screen-author">Visualization by Rafaela Dos Santos Farina</span>
+                        </div>
+                        <div class="viz-placeholder" id="teammate-viz-container">
+                            <!-- 
+                                Rafaela or Colin: Replace this placeholder with your visualization
+                                Options:
+                                1. Tableau embed: (copy here the iframe generated by Tableau)
+                                2. Static image: Example <img src="path/to/your/image.png" alt="Population vs Infrastructure Analysis">
+                            -->
+                            <div class="placeholder-content">
+                                <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                    <path d="M3 9h18"/>
+                                    <path d="M9 21V9"/>
+                                </svg>
+                                <h3>Visualization Space</h3>
+                                <p>Reserved for any visualization</p>
+                                <div class="placeholder-specs">
+                                    <span>Recommended: 1200 x 600px</span>
+                                    <span>Formats: Tableau, D3, Plotly, PNG/SVG, Gephi</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="data-links">
+                    <a href="#" class="data-link" download>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Dataset
+                    </a>
+                    <a href="protocols/viz_teammate.html" class="data-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                        Metadata &amp; Protocol
+                    </a>
+                </div>
+                
+                <div class="content-card glass-card analysis-card">
+                    <h3>Key Insights</h3>
+                    <ul class="insight-list">
+                        <li>
+                            <strong>Over-served:</strong> Northern Europe and small wealthy nations 
+                            have disproportionately high airport density
+                        </li>
+                        <li>
+                            <strong>Under-served:</strong> Large parts of Africa and South Asia 
+                            lack adequate international air connectivity
+                        </li>
+                        <li>
+                            <strong>Strategic hubs:</strong> Gulf states maximize global reach 
+                            through concentrated mega-airports
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- SECTION 8: KEY FINDINGS                 -->
+        <!-- ======================================== -->
+        <section id="findings-section" class="content-section">
+            <div class="section-inner">
+                
+                <div class="content-card glass-card large-card">
+                    <span class="section-number">07</span>
+                    <h2>What We Learned</h2>
+                    
+                    <div class="findings-grid">
+                        <div class="finding-card">
+                            <div class="finding-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M2 12h20"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                            </div>
+                            <h4>Europe Leads</h4>
+                            <p>
+                                European countries dominate the top 10 most connected list, 
+                                benefiting from geographic proximity, open skies agreements, 
+                                and strong tourism industries.
+                            </p>
+                        </div>
+                        
+                        <div class="finding-card">
+                            <div class="finding-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                                </svg>
+                            </div>
+                            <h4>Geography Matters</h4>
+                            <p>
+                                Countries positioned between continents (Turkey, UAE, Panama) 
+                                leverage their location to become travel crossroads, regardless 
+                                of population size.
+                            </p>
+                        </div>
+                        
+                        <div class="finding-card">
+                            <div class="finding-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <h4>Inequality Persists</h4>
+                            <p>
+                                Access to international travel remains highly unequal. 
+                                Some island nations have only 1-2 connections, leaving 
+                                residents with limited mobility options.
+                            </p>
+                        </div>
+                        
+                        <div class="finding-card">
+                            <div class="finding-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"/>
+                                </svg>
+                            </div>
+                            <h4>Hub Strategy Works</h4>
+                            <p>
+                                Smaller countries can achieve outsized connectivity by investing 
+                                in a single world-class hub. Qatar reaches 68 countries from 
+                                just one airport.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- SECTION 9: FINALE WINDOW               -->
+        <!-- ======================================== -->
+        <section id="finale-window" class="window-section finale">
+            <div class="window-container">
+                <div class="airplane-window">
+                    <div class="window-frame">
+                        <div class="rivet rivet-tl"></div>
+                        <div class="rivet rivet-tr"></div>
+                        <div class="rivet rivet-bl"></div>
+                        <div class="rivet rivet-br"></div>
+                    </div>
+                    <div class="window-view sunset-gradient">
+                        <!-- Wing tip -->
+                        <svg class="wing-tip" viewBox="0 0 200 400" preserveAspectRatio="none">
+                            <path d="M 0,400 Q 60,250 90,50 L 200,0 L 200,400 Z" 
+                                  fill="rgba(30,41,59,0.7)"/>
+                            <path d="M 20,400 Q 70,280 95,100" 
+                                  stroke="rgba(255,255,255,0.1)" 
+                                  stroke-width="2" 
+                                  fill="none"/>
+                        </svg>
+                        
+                        <!-- Finale content -->
+                        <div class="finale-content">
+                            <h2>Bon Voyage</h2>
+                            <p class="finale-tagline">
+                                The world awaits. Where will you go?
+                            </p>
+                        </div>
+                        
+                        <!-- Credits -->
+                        <div class="credits">
+                            <div class="credits-title">A SUPSI Data Visualization Project</div>
+                            <div class="credits-team">
+                                <span class="credit-name">Alan Dominguez</span>
+                                <span class="credit-name">Rafaela Dos Santos Farina</span>
+                                <span class="credit-name">Colin Augustine</span>
+                            </div>
+                            <div class="credits-prof">Professor Giovanni Profeta</div>
+                            <div class="credits-year">December 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!-- TOOLTIP (for map interactions)              -->
+    <!-- ============================================ -->
+    <div id="map-tooltip" class="map-tooltip"></div>
+
+    <!-- ============================================ -->
+    <!-- JavaScript                                  -->
+    <!-- ============================================ -->
+    <script src="assets/script/map-controller.js"></script>
+    <script src="assets/script/passenger-scroll.js"></script>
+
+</body>
 </html>
