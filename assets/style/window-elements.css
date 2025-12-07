@@ -272,7 +272,7 @@
 }
 
 /* ============================================
-   SUNSET GRADIENT (Finale)
+   SUNSET GRADIENT (Finale) - Legacy
    ============================================ */
 .sunset-gradient {
     background: linear-gradient(to bottom,
@@ -286,78 +286,269 @@
     );
 }
 
-/* Wing tip SVG */
-.wing-tip {
-    position: absolute;
-    bottom: -30px;
-    right: -20px;
-    width: 180px;
-    height: 350px;
-    opacity: 0;
-    animation: wingFadeIn 2s ease-out 0.5s forwards;
+/* ============================================
+   SUNSET SCENE (New Finale Design)
+   ============================================ */
+.sunset-scene {
+    background: linear-gradient(
+        180deg,
+        #1a1a2e 0%,
+        #16213e 8%,
+        #1f4068 15%,
+        #e85d04 35%,
+        #f48c06 45%,
+        #faa307 52%,
+        #ffba08 58%,
+        #f48c06 62%,
+        #e85d04 68%,
+        #9d4506 75%,
+        #3d5a80 85%,
+        #293241 100%
+    );
+    position: relative;
+    overflow: hidden;
 }
 
-@keyframes wingFadeIn {
-    to { opacity: 1; }
+/* Sky base layer */
+.sunset-sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    background: linear-gradient(
+        180deg,
+        #0d1b2a 0%,
+        #1b263b 20%,
+        #415a77 40%,
+        #e85d04 70%,
+        #f8961e 90%,
+        #f9c74f 100%
+    );
+    opacity: 0.7;
+}
+
+/* Sun glow effect */
+.sun-glow {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 60px;
+    background: radial-gradient(
+        ellipse at center bottom,
+        #fff7ed 0%,
+        #ffedd5 20%,
+        #fdba74 40%,
+        #fb923c 60%,
+        transparent 100%
+    );
+    border-radius: 50%;
+    filter: blur(8px);
+    opacity: 0.9;
+}
+
+/* Sunset clouds layer */
+.sunset-clouds-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Sunset clouds with warm color filter */
+.sunset-cloud {
+    position: absolute;
+    font-size: 60px;
+    filter: blur(2px) sepia(0.8) saturate(2) hue-rotate(-10deg) brightness(0.9);
+    opacity: 0.85;
+    will-change: transform;
+}
+
+.sunset-cloud.cloud-1 {
+    font-size: 80px;
+    top: 18%;
+    left: 5%;
+    filter: blur(3px) sepia(0.9) saturate(2.5) hue-rotate(-15deg) brightness(0.7);
+    opacity: 0.9;
+    animation: sunsetCloudFloat1 25s ease-in-out infinite;
+}
+
+.sunset-cloud.cloud-2 {
+    font-size: 100px;
+    top: 28%;
+    right: -5%;
+    filter: blur(4px) sepia(0.7) saturate(2) hue-rotate(-5deg) brightness(0.8);
+    opacity: 0.75;
+    animation: sunsetCloudFloat2 30s ease-in-out infinite;
+    animation-delay: -8s;
+}
+
+.sunset-cloud.cloud-3 {
+    font-size: 70px;
+    top: 38%;
+    left: 25%;
+    filter: blur(2px) sepia(0.85) saturate(2.2) hue-rotate(-10deg) brightness(0.85);
+    opacity: 0.8;
+    animation: sunsetCloudFloat3 20s ease-in-out infinite;
+    animation-delay: -5s;
+}
+
+.sunset-cloud.cloud-4 {
+    font-size: 90px;
+    top: 12%;
+    right: 20%;
+    filter: blur(5px) sepia(0.6) saturate(1.8) hue-rotate(0deg) brightness(0.6);
+    opacity: 0.7;
+    animation: sunsetCloudFloat4 28s ease-in-out infinite;
+    animation-delay: -12s;
+}
+
+@keyframes sunsetCloudFloat1 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(20px, 5px) scale(1.03); }
+}
+
+@keyframes sunsetCloudFloat2 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(-25px, 8px) scale(1.02); }
+}
+
+@keyframes sunsetCloudFloat3 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(15px, -5px); }
+}
+
+@keyframes sunsetCloudFloat4 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    30% { transform: translate(-10px, 3px) scale(1.01); }
+    70% { transform: translate(10px, -3px) scale(0.99); }
+}
+
+/* Ocean layer */
+.ocean-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 32%;
+    background: linear-gradient(
+        180deg,
+        #3d5a80 0%,
+        #293241 30%,
+        #1d2d44 60%,
+        #0d1b2a 100%
+    );
+}
+
+/* Ocean sun reflection */
+.ocean-reflection {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        #f9c74f 0%,
+        #f8961e 10%,
+        rgba(248, 150, 30, 0.6) 20%,
+        rgba(248, 150, 30, 0.3) 35%,
+        rgba(248, 150, 30, 0.1) 50%,
+        transparent 70%
+    );
+    filter: blur(8px);
+    opacity: 0.8;
+    animation: reflectionShimmer 4s ease-in-out infinite;
+}
+
+@keyframes reflectionShimmer {
+    0%, 100% { 
+        opacity: 0.8; 
+        transform: translateX(-50%) scaleX(1);
+    }
+    50% { 
+        opacity: 0.6; 
+        transform: translateX(-50%) scaleX(1.2);
+    }
+}
+
+/* Wing tip SVG - hidden in new design */
+.wing-tip {
+    display: none;
 }
 
 /* Finale content */
 .finale-content {
-    position: relative;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
     z-index: 5;
     text-align: center;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 1.5rem;
 }
 
 .finale-content h2 {
     font-family: var(--font-display);
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
     font-weight: 700;
     color: white;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    text-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.8),
+        0 4px 12px rgba(0, 0, 0, 0.6),
+        0 0 40px rgba(0, 0, 0, 0.4);
     margin-bottom: 0.5rem;
 }
 
 .finale-tagline {
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
-    color: rgba(255, 255, 255, 0.85);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: rgba(255, 255, 255, 0.95);
     font-style: italic;
-    max-width: 300px;
+    max-width: 320px;
     margin: 0 auto;
+    text-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.8),
+        0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Credits */
 .credits {
     position: absolute;
-    bottom: 1.5rem;
-    left: 1rem;
-    right: 1rem;
+    bottom: 8%;
+    left: 0.75rem;
+    right: 0.75rem;
     text-align: center;
-    z-index: 5;
+    z-index: 10;
 }
 
 .credits-title {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 0.5rem;
+    letter-spacing: 0.12em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.35rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .credits-team {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.15rem;
-    margin-bottom: 0.5rem;
+    gap: 0.1rem;
+    margin-bottom: 0.35rem;
 }
 
 .credit-name {
     font-family: var(--font-display);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: white;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
 }
 
 .credits-names {
@@ -373,14 +564,16 @@
 }
 
 .credits-prof {
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 0.2rem;
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.15rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .credits-year {
-    font-size: 0.65rem;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 /* ============================================
