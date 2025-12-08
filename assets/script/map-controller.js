@@ -759,6 +759,7 @@
     function setupRankingClicks() {
         const rankingItems = document.querySelectorAll('.ranking-item[data-country]');
         rankingItems.forEach(item => {
+            item.style.cursor = 'pointer';
             item.addEventListener('click', () => {
                 const country = item.dataset.country;
                 console.log('📍 Ranking click:', country);
@@ -770,15 +771,33 @@
                         mapSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     }
                     
-                    // Select country after scroll completes (with delay)
+                    // Select country after scroll completes (longer delay for smooth scroll)
                     setTimeout(() => {
-                        if (mapState.initialized && mapState.statsData[country]) {
-                            console.log('✅ Selecting country:', country);
-                            selectCountry(country);
+                        if (mapState.initialized) {
+                            // Try direct match first
+                            if (mapState.statsData[country]) {
+                                console.log('✅ Selecting country:', country);
+                                selectCountry(country);
+                            } else {
+                                // Try dropdown as fallback
+                                const dropdown = document.getElementById('country-select');
+                                if (dropdown) {
+                                    const option = Array.from(dropdown.options).find(
+                                        opt => opt.value.toLowerCase() === country.toLowerCase()
+                                    );
+                                    if (option) {
+                                        dropdown.value = option.value;
+                                        dropdown.dispatchEvent(new Event('change'));
+                                        console.log('✅ Selected via dropdown:', option.value);
+                                    } else {
+                                        console.warn('⚠️ Country not found:', country);
+                                    }
+                                }
+                            }
                         } else {
-                            console.warn('⚠️ Map not ready or country not found:', country);
+                            console.warn('⚠️ Map not initialized yet');
                         }
-                    }, 800);
+                    }, 1200);
                 }
             });
         });
