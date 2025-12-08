@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Connections Network - Metadata & Protocol</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent: #06b6d4;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Source Sans Pro', -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card h2 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 0.75rem;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        }
+        
+        th {
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        code {
+            background: rgba(6, 182, 212, 0.1);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Country Connections Network</h1>
+        <p class="subtitle">Visualization by Rafaela Dos Santos Farina</p>
+        
+        <div class="card">
+            <h2>Overview</h2>
+            <p>
+                An interactive network visualization showing the web of direct flight connections 
+                between countries. Built with Flourish, this visualization complements the D3 map 
+                by showing the density and clustering of international aviation connections.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h2>Visualization Tool</h2>
+            <table>
+                <tr>
+                    <th>Platform</th>
+                    <td>Flourish</td>
+                </tr>
+                <tr>
+                    <th>Chart Type</th>
+                    <td>Network Diagram</td>
+                </tr>
+                <tr>
+                    <th>Public URL</th>
+                    <td><a href="https://public.flourish.studio/visualisation/26452528/" style="color: var(--accent);">View on Flourish</a></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Data Source</h2>
+            <table>
+                <tr>
+                    <th>File</th>
+                    <td><code>country_connections.csv</code></td>
+                </tr>
+                <tr>
+                    <th>Original Source</th>
+                    <td>OpenFlights Database</td>
+                </tr>
+                <tr>
+                    <th>Processing</th>
+                    <td>Aggregated unique airport pairs per country</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Data Schema</h2>
+            <table>
+                <tr>
+                    <th>Column</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>source_country</code></td>
+                    <td>String</td>
+                    <td>Origin country name</td>
+                </tr>
+                <tr>
+                    <td><code>dest_country</code></td>
+                    <td>String</td>
+                    <td>Destination country name</td>
+                </tr>
+                <tr>
+                    <td><code>num_routes</code></td>
+                    <td>Integer</td>
+                    <td>Number of unique airport-to-airport routes</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Design Decisions</h2>
+            <ul style="list-style: none;">
+                <li style="margin-bottom: 0.5rem;">• Node size represents number of connections</li>
+                <li style="margin-bottom: 0.5rem;">• Edge thickness indicates route density between countries</li>
+                <li style="margin-bottom: 0.5rem;">• Clustering algorithm groups geographically related countries</li>
+                <li style="margin-bottom: 0.5rem;">• Interactive hover reveals connection details</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Author</h2>
+            <table>
+                <tr>
+                    <th>Created by</th>
+                    <td>Rafaela Dos Santos Farina</td>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <td>Data Visualization, SUPSI</td>
+                </tr>
+                <tr>
+                    <th>Date</th>
+                    <td>December 2025</td>
+                </tr>
+            </table>
+        </div>
+        
+        <a href="../index.html" class="back-link">← Back to main visualization</a>
+    </div>
+</body>
+</html>

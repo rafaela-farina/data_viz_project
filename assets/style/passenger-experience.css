@@ -846,7 +846,8 @@ strong {
 
 .ranking-item .bar {
     height: 100%;
-    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-teal));
+    width: var(--width, 50%);
+    background: var(--color, var(--accent-cyan));
     border-radius: 4px;
     transition: width 0.8s ease;
 }

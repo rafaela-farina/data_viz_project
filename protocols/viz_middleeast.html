@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Map Visualization | Data Visualization Protocol</title>
+    <meta name="description" content="Protocol and metadata for the Global Aviation Network Map visualization">
+    <meta name="author" content="Alan">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent: #06b6d4;
+            --border: rgba(148, 163, 184, 0.2);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .topbar {
+            background: var(--bg-card);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .topbar a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.875rem;
+        }
+        
+        .topbar a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        header .back {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        header .back:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        section {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+        }
+        
+        h4 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        h4:first-child {
+            margin-top: 0;
+        }
+        
+        p, li {
+            color: var(--text-secondary);
+        }
+        
+        a {
+            color: var(--accent);
+        }
+        
+        ol {
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .download-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+        
+        .download-link:hover {
+            background: rgba(6, 182, 212, 0.2);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        th {
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+        }
+        
+        td {
+            color: var(--text-secondary);
+        }
+        
+        code {
+            background: rgba(6, 182, 212, 0.1);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <nav>
+            <a href="../index.html">← Back to Global Aviation Connectivity</a>
+        </nav>
+    </div>
+    
+    <main>
+        <header>
+            <a href="../index.html" class="back">← Back to visualization</a>
+            <h1>Middle East Hub Analysis</h1>
+            <h2>Visualization Protocol</h2>
+        </header>
+        
+        <article>
+            <section>
+                <h4>Timestamp</h4>
+                <p>December 2025</p>
+                
+                <h4>Authors</h4>
+                <p>Alan Dominguez, Rafaela Dos Santos Farina, Colin Augustine</p>
+                
+                <h4>Data Source</h4>
+                <p>
+                    <a href="https://openflights.org/data.html" target="_blank">OpenFlights Database</a><br>
+                    Routes, airports, and airlines data
+                </p>
+                
+                <h4>Dataset</h4>
+                <p>
+                    <a href="../processed_data/country_connections_geo.json" class="download-link" download>
+                        Download country_connections_geo.json
+                    </a>
+                </p>
+                <p style="margin-top: 1rem;">
+                    <a href="../processed_data/country_stats.json" class="download-link" download>
+                        Download country_stats.json
+                    </a>
+                </p>
+                
+                <h4>Data Structure</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Field</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>source</code></td>
+                            <td>String</td>
+                            <td>Origin country name</td>
+                        </tr>
+                        <tr>
+                            <td><code>dest</code></td>
+                            <td>String</td>
+                            <td>Destination country name</td>
+                        </tr>
+                        <tr>
+                            <td><code>source_coords</code></td>
+                            <td>Array [lon, lat]</td>
+                            <td>Geographic coordinates of origin</td>
+                        </tr>
+                        <tr>
+                            <td><code>dest_coords</code></td>
+                            <td>Array [lon, lat]</td>
+                            <td>Geographic coordinates of destination</td>
+                        </tr>
+                        <tr>
+                            <td><code>num_routes</code></td>
+                            <td>Integer</td>
+                            <td>Number of unique flight routes between countries</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h4>Protocol / Methodology</h4>
+                <ol>
+                    <li>Download raw routes data from OpenFlights database containing source airport, destination airport, and airline information.</li>
+                    <li>Download airports data containing IATA codes, names, cities, countries, and geographic coordinates.</li>
+                    <li>Filter routes to include only international connections (source country ≠ destination country).</li>
+                    <li>Join routes data with airports data to obtain country information for each route endpoint.</li>
+                    <li>Aggregate routes by country pairs, counting the number of unique routes between each pair.</li>
+                    <li>Calculate centroid coordinates for each country based on the average of all airport coordinates within that country.</li>
+                    <li>For countries with missing or invalid coordinates (0,0), use manually verified centroid positions.</li>
+                    <li>Generate country statistics including: total routes, number of connected countries, number of international airports, and top destinations.</li>
+                    <li>Export processed data to JSON format: <code>country_connections_geo.json</code> for route data and <code>country_stats.json</code> for aggregate statistics.</li>
+                    <li>Validate data integrity by checking for missing coordinates, null values, and route count consistency.</li>
+                </ol>
+                
+                <h4>Visualization Technology</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;">• D3.js v7 - Data visualization library</li>
+                    <li style="margin-bottom: 0.5rem;">• TopoJSON - Geographic data format</li>
+                    <li style="margin-bottom: 0.5rem;">• Natural Earth projection - Map projection</li>
+                    <li style="margin-bottom: 0.5rem;">• GSAP ScrollTrigger - Scroll animations</li>
+                </ul>
+                
+                <h4>Limitations</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;">• Data reflects routes at time of download; does not include real-time flight data</li>
+                    <li style="margin-bottom: 0.5rem;">• Some small nations may have inaccurate centroid positions</li>
+                    <li style="margin-bottom: 0.5rem;">• Route counts represent number of scheduled routes, not flight frequency</li>
+                    <li style="margin-bottom: 0.5rem;">• Codeshare agreements may result in some route duplication</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

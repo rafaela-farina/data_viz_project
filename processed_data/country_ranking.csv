@@ -1,0 +1,219 @@
+country,num_countries_connected,total_routes
+France,115,873
+United Kingdom,99,1282
+Germany,97,1260
+United States,92,1057
+United Arab Emirates,91,384
+Turkey,90,412
+Netherlands,81,329
+Italy,77,873
+Spain,73,1055
+Russia,70,566
+Canada,65,324
+China,63,580
+Qatar,62,116
+Switzerland,61,247
+Belgium,58,233
+Austria,58,174
+Thailand,55,182
+India,49,237
+Morocco,48,197
+Ethiopia,46,55
+Egypt,46,145
+Kenya,45,68
+Denmark,45,166
+South Korea,44,190
+Saudi Arabia,43,217
+Greece,42,356
+Hong Kong,42,126
+Sweden,42,199
+Japan,40,261
+Singapore,40,122
+Poland,40,283
+Israel,40,77
+South Africa,40,76
+Finland,38,91
+Malaysia,38,134
+Portugal,38,243
+Czech Republic,38,100
+Norway,38,238
+Ukraine,34,129
+Ireland,34,219
+Jordan,34,55
+Australia,34,128
+Brazil,33,116
+Hungary,33,79
+Nigeria,32,47
+Latvia,32,68
+Cyprus,31,85
+Lebanon,30,45
+Panama,30,67
+Tunisia,30,110
+Iran,29,87
+Serbia,28,68
+Belarus,28,41
+Romania,28,99
+Algeria,28,80
+Dominican Republic,27,105
+Kuwait,26,57
+Malta,26,76
+Lithuania,26,68
+Croatia,25,131
+Mexico,25,213
+Oman,25,56
+Senegal,25,30
+Philippines,24,67
+Taiwan,24,168
+Kazakhstan,24,73
+Bulgaria,24,57
+Netherlands Antilles,24,51
+Ghana,24,26
+Sri Lanka,23,40
+Bahrain,23,40
+Cuba,23,51
+Pakistan,23,98
+Uzbekistan,22,78
+Colombia,22,58
+Azerbaijan,22,43
+Vietnam,21,79
+Venezuela,21,43
+Angola,20,23
+Argentina,20,47
+Luxembourg,20,54
+Peru,20,37
+Georgia,19,34
+Indonesia,19,90
+Cote d'Ivoire,19,20
+Estonia,19,26
+Bangladesh,19,36
+Slovenia,18,22
+Chile,18,28
+Puerto Rico,18,52
+Cameroon,17,23
+Tanzania,17,28
+New Zealand,17,34
+Uganda,16,17
+Mauritius,16,24
+Yemen,16,46
+Antigua and Barbuda,16,22
+Benin,15,17
+Moldova,15,25
+Mali,15,16
+Maldives,15,23
+Jamaica,15,43
+Iraq,14,59
+Nepal,14,21
+Iceland,14,32
+Trinidad and Tobago,14,23
+Gabon,14,16
+Burkina Faso,14,14
+Cape Verde,14,26
+Barbados,14,16
+El Salvador,14,32
+Armenia,13,33
+Togo,13,14
+Sudan,13,20
+Rwanda,13,15
+Macedonia,13,22
+Burma,13,24
+Ecuador,13,25
+Fiji,13,21
+Costa Rica,12,37
+Libya,12,29
+Montenegro,11,18
+Zambia,11,18
+Cambodia,11,32
+Congo (Brazzaville),11,18
+Guam,10,17
+Brunei,10,13
+Martinique,10,11
+Saint Lucia,10,17
+Guadeloupe,10,11
+Sierra Leone,9,11
+Djibouti,9,11
+Congo (Kinshasa),9,11
+Guatemala,9,18
+Bosnia and Herzegovina,9,16
+Bolivia,9,11
+Aruba,9,25
+Tajikistan,9,55
+Turkmenistan,9,11
+Slovakia,9,20
+Macau,9,38
+Afghanistan,8,20
+Madagascar,8,16
+Kyrgyzstan,8,32
+Niger,8,8
+Papua New Guinea,8,11
+Virgin Islands,8,20
+Uruguay,8,14
+Paraguay,8,10
+Zimbabwe,8,13
+Honduras,8,27
+Bahamas,8,47
+Dominica,8,8
+Guinea,8,8
+Reunion,7,13
+Seychelles,7,8
+Suriname,7,7
+Turks and Caicos Islands,7,18
+South Sudan,7,7
+Mongolia,7,9
+Mauritania,7,8
+Jersey,7,30
+Haiti,7,12
+Grenada,7,8
+Albania,7,18
+Equatorial Guinea,7,7
+Namibia,7,11
+New Caledonia,7,9
+Laos,7,15
+Somalia,6,11
+Malawi,6,8
+Liberia,6,8
+Palau,6,6
+Chad,6,8
+Cayman Islands,6,16
+Comoros,6,7
+Gambia,6,7
+Eritrea,6,7
+Saint Kitts and Nevis,6,9
+Mozambique,6,15
+Belize,5,13
+Guinea-Bissau,5,5
+Botswana,5,10
+Guernsey,5,13
+British Virgin Islands,5,7
+French Polynesia,5,6
+Guyana,5,6
+Nicaragua,5,8
+Vanuatu,5,7
+Mayotte,4,7
+Saint Vincent and the Grenadines,4,4
+Solomon Islands,4,4
+Northern Mariana Islands,4,9
+Kiribati,4,5
+Cook Islands,4,4
+Anguilla,4,4
+French Guiana,4,4
+Bhutan,3,5
+Marshall Islands,3,3
+East Timor,3,3
+Burundi,3,3
+Bermuda,3,8
+Tonga,3,4
+Samoa,3,3
+Sao Tome and Principe,3,3
+Nauru,3,3
+North Korea,3,4
+Central African Republic,2,3
+Isle of Man,2,9
+Faroe Islands,2,4
+Norfolk Island,2,3
+Wallis and Futuna,2,2
+Western Sahara,2,6
+Micronesia,2,2
+Gibraltar,1,5
+Greenland,1,1
+Christmas Island,1,1
+Saint Pierre and Miquelon,1,3

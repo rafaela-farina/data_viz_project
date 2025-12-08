@@ -1,17 +1,15 @@
 /**
  * MAP CONTROLLER - D3 Map Management
  * ===================================
- * Handles D3 map initialization, interactions, and animations. 
- * Do not touch please!
- * Version 1.12 (yes, 12 iterations so far!)
+ * Handles D3 map initialization, interactions, and animations
  */
 
 (function() {
     'use strict';
 
-    // ============================================ //
-    // CONFIGURATION                                //
-    // ============================================ //
+    // ============================================
+    // CONFIGURATION
+    // ============================================
     const CONFIG = {
         width: 1400,
         height: 700,
@@ -38,9 +36,9 @@
         }
     };
 
-    // ============================================ //
-    // STATE                                        //
-    // ============================================ //
+    // ============================================
+    // STATE
+    // ============================================
     let mapState = {
         initialized: false,
         svg: null,
@@ -51,12 +49,13 @@
         worldData: null,
         connectionsData: null,
         statsData: null,
-        selectedCountry: null
+        selectedCountry: null,
+        selectedEdge: null
     };
 
-    // ============================================ //
-    // ISO COUNTRY CODE MAPPING                     //
-    // ============================================ //
+    // ============================================
+    // ISO COUNTRY CODE MAPPING
+    // ============================================
     const countryIdToName = {
         '840': 'United States', '124': 'Canada', '484': 'Mexico',
         '826': 'United Kingdom', '276': 'Germany', '250': 'France',
@@ -103,11 +102,11 @@
         'Morocco': '🇲🇦', 'Kenya': '🇰🇪', 'Nigeria': '🇳🇬'
     };
 
-    // ============================================ //
-    // INITIALIZATION                               //
-    // ============================================ //
+    // ============================================
+    // INITIALIZATION
+    // ============================================
     function initMap(containerId = '#d3-map-container') {
-        console.log('[···] Initializing D3 map...');
+        console.log('🗺️ Initializing D3 map...');
 
         const container = d3.select(containerId);
         if (container.empty()) {
@@ -163,9 +162,9 @@
         loadMapData();
     }
 
-    // ============================================ //
-    // DATA LOADING                                 //
-    // ============================================ //
+    // ============================================
+    // DATA LOADING
+    // ============================================
     function loadMapData() {
         Promise.all([
             d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json'),
@@ -184,12 +183,12 @@
             drawCountries();
             populateCountrySelect();
 
-            console.log('[OK] Map data loaded successfully');
+            console.log('✅ Map data loaded successfully');
             console.log(`   - ${Object.keys(stats).length} countries`);
             console.log(`   - ${connections.length} connections`);
 
         }).catch(error => {
-            console.error('[X] Error loading map data:', error);
+            console.error('❌ Error loading map data:', error);
             d3.select('.loading-indicator').html(`
                 <div style="color: #ef4444; text-align: center;">
                     <p>Error loading map data</p>
@@ -199,9 +198,9 @@
         });
     }
 
-    // ============================================ //
-    // DRAWING FUNCTIONS                            //
-    // ============================================ //
+    // ============================================
+    // DRAWING FUNCTIONS
+    // ============================================
     function drawCountries() {
         const countries = topojson.feature(mapState.worldData, mapState.worldData.objects.countries);
 
@@ -260,9 +259,9 @@
         return closestCountry;
     }
 
-    // ============================================ //
-    // COUNTRY SELECTION                            //
-    // ============================================ //
+    // ============================================
+    // COUNTRY SELECTION
+    // ============================================
     function selectCountry(countryName) {
         if (!mapState.initialized) return;
 
@@ -338,15 +337,25 @@
                 mapState.connectionsGroup.append('path')
                     .attr('class', 'connection-arc')
                     .attr('d', arcPath)
+                    .attr('data-source', conn.source)
+                    .attr('data-dest', conn.dest)
                     .style('stroke', colorScale(i))
                     .style('opacity', 0)
+                    .style('cursor', 'pointer')
                     .on('mouseover', function(event) {
                         d3.select(this).style('opacity', 1).style('stroke-width', 3);
                         showConnectionTooltip(event, conn);
                     })
                     .on('mouseout', function() {
-                        d3.select(this).style('opacity', 0.6).style('stroke-width', 1.5);
+                        // Only reset if not selected
+                        if (!d3.select(this).classed('selected-edge')) {
+                            d3.select(this).style('opacity', 0.6).style('stroke-width', 1.5);
+                        }
                         hideTooltip();
+                    })
+                    .on('click', function(event) {
+                        event.stopPropagation();
+                        selectEdge(conn, this);
                     })
                     .transition()
                     .delay(i * 30)
@@ -356,9 +365,144 @@
         });
     }
 
-    // ============================================ //
-    // FLY TO REGION                                //
-    // ============================================ //
+    // ============================================
+    // EDGE SELECTION
+    // ============================================
+    function selectEdge(conn, element) {
+        // Store selected edge
+        mapState.selectedEdge = conn;
+        
+        // Reset all edges visual state
+        mapState.connectionsGroup.selectAll('.connection-arc')
+            .classed('selected-edge', false)
+            .style('stroke-width', 1.5)
+            .style('opacity', 0.6);
+        
+        // Highlight selected edge
+        d3.select(element)
+            .classed('selected-edge', true)
+            .style('stroke-width', 4)
+            .style('opacity', 1)
+            .style('stroke', '#fbbf24'); // Golden highlight
+        
+        // Center map on the edge (midpoint between countries)
+        const midLon = (conn.source_coords[0] + conn.dest_coords[0]) / 2;
+        const midLat = (conn.source_coords[1] + conn.dest_coords[1]) / 2;
+        
+        // Calculate appropriate zoom based on distance
+        const distance = Math.sqrt(
+            Math.pow(conn.dest_coords[0] - conn.source_coords[0], 2) +
+            Math.pow(conn.dest_coords[1] - conn.source_coords[1], 2)
+        );
+        const zoomLevel = Math.max(1.5, Math.min(4, 150 / distance));
+        
+        flyTo(midLon, midLat, zoomLevel);
+        
+        // Show edge info panel
+        showEdgeInfoPanel(conn);
+    }
+    
+    function showEdgeInfoPanel(conn) {
+        const panel = d3.select('#info-panel');
+        const sourceFlag = countryFlags[conn.source] || '🌍';
+        const destFlag = countryFlags[conn.dest] || '🌍';
+        
+        // Get stats for both countries
+        const sourceStats = mapState.statsData[conn.source] || {};
+        const destStats = mapState.statsData[conn.dest] || {};
+        
+        // Find top airports from source that might connect to dest
+        const sourceAirports = sourceStats.top_airports || [];
+        const destAirports = destStats.top_airports || [];
+        
+        let html = `
+            <h3 style="font-size: 1rem; line-height: 1.3;">
+                <span class="flag">${sourceFlag}</span> ${conn.source}
+                <span style="color: #06b6d4; margin: 0 0.3rem;">→</span>
+                <span class="flag">${destFlag}</span> ${conn.dest}
+            </h3>
+            <div class="info-stat" style="margin-top: 1rem; padding: 0.75rem; background: rgba(6, 182, 212, 0.1); border-radius: 8px;">
+                <div class="info-stat-label">Direct Routes</div>
+                <div class="info-stat-value" style="font-size: 1.5rem; color: #06b6d4;">${conn.num_routes}</div>
+            </div>
+        `;
+        
+        // Source country info
+        html += `
+            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(148,163,184,0.2);">
+                <h4 style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin-bottom: 0.5rem;">
+                    ${sourceFlag} From ${conn.source}
+                </h4>
+                <div style="font-size: 0.8rem; color: #94a3b8;">
+                    Total connections: <span style="color: #f1f5f9;">${sourceStats.num_countries_connected || 'N/A'}</span> countries
+                </div>
+        `;
+        
+        if (sourceAirports.length > 0) {
+            html += `
+                <div style="margin-top: 0.5rem; font-size: 0.75rem; color: #64748b;">
+                    Main airports: 
+                    <span style="color: #94a3b8;">${sourceAirports.slice(0, 2).map(a => a.iata).join(', ')}</span>
+                </div>
+            `;
+        }
+        html += `</div>`;
+        
+        // Destination country info
+        html += `
+            <div style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(148,163,184,0.1);">
+                <h4 style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; margin-bottom: 0.5rem;">
+                    ${destFlag} To ${conn.dest}
+                </h4>
+                <div style="font-size: 0.8rem; color: #94a3b8;">
+                    Total connections: <span style="color: #f1f5f9;">${destStats.num_countries_connected || 'N/A'}</span> countries
+                </div>
+        `;
+        
+        if (destAirports.length > 0) {
+            html += `
+                <div style="margin-top: 0.5rem; font-size: 0.75rem; color: #64748b;">
+                    Main airports: 
+                    <span style="color: #94a3b8;">${destAirports.slice(0, 2).map(a => a.iata).join(', ')}</span>
+                </div>
+            `;
+        }
+        html += `</div>`;
+        
+        // Back to country button
+        html += `
+            <button id="back-to-country" style="
+                margin-top: 1rem;
+                width: 100%;
+                padding: 0.5rem;
+                background: rgba(148, 163, 184, 0.1);
+                border: 1px solid rgba(148, 163, 184, 0.2);
+                border-radius: 6px;
+                color: #94a3b8;
+                font-size: 0.75rem;
+                cursor: pointer;
+                transition: all 0.2s;
+            " onmouseover="this.style.background='rgba(148, 163, 184, 0.2)'" 
+               onmouseout="this.style.background='rgba(148, 163, 184, 0.1)'"
+               onclick="window.backToCountrySelection()">
+                ← Back to ${conn.source}
+            </button>
+        `;
+        
+        panel.html(html).classed('visible', true);
+    }
+    
+    // Global function to go back to country view
+    window.backToCountrySelection = function() {
+        if (mapState.selectedEdge) {
+            selectCountry(mapState.selectedEdge.source);
+            mapState.selectedEdge = null;
+        }
+    };
+
+    // ============================================
+    // FLY TO REGION
+    // ============================================
     function flyTo(lon, lat, scale = 3) {
         if (!mapState.initialized || !mapState.svg) return;
 
@@ -389,9 +533,9 @@
             .call(mapState.zoom.transform, d3.zoomIdentity);
     }
 
-    // ============================================ //
-    // INFO PANEL                                   //
-    // ============================================ //
+    // ============================================
+    // INFO PANEL
+    // ============================================
     function showInfoPanel(countryName) {
         const stats = mapState.statsData[countryName];
         if (!stats) return;
@@ -438,9 +582,9 @@
         panel.html(html).classed('visible', true);
     }
 
-    // ============================================ //
-    // TOOLTIPS                                     //
-    // ============================================ //
+    // ============================================
+    // TOOLTIPS
+    // ============================================
     function showTooltip(event, countryName) {
         const stats = mapState.statsData[countryName];
         if (!stats) return;
@@ -510,9 +654,9 @@
         d3.select('#map-tooltip').classed('visible', false);
     }
 
-    // ============================================ //
-    // COUNTRY SELECT DROPDOWN                      //
-    // ============================================ //
+    // ============================================
+    // COUNTRY SELECT DROPDOWN
+    // ============================================
     function populateCountrySelect() {
         const select = d3.select('#country-select');
         if (select.empty()) return;
@@ -534,9 +678,9 @@
         });
     }
 
-    // ============================================ //
-    // CONTROL BINDINGS                             //
-    // ============================================ //
+    // ============================================
+    // CONTROL BINDINGS
+    // ============================================
     function bindControls() {
         // Zoom controls
         const zoomIn = document.getElementById('zoom-in');
@@ -606,11 +750,12 @@
         // Ranking items click handler
         setupRankingClicks();
         setupGemClicks();
+        setupRemoteClicks();
     }
 
-    // ============================================ //
-    // RANKING ITEM CLICKS                          //
-    // ============================================ //
+    // ============================================
+    // RANKING ITEM CLICKS
+    // ============================================
     function setupRankingClicks() {
         const rankingItems = document.querySelectorAll('.ranking-item[data-country]');
         rankingItems.forEach(item => {
@@ -648,6 +793,38 @@
             card.addEventListener('click', () => {
                 const country = card.dataset.country;
                 console.log('💎 Gem click:', country);
+                
+                if (country) {
+                    // Scroll to map first
+                    const mapSection = document.getElementById('global-map-section');
+                    if (mapSection) {
+                        mapSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                    
+                    // Select country after scroll completes (with delay)
+                    setTimeout(() => {
+                        if (mapState.initialized && mapState.statsData[country]) {
+                            console.log('✅ Selecting country:', country);
+                            selectCountry(country);
+                        } else {
+                            console.warn('⚠️ Map not ready or country not found:', country);
+                        }
+                    }, 800);
+                }
+            });
+        });
+    }
+
+    // ============================================
+    // REMOTE ITEM CLICKS
+    // ============================================
+    function setupRemoteClicks() {
+        const remoteItems = document.querySelectorAll('.remote-item[data-country]');
+        remoteItems.forEach(item => {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', () => {
+                const country = item.dataset.country;
+                console.log('🏝️ Remote click:', country);
                 
                 if (country) {
                     // Scroll to map first

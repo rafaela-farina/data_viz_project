@@ -520,7 +520,7 @@
 /* Credits */
 .credits {
     position: absolute;
-    bottom: 8%;
+    bottom: 7%;
     left: 0.75rem;
     right: 0.75rem;
     text-align: center;
@@ -930,11 +930,11 @@
     stroke-width: 3px;
 }
 
-/* ============================================
-   REGIONAL MAP CONTAINERS
-   ============================================ */
-.regional-map {
-    /* These will show static/focused views */
+.connection-arc.selected-edge {
+    stroke: #fbbf24 !important;
+    stroke-width: 4px !important;
+    opacity: 1 !important;
+    filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.6));
 }
 
 /* ============================================
@@ -946,6 +946,183 @@
 
 .teammate-viz .viz-placeholder {
     min-height: 450px;
+}
+
+/* ============================================
+   EMBED CONTAINERS (Flourish, Tableau)
+   ============================================ */
+.viz-embed-container {
+    width: 100%;
+    min-height: 500px;
+    background: #0a0a0f;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.viz-embed-container .flourish-embed {
+    width: 100%;
+    min-height: 500px;
+}
+
+.viz-embed-container .tableauPlaceholder {
+    width: 100% !important;
+    min-height: 500px;
+}
+
+/* ============================================
+   HUB CASE STUDY SECTION
+   ============================================ */
+.hub-display {
+    padding: 2rem;
+    background: linear-gradient(135deg, #0a0a0f 0%, #111827 100%);
+    min-height: 400px;
+}
+
+.hub-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.hub-icon {
+    font-size: 2.5rem;
+}
+
+.hub-title h4 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+}
+
+.hub-code {
+    font-size: 0.85rem;
+    color: var(--accent-cyan);
+    letter-spacing: 0.05em;
+}
+
+.hub-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hub-stat {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(6, 182, 212, 0.05);
+    border: 1px solid rgba(6, 182, 212, 0.1);
+    border-radius: 8px;
+}
+
+.hub-stat-value {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    margin-bottom: 0.25rem;
+}
+
+.hub-stat-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hub-placeholder {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border: 1px dashed rgba(148, 163, 184, 0.2);
+}
+
+.hub-placeholder p {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.hub-placeholder .placeholder-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* ============================================
+   GEMS & REMOTE DESTINATIONS
+   ============================================ */
+.gems-section-title {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.remote-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.remote-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border: 1px solid rgba(148, 163, 184, 0.1);
+    transition: all 0.2s ease;
+}
+
+.remote-item:hover {
+    background: rgba(6, 182, 212, 0.05);
+    border-color: rgba(6, 182, 212, 0.2);
+}
+
+.remote-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.remote-info h5 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: white;
+    margin: 0 0 0.25rem 0;
+}
+
+.remote-info p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.remote-info strong {
+    color: var(--accent-cyan);
+}
+
+@media (max-width: 768px) {
+    .hub-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hub-stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .remote-item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 /* ============================================

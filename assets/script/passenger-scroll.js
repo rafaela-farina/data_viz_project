@@ -2,8 +2,6 @@
  * PASSENGER SCROLL - GSAP ScrollTrigger Animations
  * =================================================
  * Handles all scroll-based animations and transitions
- * Do not touch please!
- * Version 1.12 (yes, 12 iterations so far!)
  */
 
 (function() {

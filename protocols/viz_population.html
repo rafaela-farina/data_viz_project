@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airports vs Population - Metadata & Protocol</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --accent: #06b6d4;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Source Sans Pro', -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        
+        .subtitle {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card h2 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 0.75rem;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+        }
+        
+        th {
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        code {
+            background: rgba(6, 182, 212, 0.1);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ratio of International Airports to Relative Population</h1>
+        <p class="subtitle">Visualization by Colin Augustine</p>
+        
+        <div class="card">
+            <h2>Overview</h2>
+            <p>
+                An interactive Tableau visualization comparing the number of international airports 
+                to population size across countries. This analysis reveals which regions are 
+                over-served or under-served in terms of air travel infrastructure relative to 
+                their population.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h2>Visualization Tool</h2>
+            <table>
+                <tr>
+                    <th>Platform</th>
+                    <td>Tableau Public</td>
+                </tr>
+                <tr>
+                    <th>Chart Type</th>
+                    <td>Geographic Map / Scatter Plot</td>
+                </tr>
+                <tr>
+                    <th>Public URL</th>
+                    <td><a href="https://public.tableau.com/app/profile/colin.augustine/viz/GroupVisualization/Sheet1" style="color: var(--accent);">View on Tableau Public</a></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Data Sources</h2>
+            <table>
+                <tr>
+                    <th>Airport Data</th>
+                    <td>OpenFlights Database (<code>airport_connectivity.csv</code>)</td>
+                </tr>
+                <tr>
+                    <th>Population Data</th>
+                    <td>World Bank / UN Population Estimates</td>
+                </tr>
+                <tr>
+                    <th>Processing</th>
+                    <td>Merged airport counts with population by country</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Key Metrics</h2>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Airport Count</td>
+                    <td>Number of international airports per country</td>
+                </tr>
+                <tr>
+                    <td>Population</td>
+                    <td>Country population (latest available)</td>
+                </tr>
+                <tr>
+                    <td>Ratio</td>
+                    <td>Airports per million inhabitants</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Key Findings</h2>
+            <ul style="list-style: none;">
+                <li style="margin-bottom: 0.5rem;"><strong>Over-served:</strong> Small wealthy nations (Luxembourg, Iceland, Malta) have high airport-to-population ratios</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Under-served:</strong> Large developing nations (India, Bangladesh, Nigeria) have low ratios despite large populations</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Strategic hubs:</strong> Gulf states (UAE, Qatar) maximize connectivity through concentrated mega-hubs</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Interactivity</h2>
+            <ul style="list-style: none;">
+                <li style="margin-bottom: 0.5rem;">• Hover over countries for detailed statistics</li>
+                <li style="margin-bottom: 0.5rem;">• Filter by region or population size</li>
+                <li style="margin-bottom: 0.5rem;">• Click to highlight specific countries</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Author</h2>
+            <table>
+                <tr>
+                    <th>Created by</th>
+                    <td>Colin Augustine</td>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <td>Data Visualization, SUPSI</td>
+                </tr>
+                <tr>
+                    <th>Date</th>
+                    <td>December 2025</td>
+                </tr>
+            </table>
+        </div>
+        
+        <a href="../index.html" class="back-link">← Back to main visualization</a>
+    </div>
+</body>
+</html>
