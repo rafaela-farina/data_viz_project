@@ -106,7 +106,7 @@
     // INITIALIZATION
     // ============================================
     function initMap(containerId = '#d3-map-container') {
-        console.log('🗺️ Initializing D3 map...');
+        console.log('[···] Initializing D3 map...');
 
         const container = d3.select(containerId);
         if (container.empty()) {
@@ -183,12 +183,12 @@
             drawCountries();
             populateCountrySelect();
 
-            console.log('✅ Map data loaded successfully');
+            console.log('[OK] Map data loaded successfully');
             console.log(`   - ${Object.keys(stats).length} countries`);
             console.log(`   - ${connections.length} connections`);
 
         }).catch(error => {
-            console.error('❌ Error loading map data:', error);
+            console.error('[X] Error loading map data:', error);
             d3.select('.loading-indicator').html(`
                 <div style="color: #ef4444; text-align: center;">
                     <p>Error loading map data</p>
@@ -737,7 +737,7 @@
             // Use both 'input' and 'change' events for better compatibility
             const updateRoutes = function() {
                 routesValue.textContent = this.value;
-                console.log('📊 Routes slider changed to:', this.value);
+                console.log('[->] Routes slider changed to:', this.value);
                 if (mapState.selectedCountry) {
                     selectCountry(mapState.selectedCountry);
                 }
@@ -762,7 +762,7 @@
             item.style.cursor = 'pointer';
             item.addEventListener('click', () => {
                 const country = item.dataset.country;
-                console.log('📍 Ranking click:', country);
+                console.log('[@] Ranking click:', country);
                 
                 if (country) {
                     // Scroll to map first
@@ -776,7 +776,7 @@
                         if (mapState.initialized) {
                             // Try direct match first
                             if (mapState.statsData[country]) {
-                                console.log('✅ Selecting country:', country);
+                                console.log('[OK] Selecting country:', country);
                                 selectCountry(country);
                             } else {
                                 // Try dropdown as fallback
@@ -788,14 +788,14 @@
                                     if (option) {
                                         dropdown.value = option.value;
                                         dropdown.dispatchEvent(new Event('change'));
-                                        console.log('✅ Selected via dropdown:', option.value);
+                                        console.log('[OK] Selected via dropdown:', option.value);
                                     } else {
-                                        console.warn('⚠️ Country not found:', country);
+                                        console.warn('[!] Country not found:', country);
                                     }
                                 }
                             }
                         } else {
-                            console.warn('⚠️ Map not initialized yet');
+                            console.warn('[!] Map not initialized yet');
                         }
                     }, 1200);
                 }
@@ -811,7 +811,7 @@
         gemCards.forEach(card => {
             card.addEventListener('click', () => {
                 const country = card.dataset.country;
-                console.log('💎 Gem click:', country);
+                console.log('[$] Gem click:', country);
                 
                 if (country) {
                     // Scroll to map first
@@ -823,10 +823,10 @@
                     // Select country after scroll completes (with delay)
                     setTimeout(() => {
                         if (mapState.initialized && mapState.statsData[country]) {
-                            console.log('✅ Selecting country:', country);
+                            console.log('[OK] Selecting country:', country);
                             selectCountry(country);
                         } else {
-                            console.warn('⚠️ Map not ready or country not found:', country);
+                            console.warn('[!] Map not ready or country not found:', country);
                         }
                     }, 800);
                 }
@@ -843,7 +843,7 @@
             item.style.cursor = 'pointer';
             item.addEventListener('click', () => {
                 const country = item.dataset.country;
-                console.log('🏝️ Remote click:', country);
+                console.log('[@] Remote click:', country);
                 
                 if (country) {
                     // Scroll to map first
@@ -855,10 +855,10 @@
                     // Select country after scroll completes (with delay)
                     setTimeout(() => {
                         if (mapState.initialized && mapState.statsData[country]) {
-                            console.log('✅ Selecting country:', country);
+                            console.log('[OK] Selecting country:', country);
                             selectCountry(country);
                         } else {
-                            console.warn('⚠️ Map not ready or country not found:', country);
+                            console.warn('[!] Map not ready or country not found:', country);
                         }
                     }, 800);
                 }
@@ -912,7 +912,7 @@
         // Bind control buttons
         bindControls();
 
-        console.log('🎮 Map controller ready');
+        console.log('[;)] Map controller ready');
     });
 
 })();
