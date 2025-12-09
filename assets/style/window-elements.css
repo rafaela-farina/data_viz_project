@@ -939,10 +939,10 @@
 
 /* ============================================
    REGIONAL MAP CONTAINERS
-   ============================================ */
+   ============================================
 .regional-map {
-    /* These will show static/focused views */
-}
+    / These will show static/focused views /
+} /*
 
 /* ============================================
    TEAMMATE VISUALIZATION SECTION
@@ -956,7 +956,7 @@
 }
 
 /* ============================================
-   EMBED CONTAINERS (Flourish, Tableau)
+   EMBED CONTAINERS (Flourish, Tableau, etc.)
    ============================================ */
 .viz-embed-container {
     width: 100%;

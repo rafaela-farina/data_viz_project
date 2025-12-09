@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "airport": {
+      "code": "CDG",
+      "icao": "LFPG",
+      "name": "Paris Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France",
+      "coordinates": {
+        "latitude": 49.0097,
+        "longitude": 2.5479
+      },
+      "opened": 1974,
+      "operator": "Groupe ADP (Aéroports de Paris)",
+      "area_km2": 32.38,
+      "terminals": 3
+    },
+    "data_year": 2024,
+    "last_updated": "2025-12-08",
+    "sources": [
+      {
+        "name": "Wikipedia - Charles de Gaulle Airport",
+        "url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport",
+        "data_types": ["passenger_stats", "cargo_stats", "rankings"]
+      },
+      {
+        "name": "Paris Aéroport Official Statistics",
+        "url": "https://pariscdgairport.com/statistics/",
+        "data_types": ["monthly_traffic", "annual_traffic"]
+      },
+      {
+        "name": "FlightConnections",
+        "url": "https://www.flightconnections.com/flights-from-paris-cdg",
+        "data_types": ["destinations", "routes", "airlines"]
+      },
+      {
+        "name": "FlightsFrom.com",
+        "url": "https://www.flightsfrom.com/CDG",
+        "data_types": ["destinations", "airlines", "flight_times"]
+      },
+      {
+        "name": "The Local France - Delay Statistics",
+        "url": "https://www.thelocal.fr/20241121/revealed-the-worst-airlines-for-delays-and-cancellations-from-france",
+        "data_types": ["delay_statistics", "cancellation_rates"]
+      },
+      {
+        "name": "Simple Flying - Air France Routes",
+        "url": "https://simpleflying.com/air-france-top-us-routes/",
+        "data_types": ["route_details", "seat_capacity"]
+      },
+      {
+        "name": "Statista - Paris Airport Traffic",
+        "url": "https://www.statista.com/statistics/1120665/passenger-traffic-paris-charles-de-gaulle-airport/",
+        "data_types": ["historical_traffic"]
+      }
+    ],
+    "notes": "Data compiled from multiple public sources. Some figures are estimates based on available data patterns."
+  },
+  "summary": {
+    "total_passengers_2024": 70290260,
+    "aircraft_movements_2024": 466543,
+    "cargo_tonnes_2024": 1914681,
+    "num_destinations": 277,
+    "num_countries_served": 109,
+    "num_airlines": 105,
+    "ranking_europe": 3,
+    "ranking_world": 14,
+    "ranking_eu": 1,
+    "main_airline": "Air France",
+    "main_airline_destinations": 185
+  },
+  "monthly_traffic_2024": [
+    {"month": "January", "month_num": 1, "passengers": 4850000, "pct_of_annual": 6.9},
+    {"month": "February", "month_num": 2, "passengers": 4720000, "pct_of_annual": 6.7},
+    {"month": "March", "month_num": 3, "passengers": 5450000, "pct_of_annual": 7.8},
+    {"month": "April", "month_num": 4, "passengers": 5750138, "pct_of_annual": 8.2},
+    {"month": "May", "month_num": 5, "passengers": 6109537, "pct_of_annual": 8.7},
+    {"month": "June", "month_num": 6, "passengers": 6270801, "pct_of_annual": 8.9},
+    {"month": "July", "month_num": 7, "passengers": 6662862, "pct_of_annual": 9.5},
+    {"month": "August", "month_num": 8, "passengers": 6868032, "pct_of_annual": 9.8},
+    {"month": "September", "month_num": 9, "passengers": 6211747, "pct_of_annual": 8.8},
+    {"month": "October", "month_num": 10, "passengers": 6219714, "pct_of_annual": 8.9},
+    {"month": "November", "month_num": 11, "passengers": 5304078, "pct_of_annual": 7.5},
+    {"month": "December", "month_num": 12, "passengers": 5834984, "pct_of_annual": 8.3}
+  ],
+  "historical_traffic": [
+    {"year": 2019, "passengers": 76200000, "notes": "Pre-pandemic peak"},
+    {"year": 2020, "passengers": 22300000, "notes": "COVID-19 impact"},
+    {"year": 2021, "passengers": 26200000, "notes": "Partial recovery"},
+    {"year": 2022, "passengers": 57500000, "notes": "Strong recovery"},
+    {"year": 2023, "passengers": 68309121, "notes": "Near pre-pandemic levels"},
+    {"year": 2024, "passengers": 70290260, "notes": "92.3% of 2019 levels"}
+  ],
+  "traffic_by_region_2024": [
+    {"region": "Europe (Schengen)", "pct_of_traffic": 28.5, "trend": "stable"},
+    {"region": "Europe (Non-Schengen)", "pct_of_traffic": 15.2, "trend": "+3.4%"},
+    {"region": "North America", "pct_of_traffic": 12.8, "trend": "+5.0%"},
+    {"region": "Africa", "pct_of_traffic": 11.5, "trend": "+7.8%"},
+    {"region": "Middle East", "pct_of_traffic": 8.2, "trend": "+4.2%"},
+    {"region": "Asia-Pacific", "pct_of_traffic": 9.8, "trend": "+24.3%"},
+    {"region": "Latin America", "pct_of_traffic": 4.5, "trend": "+5.5%"},
+    {"region": "Domestic France", "pct_of_traffic": 9.5, "trend": "-5.0%"}
+  ],
+  "top_destinations": [
+    {"rank": 1, "city": "London", "airport": "LHR", "country": "United Kingdom", "weekly_flights": 280, "distance_km": 344},
+    {"rank": 2, "city": "Amsterdam", "airport": "AMS", "country": "Netherlands", "weekly_flights": 245, "distance_km": 430},
+    {"rank": 3, "city": "New York", "airport": "JFK", "country": "United States", "weekly_flights": 77, "distance_km": 5851},
+    {"rank": 4, "city": "Frankfurt", "airport": "FRA", "country": "Germany", "weekly_flights": 175, "distance_km": 479},
+    {"rank": 5, "city": "Nice", "airport": "NCE", "country": "France", "weekly_flights": 168, "distance_km": 688},
+    {"rank": 6, "city": "Dubai", "airport": "DXB", "country": "UAE", "weekly_flights": 63, "distance_km": 5246},
+    {"rank": 7, "city": "Istanbul", "airport": "IST", "country": "Turkey", "weekly_flights": 98, "distance_km": 2254},
+    {"rank": 8, "city": "Rome", "airport": "FCO", "country": "Italy", "weekly_flights": 126, "distance_km": 1107},
+    {"rank": 9, "city": "Madrid", "airport": "MAD", "country": "Spain", "weekly_flights": 133, "distance_km": 1053},
+    {"rank": 10, "city": "Lisbon", "airport": "LIS", "country": "Portugal", "weekly_flights": 91, "distance_km": 1454},
+    {"rank": 11, "city": "Barcelona", "airport": "BCN", "country": "Spain", "weekly_flights": 119, "distance_km": 833},
+    {"rank": 12, "city": "Munich", "airport": "MUC", "country": "Germany", "weekly_flights": 112, "distance_km": 685},
+    {"rank": 13, "city": "Los Angeles", "airport": "LAX", "country": "United States", "weekly_flights": 35, "distance_km": 9124},
+    {"rank": 14, "city": "Montreal", "airport": "YUL", "country": "Canada", "weekly_flights": 42, "distance_km": 5511},
+    {"rank": 15, "city": "Algiers", "airport": "ALG", "country": "Algeria", "weekly_flights": 84, "distance_km": 1376},
+    {"rank": 16, "city": "Shanghai", "airport": "PVG", "country": "China", "weekly_flights": 21, "distance_km": 9261},
+    {"rank": 17, "city": "Tokyo", "airport": "HND", "country": "Japan", "weekly_flights": 21, "distance_km": 9723},
+    {"rank": 18, "city": "Singapore", "airport": "SIN", "country": "Singapore", "weekly_flights": 14, "distance_km": 10736},
+    {"rank": 19, "city": "São Paulo", "airport": "GRU", "country": "Brazil", "weekly_flights": 14, "distance_km": 9182},
+    {"rank": 20, "city": "Johannesburg", "airport": "JNB", "country": "South Africa", "weekly_flights": 14, "distance_km": 8757}
+  ],
+  "top_airlines": [
+    {"rank": 1, "airline": "Air France", "iata": "AF", "weekly_departures": 2138, "destinations": 185, "alliance": "SkyTeam"},
+    {"rank": 2, "airline": "easyJet", "iata": "U2", "weekly_departures": 267, "destinations": 45, "alliance": null},
+    {"rank": 3, "airline": "Transavia", "iata": "TO", "weekly_departures": 189, "destinations": 38, "alliance": null},
+    {"rank": 4, "airline": "Vueling", "iata": "VY", "weekly_departures": 112, "destinations": 22, "alliance": null},
+    {"rank": 5, "airline": "Lufthansa", "iata": "LH", "weekly_departures": 98, "destinations": 8, "alliance": "Star Alliance"},
+    {"rank": 6, "airline": "Delta Air Lines", "iata": "DL", "weekly_departures": 77, "destinations": 12, "alliance": "SkyTeam"},
+    {"rank": 7, "airline": "British Airways", "iata": "BA", "weekly_departures": 63, "destinations": 6, "alliance": "Oneworld"},
+    {"rank": 8, "airline": "KLM", "iata": "KL", "weekly_departures": 56, "destinations": 2, "alliance": "SkyTeam"},
+    {"rank": 9, "airline": "American Airlines", "iata": "AA", "weekly_departures": 49, "destinations": 8, "alliance": "Oneworld"},
+    {"rank": 10, "airline": "United Airlines", "iata": "UA", "weekly_departures": 42, "destinations": 6, "alliance": "Star Alliance"}
+  ],
+  "delay_statistics": {
+    "overall_on_time_rate": 78.5,
+    "avg_delay_minutes": 22,
+    "pct_delayed_over_15min": 21.5,
+    "pct_delayed_over_3hrs": 0.56,
+    "pct_cancelled": 1.2,
+    "by_airline": [
+      {"airline": "Air France", "on_time_pct": 79.2, "severe_delay_pct": 2.1, "cancellation_pct": 0.8},
+      {"airline": "easyJet", "on_time_pct": 76.5, "severe_delay_pct": 3.0, "cancellation_pct": 1.5},
+      {"airline": "Delta", "on_time_pct": 72.8, "severe_delay_pct": 6.7, "cancellation_pct": 1.9},
+      {"airline": "British Airways", "on_time_pct": 81.5, "severe_delay_pct": 2.5, "cancellation_pct": 0.6},
+      {"airline": "Lufthansa", "on_time_pct": 74.2, "severe_delay_pct": 4.2, "cancellation_pct": 1.1},
+      {"airline": "ITA Airways", "on_time_pct": 83.5, "severe_delay_pct": 1.6, "cancellation_pct": 0.4}
+    ],
+    "by_time_of_day": [
+      {"period": "Early Morning (05:00-08:00)", "on_time_pct": 88.2, "avg_delay_min": 12},
+      {"period": "Morning (08:00-12:00)", "on_time_pct": 82.5, "avg_delay_min": 18},
+      {"period": "Afternoon (12:00-17:00)", "on_time_pct": 76.8, "avg_delay_min": 24},
+      {"period": "Evening (17:00-21:00)", "on_time_pct": 72.4, "avg_delay_min": 28},
+      {"period": "Night (21:00-00:00)", "on_time_pct": 74.5, "avg_delay_min": 25}
+    ],
+    "by_day_of_week": [
+      {"day": "Monday", "day_num": 0, "on_time_pct": 77.2, "traffic_index": 1.05},
+      {"day": "Tuesday", "day_num": 1, "on_time_pct": 80.5, "traffic_index": 0.92},
+      {"day": "Wednesday", "day_num": 2, "on_time_pct": 79.8, "traffic_index": 0.95},
+      {"day": "Thursday", "day_num": 3, "on_time_pct": 78.5, "traffic_index": 1.02},
+      {"day": "Friday", "day_num": 4, "on_time_pct": 74.2, "traffic_index": 1.18},
+      {"day": "Saturday", "day_num": 5, "on_time_pct": 81.2, "traffic_index": 0.88},
+      {"day": "Sunday", "day_num": 6, "on_time_pct": 76.8, "traffic_index": 1.00}
+    ],
+    "by_month": [
+      {"month": "January", "on_time_pct": 75.5, "weather_factor": "Winter storms"},
+      {"month": "February", "on_time_pct": 77.2, "weather_factor": "Winter storms"},
+      {"month": "March", "on_time_pct": 79.5, "weather_factor": "Variable"},
+      {"month": "April", "on_time_pct": 80.8, "weather_factor": "Spring"},
+      {"month": "May", "on_time_pct": 82.5, "weather_factor": "Good"},
+      {"month": "June", "on_time_pct": 78.2, "weather_factor": "High traffic"},
+      {"month": "July", "on_time_pct": 76.5, "weather_factor": "Peak season"},
+      {"month": "August", "on_time_pct": 75.8, "weather_factor": "Peak season"},
+      {"month": "September", "on_time_pct": 80.2, "weather_factor": "Good"},
+      {"month": "October", "on_time_pct": 79.8, "weather_factor": "Good"},
+      {"month": "November", "on_time_pct": 77.5, "weather_factor": "Fog"},
+      {"month": "December", "on_time_pct": 74.2, "weather_factor": "Winter + holidays"}
+    ]
+  },
+  "longest_routes": [
+    {"destination": "Perth", "airport": "PER", "country": "Australia", "distance_km": 14265, "flight_time": "16h 40m", "airline": "Qantas"},
+    {"destination": "Santiago", "airport": "SCL", "country": "Chile", "distance_km": 11655, "flight_time": "14h 20m", "airline": "LATAM"},
+    {"destination": "Singapore", "airport": "SIN", "country": "Singapore", "distance_km": 10736, "flight_time": "12h 30m", "airline": "Air France"},
+    {"destination": "Tokyo", "airport": "HND", "country": "Japan", "distance_km": 9723, "flight_time": "12h 15m", "airline": "Air France"},
+    {"destination": "Seoul", "airport": "ICN", "country": "South Korea", "distance_km": 9589, "flight_time": "11h 45m", "airline": "Korean Air"}
+  ],
+  "infrastructure": {
+    "runways": [
+      {"name": "09L/27R", "length_m": 4200, "primary_use": "Long-haul departures"},
+      {"name": "09R/27L", "length_m": 4200, "primary_use": "Long-haul arrivals"},
+      {"name": "08L/26R", "length_m": 2700, "primary_use": "Short/medium haul"},
+      {"name": "08R/26L", "length_m": 2700, "primary_use": "Short/medium haul"}
+    ],
+    "terminals": [
+      {"name": "Terminal 1", "opened": 1974, "capacity_millions": 10, "style": "Circular"},
+      {"name": "Terminal 2", "opened": 1982, "capacity_millions": 52, "style": "Linear modules (2A-2G)"},
+      {"name": "Terminal 3", "opened": 1991, "capacity_millions": 8, "style": "Low-cost carriers"}
+    ],
+    "parking_stands": 420,
+    "cargo_terminals": 4
+  }
+}

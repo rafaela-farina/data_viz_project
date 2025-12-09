@@ -1,0 +1,6 @@
+period,start_hour,end_hour,on_time_pct,avg_delay_min,traffic_level
+Early Morning,5,8,88.2,12,Low
+Morning,8,12,82.5,18,High
+Afternoon,12,17,76.8,24,Very High
+Evening,17,21,72.4,28,High
+Night,21,24,74.5,25,Medium
