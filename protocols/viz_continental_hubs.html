@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continental Aviation Hubs - Metadata & Protocol</title>
+    <style>
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-cyan: #06b6d4;
+            --accent-violet: #8b5cf6;
+            --border-color: rgba(255, 255, 255, 0.08);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        
+        .subtitle {
+            color: var(--accent-cyan);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            margin: 2rem 0 1rem 0;
+            color: white;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        h3 {
+            font-size: 1rem;
+            margin: 1.5rem 0 0.75rem 0;
+            color: var(--accent-cyan);
+        }
+        
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        th {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+        
+        td {
+            color: var(--text-secondary);
+        }
+        
+        code {
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent-cyan);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.85rem;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .tag-official {
+            background: rgba(34, 197, 94, 0.2);
+            color: #22c55e;
+        }
+        
+        .tag-estimated {
+            background: rgba(234, 179, 8, 0.2);
+            color: #eab308;
+        }
+        
+        .source-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .source-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .source-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .source-list a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+        
+        .source-list a:hover {
+            text-decoration: underline;
+        }
+        
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .hub-mini-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        
+        .hub-mini-card h4 {
+            font-size: 0.9rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hub-mini-card .code {
+            font-size: 0.75rem;
+            color: var(--accent-cyan);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .hub-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Visualization</a>
+        
+        <h1>Continental Aviation Hubs</h1>
+        <p class="subtitle">Section 06 - Metadata & Data Protocol</p>
+        
+        <div class="card">
+            <h2>Overview</h2>
+            <p>
+                This section analyzes the <strong>leading aviation hub from each continent</strong> — 
+                specifically, the busiest airport in the most connected country of each region. 
+                The visualization allows users to interactively explore and compare these six 
+                global gateways that shape international travel patterns.
+            </p>
+            
+            <h3>Airports Featured</h3>
+            <div class="hub-grid">
+                <div class="hub-mini-card">
+                    <h4>🇫🇷 Paris Charles de Gaulle</h4>
+                    <span class="code">CDG · Europe</span>
+                </div>
+                <div class="hub-mini-card">
+                    <h4>🇺🇸 Hartsfield-Jackson Atlanta</h4>
+                    <span class="code">ATL · North America</span>
+                </div>
+                <div class="hub-mini-card">
+                    <h4>🇦🇪 Dubai International</h4>
+                    <span class="code">DXB · Asia/Middle East</span>
+                </div>
+                <div class="hub-mini-card">
+                    <h4>🇧🇷 São Paulo Guarulhos</h4>
+                    <span class="code">GRU · South America</span>
+                </div>
+                <div class="hub-mini-card">
+                    <h4>🇲🇦 Mohammed V International</h4>
+                    <span class="code">CMN · Africa</span>
+                </div>
+                <div class="hub-mini-card">
+                    <h4>🇦🇺 Sydney Kingsford Smith</h4>
+                    <span class="code">SYD · Oceania</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Data Sources</h2>
+            <p>
+                Passenger data for 2024 was compiled from official airport authority reports 
+                and verified government statistics:
+            </p>
+            
+            <ul class="source-list">
+                <li>
+                    <strong>CDG (Paris):</strong> Paris Aéroport / Groupe ADP Monthly Traffic Reports
+                    <br><a href="https://www.parisaeroport.fr/en/group/finance/traffic" target="_blank">parisaeroport.fr</a>
+                </li>
+                <li>
+                    <strong>ATL (Atlanta):</strong> Atlanta Airport Official Statistics, Road Genius Analysis
+                    <br><a href="https://www.atl.com/business-information/statistics/" target="_blank">atl.com/statistics</a>
+                </li>
+                <li>
+                    <strong>DXB (Dubai):</strong> Dubai Airports Annual Review 2024
+                    <br><a href="https://www.dubaiairports.ae/corporate/media-centre/fact-sheets" target="_blank">dubaiairports.ae</a>
+                </li>
+                <li>
+                    <strong>GRU (São Paulo):</strong> GRU Airport / CEIC Data Brazil Aviation Statistics
+                    <br><a href="https://www.gru.com.br/en/institucional/gru-airport/statistics" target="_blank">gru.com.br</a>
+                </li>
+                <li>
+                    <strong>CMN (Casablanca):</strong> ONDA (Office National Des Aéroports) Morocco
+                    <br><a href="https://www.onda.ma/en" target="_blank">onda.ma</a>
+                </li>
+                <li>
+                    <strong>SYD (Sydney):</strong> Sydney Airport Corporation Quarterly Reports
+                    <br><a href="https://www.sydneyairport.com.au/corporate/investor-centre" target="_blank">sydneyairport.com.au</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Key Metrics (2024)</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Airport</th>
+                        <th>Passengers</th>
+                        <th>Flights</th>
+                        <th>Countries</th>
+                        <th>Data Quality</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ATL (Atlanta)</td>
+                        <td>108.1M</td>
+                        <td>796,224</td>
+                        <td>92</td>
+                        <td><span class="tag tag-official">Official</span></td>
+                    </tr>
+                    <tr>
+                        <td>DXB (Dubai)</td>
+                        <td>92.3M</td>
+                        <td>~440,300</td>
+                        <td>91</td>
+                        <td><span class="tag tag-official">Official</span></td>
+                    </tr>
+                    <tr>
+                        <td>CDG (Paris)</td>
+                        <td>70.3M</td>
+                        <td>466,543</td>
+                        <td>115+</td>
+                        <td><span class="tag tag-official">Official</span></td>
+                    </tr>
+                    <tr>
+                        <td>GRU (São Paulo)</td>
+                        <td>43.6M</td>
+                        <td>~267,000</td>
+                        <td>33</td>
+                        <td><span class="tag tag-estimated">Estimated</span></td>
+                    </tr>
+                    <tr>
+                        <td>SYD (Sydney)</td>
+                        <td>41.4M</td>
+                        <td>348,904</td>
+                        <td>34</td>
+                        <td><span class="tag tag-official">Official</span></td>
+                    </tr>
+                    <tr>
+                        <td>CMN (Casablanca)</td>
+                        <td>~10M</td>
+                        <td>~67,000</td>
+                        <td>48</td>
+                        <td><span class="tag tag-estimated">Estimated</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+                <strong>Note:</strong> Flight counts for some airports are estimated based on 
+                passenger-per-flight ratios. Countries connected data reflects direct international routes.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h2>Selection Methodology</h2>
+            
+            <h3>Why These Airports?</h3>
+            <p>
+                Each hub was selected as the <strong>busiest airport in the #1 most connected 
+                country</strong> within its continent, based on our connectivity analysis:
+            </p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Continent</th>
+                        <th>Top Connected Country</th>
+                        <th>Busiest Airport</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Europe</td>
+                        <td>France (115 countries)</td>
+                        <td>Paris CDG</td>
+                    </tr>
+                    <tr>
+                        <td>North America</td>
+                        <td>USA (92 countries)</td>
+                        <td>Atlanta ATL</td>
+                    </tr>
+                    <tr>
+                        <td>Asia</td>
+                        <td>UAE (91 countries)</td>
+                        <td>Dubai DXB</td>
+                    </tr>
+                    <tr>
+                        <td>South America</td>
+                        <td>Brazil (33 countries)</td>
+                        <td>São Paulo GRU</td>
+                    </tr>
+                    <tr>
+                        <td>Africa</td>
+                        <td>Morocco (48 countries)</td>
+                        <td>Casablanca CMN</td>
+                    </tr>
+                    <tr>
+                        <td>Oceania</td>
+                        <td>Australia (34 countries)</td>
+                        <td>Sydney SYD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Visualization Details</h2>
+            
+            <h3>Interactive Elements</h3>
+            <p>
+                The section features a <strong>tab-based selector</strong> allowing users to 
+                switch between continental hubs. Each tab displays:
+            </p>
+            <ul style="color: var(--text-secondary); margin-left: 1.5rem; margin-bottom: 1rem;">
+                <li>Airport name and IATA code</li>
+                <li>Three key statistics (countries connected, ranking, annual passengers)</li>
+                <li>Contextual description explaining the hub's significance</li>
+            </ul>
+            
+            <h3>Planned Enhancement</h3>
+            <p>
+                A Flourish line/stream chart will be embedded showing <strong>monthly passenger 
+                trends</strong> for 2024, allowing comparison across all six hubs. This 
+                visualization is being developed by teammate Rafaela Dos Santos Farina.
+            </p>
+            
+            <h3>Data Files</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>File</th>
+                        <th>Format</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>continental_hubs_2024.json</code></td>
+                        <td>JSON</td>
+                        <td>Complete hub data with metadata</td>
+                    </tr>
+                    <tr>
+                        <td><code>continental_hubs_summary.csv</code></td>
+                        <td>CSV</td>
+                        <td>Summary statistics for all hubs</td>
+                    </tr>
+                    <tr>
+                        <td><code>hub_airports_by_continent.json</code></td>
+                        <td>JSON</td>
+                        <td>Mapping of continents to hub airports</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Key Insights</h2>
+            
+            <h3>Size vs. Connectivity</h3>
+            <p>
+                ATL handles the most passengers (108M) but CDG connects to more countries (115+). 
+                This highlights the difference between <strong>domestic hub dominance</strong> 
+                (ATL serves primarily US domestic routes) versus <strong>international reach</strong> 
+                (CDG leverages Air France's global network).
+            </p>
+            
+            <h3>Strategic Positioning</h3>
+            <p>
+                Dubai (DXB) exemplifies the "super-connector" model — positioned between Europe, 
+                Africa, and Asia, it serves as a layover hub for long-haul routes, driving its 
+                92.3M passengers despite UAE's relatively small domestic market.
+            </p>
+            
+            <h3>Regional Disparities</h3>
+            <p>
+                The gap between top hubs (ATL: 108M) and smaller regional leaders (CMN: 10M) 
+                reveals significant infrastructure inequality in global aviation.
+            </p>
+        </div>
+        
+        <div class="card">
+            <h2>Technical Implementation</h2>
+            
+            <h3>Technologies Used</h3>
+            <ul style="color: var(--text-secondary); margin-left: 1.5rem;">
+                <li><strong>HTML/CSS:</strong> Tab-based navigation with CSS transitions</li>
+                <li><strong>JavaScript:</strong> Vanilla JS for tab switching (no framework required)</li>
+                <li><strong>Flourish:</strong> Embedded visualization for monthly trends (pending)</li>
+            </ul>
+            
+            <h3>Accessibility</h3>
+            <p>
+                Tab buttons include proper focus states and keyboard navigation support. 
+                Content transitions use CSS animations for smooth visual feedback.
+            </p>
+        </div>
+        
+        <div class="card" style="background: rgba(6, 182, 212, 0.05); border-color: rgba(6, 182, 212, 0.2);">
+            <h2>Project Credits</h2>
+            <p>
+                <strong>Data Collection & Analysis:</strong> Alan Dominguez<br>
+                <strong>Visualization Development:</strong> Rafaela Dos Santos Farina (Flourish chart)<br>
+                <strong>Project Coordination:</strong> Team collaboration<br>
+                <strong>Course:</strong> SUPSI Data Visualization, December 2025<br>
+                <strong>Professor:</strong> Giovanni Profeta
+            </p>
+        </div>
+    </div>
+</body>
+</html>

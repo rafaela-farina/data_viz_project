@@ -25,21 +25,15 @@
 </head>
 <body>
     
-    <!-- ============================================ -->
-    <!-- SCROLL PROGRESS INDICATOR                   -->
-    <!-- ============================================ -->
+    <!-- SCROLL PROGRESS INDICATOR -->
     <div class="scroll-progress">
         <div class="progress-bar"></div>
     </div>
 
-    <!-- ============================================ -->
-    <!-- MAIN CONTENT                                -->
-    <!-- ============================================ -->
+    <!-- MAIN CONTENT -->
     <main class="passenger-journey">
         
-        <!-- ======================================== -->
-        <!-- SECTION 1: HERO WINDOW                  -->
-        <!-- ======================================== -->
+        <!-- SECTION 1: HERO WINDOW -->
         <section id="hero-window" class="window-section">
             <div class="window-container">
                 <div class="airplane-window">
@@ -50,7 +44,6 @@
                         <div class="rivet rivet-br"></div>
                     </div>
                     <div class="window-view sky-gradient">
-                        <!-- Emoji clouds with blur effect -->
                         <div class="clouds-layer">
                             <div class="emoji-cloud cloud-1">☁️</div>
                             <div class="emoji-cloud cloud-2">☁️</div>
@@ -58,8 +51,6 @@
                             <div class="emoji-cloud cloud-4">☁️</div>
                             <div class="emoji-cloud cloud-5">☁️</div>
                         </div>
-                        
-                        <!-- Title content -->
                         <div class="window-content">
                             <h1 class="hero-title">Where Can<br>You Fly?</h1>
                             <p class="hero-subtitle">Exploring Global Tourism Connectivity</p>
@@ -72,7 +63,6 @@
                     </div>
                 </div>
             </div>
-            
             <div class="scroll-indicator">
                 <span>Scroll to explore</span>
                 <div class="scroll-arrow">
@@ -83,9 +73,7 @@
             </div>
         </section>
 
-        <!-- ======================================== -->
-        <!-- SECTION 2: INTRODUCTION                 -->
-        <!-- ======================================== -->
+        <!-- SECTION 2: INTRODUCTION -->
         <section id="intro-section" class="content-section">
             <div class="section-inner">
                 <div class="content-card glass-card">
@@ -123,117 +111,135 @@
             </div>
         </section>
 
-        <!-- ======================================== -->
-        <!-- SECTION 3: BEST CONNECTED               -->
-        <!-- ======================================== -->
-        <section id="connected-section" class="viz-section" data-scene="connected">
+        <!-- SECTION 3: TOP 10 + INTERACTIVE MAP (COMPACT) -->
+        <section id="global-map-section" class="viz-section compact-section" data-scene="global">
             <div class="section-inner">
                 
                 <div class="content-card glass-card intro-card">
                     <span class="section-number">02</span>
-                    <h2>The Most Connected</h2>
+                    <h2>Explore Global Connectivity</h2>
                     <p class="lead-text">
-                        If you're looking to maximize your travel options, these countries 
-                        offer the most international connections. From here, the world is 
-                        truly at your doorstep.
+                        Click on any country to see where you can fly from there, 
+                        or select from the top 10 most connected countries on the left.
                     </p>
                 </div>
                 
-                <div class="seat-screen mini-screen">
-                    <div class="screen-bezel">
-                        <div class="ranking-display">
-                            <div class="ranking-header">
-                                <h4>Top 10 Most Connected Countries</h4>
-                                <span class="ranking-subtitle">By number of countries reachable via direct flights</span>
+                <!-- Map Controls -->
+                <div class="map-controls-bar">
+                    <div class="control-group">
+                        <label for="country-select">Select Country:</label>
+                        <select id="country-select">
+                            <option value="">Choose a destination...</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="max-routes">Show top routes:</label>
+                        <input type="range" id="max-routes" min="5" max="50" value="20">
+                        <span id="routes-value">20</span>
+                    </div>
+                    <div class="control-group buttons">
+                        <button id="zoom-in" class="control-btn" title="Zoom In">+</button>
+                        <button id="zoom-out" class="control-btn" title="Zoom Out">−</button>
+                        <button id="zoom-reset" class="control-btn" title="Reset View">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                                <path d="M3 3v5h5"/>
+                            </svg>
+                        </button>
+                        <button id="reset-btn" class="control-btn text-btn">Clear</button>
+                    </div>
+                </div>
+                
+                <!-- Combined Top 10 + Map Layout (Compact) -->
+                <div class="map-with-sidebar compact-layout">
+                    <!-- Top 10 Sidebar -->
+                    <div class="top10-sidebar">
+                        <div class="sidebar-header">
+                            <h4>Top 10 Connected</h4>
+                            <span class="sidebar-subtitle">By countries reachable</span>
+                        </div>
+                        <div class="sidebar-ranking">
+                            <div class="sidebar-item" data-country="France">
+                                <span class="sidebar-rank">1</span>
+                                <span class="sidebar-flag">🇫🇷</span>
+                                <span class="sidebar-name">France</span>
+                                <span class="sidebar-count">115</span>
                             </div>
-                            <div class="ranking-list">
-                                <div class="ranking-item" data-country="France">
-                                    <span class="rank">1</span>
-                                    <span class="country-name">🇫🇷 France</span>
-                                    <div class="bar-container">
-                                        <div class="bar" style="--width: 100%; --color: #fbbf24;"></div>
+                            <div class="sidebar-item" data-country="United Kingdom">
+                                <span class="sidebar-rank">2</span>
+                                <span class="sidebar-flag">🇬🇧</span>
+                                <span class="sidebar-name">UK</span>
+                                <span class="sidebar-count">99</span>
+                            </div>
+                            <div class="sidebar-item" data-country="Germany">
+                                <span class="sidebar-rank">3</span>
+                                <span class="sidebar-flag">🇩🇪</span>
+                                <span class="sidebar-name">Germany</span>
+                                <span class="sidebar-count">97</span>
+                            </div>
+                            <div class="sidebar-item" data-country="United States">
+                                <span class="sidebar-rank">4</span>
+                                <span class="sidebar-flag">🇺🇸</span>
+                                <span class="sidebar-name">USA</span>
+                                <span class="sidebar-count">92</span>
+                            </div>
+                            <div class="sidebar-item" data-country="Italy">
+                                <span class="sidebar-rank">5</span>
+                                <span class="sidebar-flag">🇮🇹</span>
+                                <span class="sidebar-name">Italy</span>
+                                <span class="sidebar-count">89</span>
+                            </div>
+                            <div class="sidebar-item" data-country="Netherlands">
+                                <span class="sidebar-rank">6</span>
+                                <span class="sidebar-flag">🇳🇱</span>
+                                <span class="sidebar-name">Nether...</span>
+                                <span class="sidebar-count">84</span>
+                            </div>
+                            <div class="sidebar-item" data-country="Spain">
+                                <span class="sidebar-rank">7</span>
+                                <span class="sidebar-flag">🇪🇸</span>
+                                <span class="sidebar-name">Spain</span>
+                                <span class="sidebar-count">83</span>
+                            </div>
+                            <div class="sidebar-item" data-country="Switzerland">
+                                <span class="sidebar-rank">8</span>
+                                <span class="sidebar-flag">🇨🇭</span>
+                                <span class="sidebar-name">Switzer...</span>
+                                <span class="sidebar-count">81</span>
+                            </div>
+                            <div class="sidebar-item" data-country="Turkey">
+                                <span class="sidebar-rank">9</span>
+                                <span class="sidebar-flag">🇹🇷</span>
+                                <span class="sidebar-name">Turkey</span>
+                                <span class="sidebar-count">78</span>
+                            </div>
+                            <div class="sidebar-item" data-country="Belgium">
+                                <span class="sidebar-rank">10</span>
+                                <span class="sidebar-flag">🇧🇪</span>
+                                <span class="sidebar-name">Belgium</span>
+                                <span class="sidebar-count">73</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map Container -->
+                    <div class="map-main">
+                        <div class="seat-screen compact-screen">
+                            <div class="screen-bezel">
+                                <div id="d3-map-container" class="map-display">
+                                    <div class="loading-indicator">
+                                        <div class="loader"></div>
+                                        <span>Loading map data...</span>
                                     </div>
-                                    <span class="connections">115</span>
                                 </div>
-                                <div class="ranking-item" data-country="United Kingdom">
-                                    <span class="rank">2</span>
-                                    <span class="country-name">🇬🇧 United Kingdom</span>
-                                    <div class="bar-container">
-                                        <div class="bar" style="--width: 86%; --color: #06b6d4;"></div>
-                                    </div>
-                                    <span class="connections">99</span>
-                                </div>
-                                <div class="ranking-item" data-country="Germany">
-                                    <span class="rank">3</span>
-                                    <span class="country-name">🇩🇪 Germany</span>
-                                    <div class="bar-container">
-                                        <div class="bar" style="--width: 84%; --color: #06b6d4;"></div>
-                                    </div>
-                                    <span class="connections">97</span>
-                                </div>
-                                <div class="ranking-item" data-country="United States">
-                                    <span class="rank">4</span>
-                                    <span class="country-name">🇺🇸 United States</span>
-                                    <div class="bar-container">
-                                        <div class="bar" style="--width: 80%; --color: #06b6d4;"></div>
-                                    </div>
-                                    <span class="connections">92</span>
-                                </div>
-                                <div class="ranking-item" data-country="Italy">
-                                    <span class="rank">5</span>
-                                    <span class="country-name">🇮🇹 Italy</span>
-                                    <div class="bar-container">
-                                        <div class="bar" style="--width: 77%; --color: #06b6d4;"></div>
-                                    </div>
-                                    <span class="connections">89</span>
-                                </div>
-                                <div class="ranking-item" data-country="Netherlands">
-                                    <span class="rank">6</span>
-                                    <span class="country-name">🇳🇱 Netherlands</span>
-                                    <div class="bar-container">
-                                        <div class="bar" style="--width: 73%; --color: #14b8a6;"></div>
-                                    </div>
-                                    <span class="connections">84</span>
-                                </div>
-                                <div class="ranking-item" data-country="Spain">
-                                    <span class="rank">7</span>
-                                    <span class="country-name">🇪🇸 Spain</span>
-                                    <div class="bar-container">
-                                        <div class="bar" style="--width: 72%; --color: #14b8a6;"></div>
-                                    </div>
-                                    <span class="connections">83</span>
-                                </div>
-                                <div class="ranking-item" data-country="Switzerland">
-                                    <span class="rank">8</span>
-                                    <span class="country-name">🇨🇭 Switzerland</span>
-                                    <div class="bar-container">
-                                        <div class="bar" style="--width: 70%; --color: #14b8a6;"></div>
-                                    </div>
-                                    <span class="connections">81</span>
-                                </div>
-                                <div class="ranking-item" data-country="Turkey">
-                                    <span class="rank">9</span>
-                                    <span class="country-name">🇹🇷 Turkey</span>
-                                    <div class="bar-container">
-                                        <div class="bar" style="--width: 68%; --color: #14b8a6;"></div>
-                                    </div>
-                                    <span class="connections">78</span>
-                                </div>
-                                <div class="ranking-item" data-country="Belgium">
-                                    <span class="rank">10</span>
-                                    <span class="country-name">🇧🇪 Belgium</span>
-                                    <div class="bar-container">
-                                        <div class="bar" style="--width: 63%; --color: #14b8a6;"></div>
-                                    </div>
-                                    <span class="connections">73</span>
-                                </div>
+                                <div id="info-panel" class="info-panel"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="data-links">
-                    <a href="processed_data/country_ranking.csv" class="data-link" download>
+                    <a href="processed_data/country_connections_geo.json" class="data-link" download>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                             <polyline points="7,10 12,15 17,10"/>
@@ -241,7 +247,7 @@
                         </svg>
                         Dataset
                     </a>
-                    <a href="protocols/viz_connected.html" class="data-link">
+                    <a href="protocols/viz_global_map.html" class="data-link">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                             <polyline points="14,2 14,8 20,8"/>
@@ -252,37 +258,162 @@
                     </a>
                 </div>
                 
-                <div class="content-card glass-card analysis-card">
-                    <h3>European Dominance</h3>
-                    <p>
-                        Notice the pattern? <strong>7 of the top 10</strong> are European countries. 
-                        The continent's compact geography, strong tourism industry, and open borders 
-                        (Schengen Agreement) have created an unmatched network of international routes.
+            </div>
+        </section>
+
+        <!-- SECTION 4: HIDDEN GEMS & REMOTE (Compact, directly after map) -->
+        <section id="gems-section" class="viz-section compact-section" data-scene="gems">
+            <div class="section-inner">
+                
+                <div class="content-card glass-card intro-card">
+                    <span class="section-number">03</span>
+                    <h2>Hidden Gems &amp; Remote Destinations</h2>
+                    <p class="lead-text">
+                        Some destinations surprise with their connectivity, while others 
+                        remain beautifully remote.
                     </p>
-                    <p>
-                        Countries like the UAE (ranked 11th) and Turkey (9th), despite smaller 
-                        populations, leverage their geographic position between Europe, Asia, and Africa 
-                        to become global travel hubs.
-                    </p>
+                </div>
+                
+                <div class="seat-screen gems-screen">
+                    <div class="screen-bezel">
+                        <div class="gems-display compact-gems">
+                            <!-- Well-Connected Grid -->
+                            <div class="gems-row">
+                                <h4 class="gems-section-title">Surprisingly Well-Connected</h4>
+                                <div class="gem-grid-compact">
+                                    <div class="gem-card-mini" data-country="Qatar">
+                                        <div class="gem-mini-header">
+                                            <span class="gem-flag">🇶🇦</span>
+                                            <div class="gem-mini-info">
+                                                <span class="gem-region-tag">Middle East</span>
+                                                <h5>Qatar</h5>
+                                            </div>
+                                        </div>
+                                        <div class="gem-mini-stats">
+                                            <span class="stat"><strong>68</strong> countries</span>
+                                            <span class="stat"><strong>1</strong> airport</span>
+                                        </div>
+                                        <p class="gem-mini-insight">Single airport (Doha) connects to 68 countries — one of the highest ratios worldwide.</p>
+                                    </div>
+                                    
+                                    <div class="gem-card-mini" data-country="Portugal">
+                                        <div class="gem-mini-header">
+                                            <span class="gem-flag">🇵🇹</span>
+                                            <div class="gem-mini-info">
+                                                <span class="gem-region-tag">Europe</span>
+                                                <h5>Portugal</h5>
+                                            </div>
+                                        </div>
+                                        <div class="gem-mini-stats">
+                                            <span class="stat"><strong>56</strong> countries</span>
+                                            <span class="stat"><strong>5</strong> airports</span>
+                                        </div>
+                                        <p class="gem-mini-insight">Gateway to Europe and former colonies in Africa and South America.</p>
+                                    </div>
+                                    
+                                    <div class="gem-card-mini" data-country="Kenya">
+                                        <div class="gem-mini-header">
+                                            <span class="gem-flag">🇰🇪</span>
+                                            <div class="gem-mini-info">
+                                                <span class="gem-region-tag">Africa</span>
+                                                <h5>Kenya</h5>
+                                            </div>
+                                        </div>
+                                        <div class="gem-mini-stats">
+                                            <span class="stat"><strong>34</strong> countries</span>
+                                            <span class="stat"><strong>3</strong> airports</span>
+                                        </div>
+                                        <p class="gem-mini-insight">East Africa's main hub. Nairobi connects to Europe, Middle East, and Asia.</p>
+                                    </div>
+                                    
+                                    <div class="gem-card-mini" data-country="Panama">
+                                        <div class="gem-mini-header">
+                                            <span class="gem-flag">🇵🇦</span>
+                                            <div class="gem-mini-info">
+                                                <span class="gem-region-tag">Central America</span>
+                                                <h5>Panama</h5>
+                                            </div>
+                                        </div>
+                                        <div class="gem-mini-stats">
+                                            <span class="stat"><strong>35</strong> countries</span>
+                                            <span class="stat"><strong>2</strong> airports</span>
+                                        </div>
+                                        <p class="gem-mini-insight">The "Hub of the Americas" — connects North and South America like no other.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Remote Destinations Row -->
+                            <div class="gems-row remote-row">
+                                <h4 class="gems-section-title">Off the Beaten Path</h4>
+                                <div class="remote-grid-compact">
+                                    <div class="remote-card-mini" data-country="Greenland">
+                                        <span class="remote-flag">🇬🇱</span>
+                                        <div class="remote-text">
+                                            <strong>Greenland</strong>
+                                            <span>Connected to just <em>2 countries</em> — world's largest island, hardest to reach.</span>
+                                        </div>
+                                    </div>
+                                    <div class="remote-card-mini" data-country="Faroe Islands">
+                                        <span class="remote-flag">🇫🇴</span>
+                                        <div class="remote-text">
+                                            <strong>Faroe Islands</strong>
+                                            <span>Only <em>3 connections</em> to these North Atlantic islands.</span>
+                                        </div>
+                                    </div>
+                                    <div class="remote-card-mini" data-country="Tonga">
+                                        <span class="remote-flag">🇹🇴</span>
+                                        <div class="remote-text">
+                                            <strong>Tonga</strong>
+                                            <span>Pacific kingdom connects to just <em>4 countries</em>.</span>
+                                        </div>
+                                    </div>
+                                    <div class="remote-card-mini" data-country="Timor-Leste">
+                                        <span class="remote-flag">🇹🇱</span>
+                                        <div class="remote-text">
+                                            <strong>East Timor</strong>
+                                            <span>Southeast Asia's youngest nation: only <em>3 routes</em>.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="data-links">
+                    <a href="processed_data/country_stats.json" class="data-link" download>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Dataset
+                    </a>
+                    <a href="protocols/viz_gems.html" class="data-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                        Metadata &amp; Protocol
+                    </a>
                 </div>
                 
             </div>
         </section>
 
-        <!-- ======================================== -->
-        <!-- SECTION 4: COUNTRY CONNECTIONS NETWORK  -->
-        <!-- Visualization by Rafaela Dos Santos     -->
-        <!-- ======================================== -->
+        <!-- SECTION 5: COUNTRY CONNECTIONS NETWORK (Flourish) -->
         <section id="connections-network-section" class="viz-section" data-scene="network">
             <div class="section-inner">
                 
                 <div class="content-card glass-card intro-card">
-                    <span class="section-number">03</span>
+                    <span class="section-number">04</span>
                     <h2>Country Connections Network</h2>
                     <p class="lead-text">
                         Which countries are most interconnected? This network visualization 
-                        reveals the web of direct flight routes between nations, showing how 
-                        global air travel creates clusters of highly connected regions.
+                        reveals the web of direct flight routes between nations.
                     </p>
                 </div>
                 
@@ -331,62 +462,34 @@
             </div>
         </section>
 
-        <!-- ======================================== -->
-        <!-- SECTION 5: POPULATION VS INFRASTRUCTURE -->
-        <!-- Visualization by Colin Augustine        -->
-        <!-- ======================================== -->
-        <section id="population-section" class="viz-section" data-scene="population">
+        <!-- SECTION 6: GLOBAL AIRPORTS MAP (Flourish - Replaces Tableau) -->
+        <section id="airports-map-section" class="viz-section" data-scene="airports">
             <div class="section-inner">
                 
                 <div class="content-card glass-card intro-card">
-                    <span class="section-number">04</span>
-                    <h2>Airports vs. Population</h2>
+                    <span class="section-number">05</span>
+                    <h2>Global Airport Distribution</h2>
                     <p class="lead-text">
-                        Is airport connectivity fairly distributed? We compared population 
-                        sizes with the number of international airports to reveal which 
-                        regions are over-served and which lack adequate air travel infrastructure.
+                        Explore the worldwide distribution of international airports and how 
+                        they connect regions across the globe.
                     </p>
                 </div>
                 
                 <div class="seat-screen teammate-viz">
                     <div class="screen-bezel">
-                        <div class="viz-embed-container" id="tableau-container">
-                            <div class='tableauPlaceholder' id='viz1765216907182' style='position: relative'>
+                        <div class="viz-embed-container" id="flourish-map-container">
+                            <div class="flourish-embed flourish-map" data-src="visualisation/26727077">
+                                <script src="https://public.flourish.studio/resources/embed.js"></script>
                                 <noscript>
-                                    <a href='#'>
-                                        <img alt='Ratio of International Airports to Relative Population' src='https://public.tableau.com/static/images/CN/CNPJBJYGT/1_rss.png' style='border: none' />
-                                    </a>
+                                    <img src="https://public.flourish.studio/visualisation/26727077/thumbnail" width="100%" alt="map visualization" />
                                 </noscript>
-                                <object class='tableauViz' style='display:none;'>
-                                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                    <param name='embed_code_version' value='3' />
-                                    <param name='path' value='shared/CNPJBJYGT' />
-                                    <param name='toolbar' value='yes' />
-                                    <param name='static_image' value='https://public.tableau.com/static/images/CN/CNPJBJYGT/1.png' />
-                                    <param name='animate_transition' value='yes' />
-                                    <param name='display_static_image' value='yes' />
-                                    <param name='display_spinner' value='yes' />
-                                    <param name='display_overlay' value='yes' />
-                                    <param name='display_count' value='yes' />
-                                    <param name='language' value='en-US' />
-                                    <param name='filter' value='publish=yes' />
-                                </object>
                             </div>
-                            <script type='text/javascript'>
-                                var divElement = document.getElementById('viz1765216907182');
-                                var vizElement = divElement.getElementsByTagName('object')[0];
-                                vizElement.style.width='100%';
-                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                                var scriptElement = document.createElement('script');
-                                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                                vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                            </script>
                         </div>
                     </div>
                 </div>
                 
                 <div class="data-links">
-                    <a href="processed_data/population.xlsx" class="data-link" download>
+                    <a href="processed_data/country_stats.json" class="data-link" download>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                             <polyline points="7,10 12,15 17,10"/>
@@ -406,7 +509,7 @@
                 </div>
                 
                 <div class="content-card glass-card analysis-card">
-                    <h3>Key Insights</h3>
+                    <h3>Key Observations</h3>
                     <ul class="insight-list">
                         <li>
                             <strong>Over-served:</strong> Northern Europe and small wealthy nations 
@@ -426,223 +529,223 @@
             </div>
         </section>
 
-        <!-- ======================================== -->
-        <!-- SECTION 6: HIDDEN GEMS & REMOTE         -->
-        <!-- ======================================== -->
-        <section id="gems-section" class="viz-section" data-scene="gems">
-            <div class="section-inner">
-                
-                <div class="content-card glass-card intro-card">
-                    <span class="section-number">05</span>
-                    <h2>Hidden Gems &amp; Remote Destinations</h2>
-                    <p class="lead-text">
-                        Some destinations surprise with their connectivity, while others 
-                        remain beautifully remote. Whether you seek accessible adventures 
-                        or true isolation, here's where to look.
-                    </p>
-                </div>
-                
-                <div class="seat-screen mini-screen">
-                    <div class="screen-bezel">
-                        <div class="gems-display">
-                            <h4 class="gems-section-title">Surprisingly Well-Connected</h4>
-                            <div class="gem-grid">
-                                <div class="gem-card" data-country="Qatar">
-                                    <div class="gem-header">
-                                        <span class="gem-region">Middle East</span>
-                                        <h4>Qatar</h4>
-                                    </div>
-                                    <div class="gem-stats">
-                                        <div class="gem-stat">
-                                            <span class="gem-value">68</span>
-                                            <span class="gem-label">countries</span>
-                                        </div>
-                                        <div class="gem-stat">
-                                            <span class="gem-value">1</span>
-                                            <span class="gem-label">airport</span>
-                                        </div>
-                                    </div>
-                                    <p class="gem-insight">
-                                        A single airport (Doha) connects to 68 countries — 
-                                        one of the highest ratios in the world.
-                                    </p>
-                                </div>
-                                
-                                <div class="gem-card" data-country="Portugal">
-                                    <div class="gem-header">
-                                        <span class="gem-region">Europe</span>
-                                        <h4>Portugal</h4>
-                                    </div>
-                                    <div class="gem-stats">
-                                        <div class="gem-stat">
-                                            <span class="gem-value">56</span>
-                                            <span class="gem-label">countries</span>
-                                        </div>
-                                        <div class="gem-stat">
-                                            <span class="gem-value">5</span>
-                                            <span class="gem-label">airports</span>
-                                        </div>
-                                    </div>
-                                    <p class="gem-insight">
-                                        Gateway to both Europe and former colonies in Africa 
-                                        and South America.
-                                    </p>
-                                </div>
-                                
-                                <div class="gem-card" data-country="Kenya">
-                                    <div class="gem-header">
-                                        <span class="gem-region">Africa</span>
-                                        <h4>Kenya</h4>
-                                    </div>
-                                    <div class="gem-stats">
-                                        <div class="gem-stat">
-                                            <span class="gem-value">34</span>
-                                            <span class="gem-label">countries</span>
-                                        </div>
-                                        <div class="gem-stat">
-                                            <span class="gem-value">3</span>
-                                            <span class="gem-label">airports</span>
-                                        </div>
-                                    </div>
-                                    <p class="gem-insight">
-                                        East Africa's main hub. Nairobi connects the continent 
-                                        to Europe, Middle East, and Asia.
-                                    </p>
-                                </div>
-                                
-                                <div class="gem-card" data-country="Panama">
-                                    <div class="gem-header">
-                                        <span class="gem-region">Central America</span>
-                                        <h4>Panama</h4>
-                                    </div>
-                                    <div class="gem-stats">
-                                        <div class="gem-stat">
-                                            <span class="gem-value">35</span>
-                                            <span class="gem-label">countries</span>
-                                        </div>
-                                        <div class="gem-stat">
-                                            <span class="gem-value">2</span>
-                                            <span class="gem-label">airports</span>
-                                        </div>
-                                    </div>
-                                    <p class="gem-insight">
-                                        The "Hub of the Americas" — connects North and South 
-                                        America like no other.
-                                    </p>
-                                </div>
-                            </div>
-                            
-                            <h4 class="gems-section-title" style="margin-top: 2rem;">Off the Beaten Path</h4>
-                            <div class="remote-list">
-                                <div class="remote-item" data-country="Greenland">
-                                    <div class="remote-icon">🇬🇱</div>
-                                    <div class="remote-info">
-                                        <h5>Greenland</h5>
-                                        <p>Connected to just <strong>2 countries</strong>. The world's largest island remains one of the hardest places to reach.</p>
-                                    </div>
-                                </div>
-                                <div class="remote-item" data-country="Faroe Islands">
-                                    <div class="remote-icon">🇫🇴</div>
-                                    <div class="remote-info">
-                                        <h5>Faroe Islands</h5>
-                                        <p>Only <strong>3 international connections</strong> to these remote North Atlantic islands.</p>
-                                    </div>
-                                </div>
-                                <div class="remote-item" data-country="Tonga">
-                                    <div class="remote-icon">🇹🇴</div>
-                                    <div class="remote-info">
-                                        <h5>Tonga</h5>
-                                        <p>This Pacific kingdom connects to just <strong>4 countries</strong> — true island isolation.</p>
-                                    </div>
-                                </div>
-                                <div class="remote-item" data-country="East Timor">
-                                    <div class="remote-icon">🇹🇱</div>
-                                    <div class="remote-info">
-                                        <h5>East Timor</h5>
-                                        <p>Southeast Asia's youngest nation has only <strong>3 international routes</strong>.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="data-links">
-                    <a href="processed_data/country_stats.json" class="data-link" download>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                            <polyline points="7,10 12,15 17,10"/>
-                            <line x1="12" y1="15" x2="12" y2="3"/>
-                        </svg>
-                        Dataset
-                    </a>
-                    <a href="protocols/viz_gems.html" class="data-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14,2 14,8 20,8"/>
-                            <line x1="16" y1="13" x2="8" y2="13"/>
-                            <line x1="16" y1="17" x2="8" y2="17"/>
-                        </svg>
-                        Metadata &amp; Protocol
-                    </a>
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- ======================================== -->
-        <!-- SECTION 7: HUB CASE STUDY (CDG)         -->
-        <!-- ======================================== -->
+        <!-- SECTION 7: CONTINENTAL AVIATION HUBS (Interactive Comparison) -->
         <section id="hub-section" class="viz-section" data-scene="hub">
             <div class="section-inner">
                 
                 <div class="content-card glass-card intro-card">
                     <span class="section-number">06</span>
-                    <h2>Inside a Global Hub</h2>
+                    <h2>Continental Aviation Hubs</h2>
                     <p class="lead-text">
-                        France tops our connectivity ranking. Let's zoom into its main airport — 
-                        <strong>Charles de Gaulle (CDG)</strong> — to understand what makes 
-                        a truly global aviation hub tick.
+                        Each continent has a leading aviation hub — the busiest airport in its 
+                        most connected country. Compare these <strong>6 global gateways</strong> 
+                        to see how they shape international travel.
                     </p>
                 </div>
                 
-                <div class="seat-screen mini-screen">
+                <div class="seat-screen hub-screen">
                     <div class="screen-bezel">
-                        <div class="hub-display">
-                            <div class="hub-header">
-                                <div class="hub-icon">✈️</div>
-                                <div class="hub-title">
-                                    <h4>Paris Charles de Gaulle</h4>
-                                    <span class="hub-code">CDG · Paris, France</span>
+                        <div class="hub-display interactive-hub">
+                            
+                            <!-- Hub Multi-Selector -->
+                            <div class="hub-selector-multi">
+                                <div class="selector-header">
+                                    <span class="selector-label">Compare Hubs:</span>
+                                    <button class="select-all-btn" id="select-all-hubs">Select All</button>
+                                </div>
+                                <div class="hub-checkboxes">
+                                    <label class="hub-checkbox active" data-hub="cdg">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-flag">🇫🇷</span>
+                                        <span class="checkbox-label">CDG</span>
+                                        <span class="checkbox-region">Europe</span>
+                                    </label>
+                                    <label class="hub-checkbox active" data-hub="atl">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-flag">🇺🇸</span>
+                                        <span class="checkbox-label">ATL</span>
+                                        <span class="checkbox-region">N. America</span>
+                                    </label>
+                                    <label class="hub-checkbox active" data-hub="dxb">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-flag">🇦🇪</span>
+                                        <span class="checkbox-label">DXB</span>
+                                        <span class="checkbox-region">Asia</span>
+                                    </label>
+                                    <label class="hub-checkbox active" data-hub="gru">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-flag">🇧🇷</span>
+                                        <span class="checkbox-label">GRU</span>
+                                        <span class="checkbox-region">S. America</span>
+                                    </label>
+                                    <label class="hub-checkbox active" data-hub="cmn">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-flag">🇲🇦</span>
+                                        <span class="checkbox-label">CMN</span>
+                                        <span class="checkbox-region">Africa</span>
+                                    </label>
+                                    <label class="hub-checkbox active" data-hub="syd">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-flag">🇦🇺</span>
+                                        <span class="checkbox-label">SYD</span>
+                                        <span class="checkbox-region">Oceania</span>
+                                    </label>
                                 </div>
                             </div>
                             
-                            <div class="hub-stats-grid">
-                                <div class="hub-stat">
-                                    <span class="hub-stat-value">115+</span>
-                                    <span class="hub-stat-label">Countries Connected</span>
+                            <!-- Dynamic Comparison Display -->
+                            <div class="hub-comparison-wrapper">
+                                <!-- Title changes based on selection -->
+                                <div class="comparison-title" id="comparison-title">
+                                    <h4>All Continental Hubs</h4>
+                                    <span class="comparison-subtitle">Global Overview — 6 airports across 6 continents</span>
                                 </div>
-                                <div class="hub-stat">
-                                    <span class="hub-stat-value">2nd</span>
-                                    <span class="hub-stat-label">Busiest in Europe</span>
-                                </div>
-                                <div class="hub-stat">
-                                    <span class="hub-stat-value">76M</span>
-                                    <span class="hub-stat-label">Passengers/Year</span>
+                                
+                                <!-- Comparison Cards Grid -->
+                                <div class="hub-cards-grid" id="hub-cards-grid">
+                                    <!-- CDG -->
+                                    <div class="hub-card" data-hub="cdg">
+                                        <div class="hub-card-header">
+                                            <span class="hub-card-flag">🇫🇷</span>
+                                            <div class="hub-card-info">
+                                                <strong>Paris CDG</strong>
+                                                <span>Europe</span>
+                                            </div>
+                                        </div>
+                                        <div class="hub-card-stats">
+                                            <div class="mini-stat">
+                                                <span class="mini-value">70.3M</span>
+                                                <span class="mini-label">Passengers</span>
+                                            </div>
+                                            <div class="mini-stat">
+                                                <span class="mini-value">115+</span>
+                                                <span class="mini-label">Countries</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- ATL -->
+                                    <div class="hub-card" data-hub="atl">
+                                        <div class="hub-card-header">
+                                            <span class="hub-card-flag">🇺🇸</span>
+                                            <div class="hub-card-info">
+                                                <strong>Atlanta ATL</strong>
+                                                <span>N. America</span>
+                                            </div>
+                                        </div>
+                                        <div class="hub-card-stats">
+                                            <div class="mini-stat">
+                                                <span class="mini-value">108.1M</span>
+                                                <span class="mini-label">Passengers</span>
+                                            </div>
+                                            <div class="mini-stat">
+                                                <span class="mini-value">92</span>
+                                                <span class="mini-label">Countries</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- DXB -->
+                                    <div class="hub-card" data-hub="dxb">
+                                        <div class="hub-card-header">
+                                            <span class="hub-card-flag">🇦🇪</span>
+                                            <div class="hub-card-info">
+                                                <strong>Dubai DXB</strong>
+                                                <span>Asia</span>
+                                            </div>
+                                        </div>
+                                        <div class="hub-card-stats">
+                                            <div class="mini-stat">
+                                                <span class="mini-value">92.3M</span>
+                                                <span class="mini-label">Passengers</span>
+                                            </div>
+                                            <div class="mini-stat">
+                                                <span class="mini-value">91</span>
+                                                <span class="mini-label">Countries</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- GRU -->
+                                    <div class="hub-card" data-hub="gru">
+                                        <div class="hub-card-header">
+                                            <span class="hub-card-flag">🇧🇷</span>
+                                            <div class="hub-card-info">
+                                                <strong>São Paulo GRU</strong>
+                                                <span>S. America</span>
+                                            </div>
+                                        </div>
+                                        <div class="hub-card-stats">
+                                            <div class="mini-stat">
+                                                <span class="mini-value">43.6M</span>
+                                                <span class="mini-label">Passengers</span>
+                                            </div>
+                                            <div class="mini-stat">
+                                                <span class="mini-value">33</span>
+                                                <span class="mini-label">Countries</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- CMN -->
+                                    <div class="hub-card" data-hub="cmn">
+                                        <div class="hub-card-header">
+                                            <span class="hub-card-flag">🇲🇦</span>
+                                            <div class="hub-card-info">
+                                                <strong>Casablanca CMN</strong>
+                                                <span>Africa</span>
+                                            </div>
+                                        </div>
+                                        <div class="hub-card-stats">
+                                            <div class="mini-stat">
+                                                <span class="mini-value">10M</span>
+                                                <span class="mini-label">Passengers</span>
+                                            </div>
+                                            <div class="mini-stat">
+                                                <span class="mini-value">48</span>
+                                                <span class="mini-label">Countries</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- SYD -->
+                                    <div class="hub-card" data-hub="syd">
+                                        <div class="hub-card-header">
+                                            <span class="hub-card-flag">🇦🇺</span>
+                                            <div class="hub-card-info">
+                                                <strong>Sydney SYD</strong>
+                                                <span>Oceania</span>
+                                            </div>
+                                        </div>
+                                        <div class="hub-card-stats">
+                                            <div class="mini-stat">
+                                                <span class="mini-value">41.4M</span>
+                                                <span class="mini-label">Passengers</span>
+                                            </div>
+                                            <div class="mini-stat">
+                                                <span class="mini-value">34</span>
+                                                <span class="mini-label">Countries</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flourish-embed flourish-chart" data-src="visualisation/26705958">
-                                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                                <noscript>
-                                    <img src="https://public.flourish.studio/visualisation/26705958/thumbnail" width="100%" alt="chart visualization" />
-                                </noscript>
+                            
+                            <!-- Flourish Chart -->
+                            <div class="hub-flourish-chart">
+                                <div class="flourish-embed flourish-chart" data-src="visualisation/26746807">
+                                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                                    <noscript>
+                                        <img src="https://public.flourish.studio/visualisation/26746807/thumbnail" width="100%" alt="Monthly flights comparison chart" />
+                                    </noscript>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="data-links">
-                    <a href="#" class="data-link" download>
+                    <a href="processed_data/continental_hubs_2024.json" class="data-link" download>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                             <polyline points="7,10 12,15 17,10"/>
@@ -650,7 +753,7 @@
                         </svg>
                         Dataset
                     </a>
-                    <a href="#" class="data-link">
+                    <a href="protocols/viz_continental_hubs.html" class="data-link">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                             <polyline points="14,2 14,8 20,8"/>
@@ -661,130 +764,15 @@
                     </a>
                 </div>
                 
-                <div class="content-card glass-card analysis-card">
-                    <h3>Why Paris?</h3>
-                    <p>
-                        CDG benefits from France's central European location, strong tourism industry, 
-                        and Air France's extensive network. It serves as a key transfer point between 
-                        the Americas, Europe, Africa, and the Middle East — making Paris accessible 
-                        from virtually anywhere in the world.
-                    </p>
-                </div>
-                
             </div>
         </section>
 
-        <!-- ======================================== -->
-        <!-- SECTION 8: INTERACTIVE MAP EXPLORER     -->
-        <!-- ======================================== -->
-        <section id="global-map-section" class="viz-section" data-scene="global">
-            <div class="section-inner">
-                
-                <div class="content-card glass-card intro-card">
-                    <span class="section-number">07</span>
-                    <h2>Explore the Network</h2>
-                    <p class="lead-text">
-                        Now it's your turn. Click on any country to see where you can fly from there,
-                        or click on a connection arc to explore that specific route.
-                    </p>
-                </div>
-                
-                <!-- Map Controls -->
-                <div class="map-controls-bar">
-                    <div class="control-group">
-                        <label for="country-select">Select Country:</label>
-                        <select id="country-select">
-                            <option value="">Choose a destination...</option>
-                        </select>
-                    </div>
-                    <div class="control-group">
-                        <label for="max-routes">Show top routes:</label>
-                        <input type="range" id="max-routes" min="5" max="50" value="20">
-                        <span id="routes-value">20</span>
-                    </div>
-                    <div class="control-group buttons">
-                        <button id="zoom-in" class="control-btn" title="Zoom In">+</button>
-                        <button id="zoom-out" class="control-btn" title="Zoom Out">−</button>
-                        <button id="zoom-reset" class="control-btn" title="Reset View">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
-                                <path d="M3 3v5h5"/>
-                            </svg>
-                        </button>
-                        <button id="reset-btn" class="control-btn text-btn">Clear</button>
-                    </div>
-                </div>
-                
-                <div class="seat-screen">
-                    <div class="screen-bezel">
-                        <div id="d3-map-container" class="map-display">
-                            <div class="loading-indicator">
-                                <div class="loader"></div>
-                                <span>Loading map data...</span>
-                            </div>
-                        </div>
-                        <div id="info-panel" class="info-panel"></div>
-                    </div>
-                </div>
-                
-                <div class="data-links">
-                    <a href="processed_data/country_connections_geo.json" class="data-link" download>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                            <polyline points="7,10 12,15 17,10"/>
-                            <line x1="12" y1="15" x2="12" y2="3"/>
-                        </svg>
-                        Dataset
-                    </a>
-                    <a href="protocols/viz_global_map.html" class="data-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14,2 14,8 20,8"/>
-                            <line x1="16" y1="13" x2="8" y2="13"/>
-                            <line x1="16" y1="17" x2="8" y2="17"/>
-                        </svg>
-                        Metadata &amp; Protocol
-                    </a>
-                </div>
-                
-                <div class="content-card glass-card analysis-card">
-                    <h3>How to Explore</h3>
-                    <div class="insight-grid">
-                        <div class="insight-item">
-                            <div class="insight-icon color-yellow"></div>
-                            <div class="insight-text">
-                                <strong>Click a Country</strong>
-                                <span>See all destinations reachable from there</span>
-                            </div>
-                        </div>
-                        <div class="insight-item">
-                            <div class="insight-icon color-cyan"></div>
-                            <div class="insight-text">
-                                <strong>Click a Route</strong>
-                                <span>Explore details about that specific connection</span>
-                            </div>
-                        </div>
-                        <div class="insight-item">
-                            <div class="insight-icon color-teal"></div>
-                            <div class="insight-text">
-                                <strong>Zoom &amp; Pan</strong>
-                                <span>Use controls or scroll to navigate the map</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- ======================================== -->
-        <!-- SECTION 9: KEY FINDINGS                 -->
-        <!-- ======================================== -->
+        <!-- SECTION 8: KEY FINDINGS & NEXT STEPS -->
         <section id="findings-section" class="content-section">
             <div class="section-inner">
                 
                 <div class="content-card glass-card large-card">
-                    <span class="section-number">08</span>
+                    <span class="section-number">07</span>
                     <h2>What We Learned</h2>
                     
                     <div class="findings-grid">
@@ -853,12 +841,49 @@
                     </div>
                 </div>
                 
+                <!-- NEXT STEPS -->
+                <div class="content-card glass-card next-steps-card">
+                    <h2>Next Steps</h2>
+                    <p class="lead-text">
+                        This analysis opens doors for further exploration:
+                    </p>
+                    
+                    <div class="next-steps-grid">
+                        <div class="next-step">
+                            <span class="step-icon">📈</span>
+                            <div class="step-content">
+                                <h4>Temporal Analysis</h4>
+                                <p>Track how connectivity patterns change over seasons, years, and post-pandemic recovery trends.</p>
+                            </div>
+                        </div>
+                        <div class="next-step">
+                            <span class="step-icon">💰</span>
+                            <div class="step-content">
+                                <h4>Cost Correlation</h4>
+                                <p>Investigate the relationship between connectivity and average flight prices to understand accessibility beyond availability.</p>
+                            </div>
+                        </div>
+                        <div class="next-step">
+                            <span class="step-icon">🌱</span>
+                            <div class="step-content">
+                                <h4>Environmental Impact</h4>
+                                <p>Map carbon emissions per route and explore sustainable aviation trends.</p>
+                            </div>
+                        </div>
+                        <div class="next-step">
+                            <span class="step-icon">🔮</span>
+                            <div class="step-content">
+                                <h4>Future Predictions</h4>
+                                <p>Model emerging routes and predict which countries will become the next major hubs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
-        <!-- ======================================== -->
-        <!-- SECTION 10: FINALE WINDOW               -->
-        <!-- ======================================== -->
+        <!-- SECTION 9: FINALE WINDOW -->
         <section id="finale-window" class="window-section finale">
             <div class="window-container">
                 <div class="airplane-window">
@@ -869,34 +894,23 @@
                         <div class="rivet rivet-br"></div>
                     </div>
                     <div class="window-view sunset-scene">
-                        <!-- Sky gradient layers -->
                         <div class="sunset-sky"></div>
-                        
-                        <!-- Sun glow -->
                         <div class="sun-glow"></div>
-                        
-                        <!-- Sunset clouds with warm tones -->
                         <div class="sunset-clouds-layer">
                             <div class="sunset-cloud cloud-1">☁️</div>
                             <div class="sunset-cloud cloud-2">☁️</div>
                             <div class="sunset-cloud cloud-3">☁️</div>
                             <div class="sunset-cloud cloud-4">☁️</div>
                         </div>
-                        
-                        <!-- Ocean/horizon -->
                         <div class="ocean-layer">
                             <div class="ocean-reflection"></div>
                         </div>
-                        
-                        <!-- Finale content -->
                         <div class="finale-content">
                             <h2>Bon Voyage</h2>
                             <p class="finale-tagline">
                                 The world awaits. Where will you go?
                             </p>
                         </div>
-                        
-                        <!-- Credits -->
                         <div class="credits">
                             <div class="credits-title">A SUPSI Data Visualization Project</div>
                             <div class="credits-team">
@@ -914,14 +928,278 @@
 
     </main>
 
-    <!-- ============================================ -->
-    <!-- TOOLTIP (for map interactions)              -->
-    <!-- ============================================ -->
+    <!-- TOOLTIP -->
     <div id="map-tooltip" class="map-tooltip"></div>
 
-    <!-- ============================================ -->
-    <!-- JavaScript                                  -->
-    <!-- ============================================ -->
+    <!-- Interactive Features Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // ==========================================
+            // 1. HUB DATA
+            // ==========================================
+            const hubData = {
+                cdg: { name: 'Paris CDG', fullName: 'Charles de Gaulle', region: 'Europe', flag: '🇫🇷', passengers: '70.3M', countries: '115+' },
+                atl: { name: 'Atlanta ATL', fullName: 'Hartsfield-Jackson', region: 'N. America', flag: '🇺🇸', passengers: '108.1M', countries: '92' },
+                dxb: { name: 'Dubai DXB', fullName: 'Dubai International', region: 'Asia', flag: '🇦🇪', passengers: '92.3M', countries: '91' },
+                gru: { name: 'São Paulo GRU', fullName: 'Guarulhos', region: 'S. America', flag: '🇧🇷', passengers: '43.6M', countries: '33' },
+                cmn: { name: 'Casablanca CMN', fullName: 'Mohammed V', region: 'Africa', flag: '🇲🇦', passengers: '10M', countries: '48' },
+                syd: { name: 'Sydney SYD', fullName: 'Kingsford Smith', region: 'Oceania', flag: '🇦🇺', passengers: '41.4M', countries: '34' }
+            };
+            
+            // ==========================================
+            // 2. HUB MULTISELECT SYSTEM
+            // ==========================================
+            const hubCheckboxes = document.querySelectorAll('.hub-checkbox');
+            const hubCards = document.querySelectorAll('.hub-card');
+            const comparisonTitle = document.getElementById('comparison-title');
+            const selectAllBtn = document.getElementById('select-all-hubs');
+            
+            // Get selected hubs
+            function getSelectedHubs() {
+                const selected = [];
+                hubCheckboxes.forEach(cb => {
+                    if (cb.querySelector('input').checked) {
+                        selected.push(cb.dataset.hub);
+                    }
+                });
+                return selected;
+            }
+            
+            // Update display based on selection
+            function updateHubDisplay() {
+                const selected = getSelectedHubs();
+                
+                // Update checkbox visual state
+                hubCheckboxes.forEach(cb => {
+                    const isChecked = cb.querySelector('input').checked;
+                    cb.classList.toggle('active', isChecked);
+                });
+                
+                // Update cards visibility
+                hubCards.forEach(card => {
+                    const hubId = card.dataset.hub;
+                    const isSelected = selected.includes(hubId);
+                    card.classList.toggle('hidden', !isSelected);
+                    card.classList.toggle('visible', isSelected);
+                });
+                
+                // Update title
+                updateComparisonTitle(selected);
+                
+                // Update Select All button text
+                if (selected.length === 6) {
+                    selectAllBtn.textContent = 'Deselect All';
+                } else {
+                    selectAllBtn.textContent = 'Select All';
+                }
+            }
+            
+            // Update comparison title
+            function updateComparisonTitle(selected) {
+                if (!comparisonTitle) return;
+                
+                const h4 = comparisonTitle.querySelector('h4');
+                const subtitle = comparisonTitle.querySelector('.comparison-subtitle');
+                
+                if (selected.length === 0) {
+                    h4.textContent = 'No Hubs Selected';
+                    subtitle.textContent = 'Select at least one hub to compare';
+                } else if (selected.length === 6) {
+                    h4.textContent = 'All Continental Hubs';
+                    subtitle.textContent = 'Global Overview — 6 airports across 6 continents';
+                } else if (selected.length === 1) {
+                    const hub = hubData[selected[0]];
+                    h4.textContent = hub.fullName;
+                    subtitle.textContent = `${hub.flag} ${hub.region} Hub`;
+                } else {
+                    // Multiple but not all - show "vs" format
+                    const names = selected.map(id => hubData[id].name.split(' ')[0]);
+                    h4.textContent = names.join(' vs ');
+                    subtitle.textContent = `Comparing ${selected.length} continental hubs`;
+                }
+            }
+            
+            // Checkbox click handlers
+            hubCheckboxes.forEach(cb => {
+                cb.addEventListener('click', function(e) {
+                    // Toggle checkbox state
+                    const input = this.querySelector('input');
+                    input.checked = !input.checked;
+                    e.preventDefault();
+                    
+                    // Ensure at least one is selected
+                    const selected = getSelectedHubs();
+                    if (selected.length === 0) {
+                        input.checked = true;
+                    }
+                    
+                    updateHubDisplay();
+                });
+            });
+            
+            // Select All button
+            if (selectAllBtn) {
+                selectAllBtn.addEventListener('click', function() {
+                    const selected = getSelectedHubs();
+                    const shouldSelectAll = selected.length < 6;
+                    
+                    hubCheckboxes.forEach(cb => {
+                        cb.querySelector('input').checked = shouldSelectAll;
+                    });
+                    
+                    updateHubDisplay();
+                });
+            }
+            
+            // Function to select specific hubs (for external control)
+            window.selectHubs = function(hubIds) {
+                if (!Array.isArray(hubIds)) hubIds = [hubIds];
+                
+                hubCheckboxes.forEach(cb => {
+                    const input = cb.querySelector('input');
+                    input.checked = hubIds.includes(cb.dataset.hub);
+                });
+                
+                // Ensure at least one is selected
+                if (getSelectedHubs().length === 0) {
+                    hubCheckboxes[0].querySelector('input').checked = true;
+                }
+                
+                updateHubDisplay();
+            };
+            
+            // Legacy single select (for compatibility)
+            window.selectHub = function(hubId) {
+                window.selectHubs([hubId]);
+            };
+            
+            // ==========================================
+            // 3. HIDDEN GEMS - Click to show on D3 Map
+            // ==========================================
+            const gemCards = document.querySelectorAll('.gem-card-mini[data-country], .remote-card-mini[data-country]');
+            
+            gemCards.forEach(card => {
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', function() {
+                    const country = this.dataset.country;
+                    if (country && typeof window.selectCountry === 'function') {
+                        // Scroll to map section
+                        const mapSection = document.getElementById('global-map-section');
+                        if (mapSection) {
+                            mapSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                        // Select country on D3 map
+                        setTimeout(() => {
+                            window.selectCountry(country);
+                        }, 800);
+                    }
+                });
+            });
+            
+            // ==========================================
+            // 4. FLOURISH SYNC
+            // ==========================================
+            const flourishToHubMap = {
+                'Charles de Gaulle': 'cdg',
+                'Paris': 'cdg',
+                'CDG': 'cdg',
+                'France': 'cdg',
+                'Hartsfield-Jackson Atlanta': 'atl',
+                'Atlanta': 'atl',
+                'ATL': 'atl',
+                'USA': 'atl',
+                'Dubai International': 'dxb',
+                'Dubai': 'dxb',
+                'DXB': 'dxb',
+                'UAE': 'dxb',
+                'Guarulhos International': 'gru',
+                'São Paulo': 'gru',
+                'Sao Paulo': 'gru',
+                'GRU': 'gru',
+                'Brazil': 'gru',
+                'Mohammed V International': 'cmn',
+                'Casablanca': 'cmn',
+                'CMN': 'cmn',
+                'Morocco': 'cmn',
+                'Sydney Kingsford Smith': 'syd',
+                'Sydney': 'syd',
+                'SYD': 'syd',
+                'Australia': 'syd'
+            };
+            
+            // Sync from Flourish selection (multiple selections)
+            window.syncHubsFromFlourish = function(selections) {
+                if (!Array.isArray(selections)) selections = [selections];
+                
+                const hubIds = selections
+                    .map(s => flourishToHubMap[s])
+                    .filter(id => id !== undefined);
+                
+                if (hubIds.length > 0) {
+                    window.selectHubs(hubIds);
+                }
+            };
+            
+            // Legacy single sync
+            window.syncHubFromFlourish = function(selection) {
+                const hubId = flourishToHubMap[selection];
+                if (hubId) {
+                    // Add to current selection instead of replacing
+                    const current = getSelectedHubs();
+                    if (!current.includes(hubId)) {
+                        current.push(hubId);
+                        window.selectHubs(current);
+                    }
+                }
+            };
+            
+            // Listen for postMessage from Flourish
+            window.addEventListener('message', function(event) {
+                if (event.origin.includes('flourish.studio') || event.origin.includes('public.flourish.studio')) {
+                    try {
+                        const data = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
+                        
+                        if (data.type === 'selection' || data.action === 'select') {
+                            const selection = data.value || data.label || data.name || data.airport;
+                            if (selection) {
+                                if (Array.isArray(selection)) {
+                                    window.syncHubsFromFlourish(selection);
+                                } else {
+                                    window.syncHubFromFlourish(selection);
+                                }
+                            }
+                        }
+                    } catch (e) {
+                        // Not a JSON message, ignore
+                    }
+                }
+            });
+            
+            // ==========================================
+            // 5. EXPOSE API
+            // ==========================================
+            window.PassengerExperience = {
+                selectHub: window.selectHub,
+                selectHubs: window.selectHubs,
+                getSelectedHubs: getSelectedHubs,
+                syncHubFromFlourish: window.syncHubFromFlourish,
+                syncHubsFromFlourish: window.syncHubsFromFlourish,
+                hubData: hubData,
+                hubMapping: flourishToHubMap
+            };
+            
+            // Initialize display
+            updateHubDisplay();
+            
+            console.log('✈️ Passenger Experience: Interactive features loaded');
+            console.log('   - Hub multiselect ready');
+            console.log('   - Hidden gems clickable');
+            console.log('   - Flourish sync prepared');
+        });
+    </script>
+
+    <!-- JavaScript -->
     <script src="assets/script/map-controller.js"></script>
     <script src="assets/script/passenger-scroll.js"></script>
 

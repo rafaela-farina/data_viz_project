@@ -1,28 +1,20 @@
 # The Passenger Experience
 ## Global Aviation Connectivity Visualization
 
-A scrollytelling data visualization exploring international flight connectivity worldwide. Built as part of the Data Visualization course at SUPSI (University of Applied Sciences and Arts of Southern Switzerland).
+A scrollytelling data visualization exploring how international airports connect the world.
 
----
-
-## Research Question
-
-> **How easy is it to travel from one country to another?**
-
-We analyzed flight route data from international airports worldwide to reveal patterns about which destinations are travel hubs, which are hidden gems, and which remain beautifully remote.
+**SUPSI Data Visualization Course** · December 2025  
+**Professor:** Giovanni Profeta
 
 ---
 
 ## Team
 
-| Name | Role |
-|------|------|
-| **Alan Dominguez** | Data Specialist |
-| **Rafaela Dos Santos Farina** | Visualization Specialist |
-| **Colin Augustine** | Research Specialist |
-
-**Supervisor:** Professor Giovanni Profeta  
-**Institution:** SUPSI — December 2025
+| Member | Role |
+|--------|------|
+| **Alan Dominguez** | Lead Developer, Data Analysis, D3.js Map |
+| **Rafaela Dos Santos Farina** | Flourish Visualizations (Network, Hubs Chart) |
+| **Colin Augustine** | Tableau Visualizations, Data Support |
 
 ---
 
@@ -30,236 +22,214 @@ We analyzed flight route data from international airports worldwide to reveal pa
 
 ```
 aviation-project/
-│
-├── index.html                          # Main HTML file
-├── favicon.ico                         # Site favicon
-├── README.md                           # This file
-│
+├── index.html                    # Main scrollytelling page
+├── README.md                     # This file
 ├── assets/
-│   ├── style/
-│   │   ├── passenger-experience.css    # Main stylesheet (layout, typography)
-│   │   └── window-elements.css         # Airplane window & screen components
-│   │
-│   └── script/
-│       ├── map-controller.js           # D3.js map logic & interactions
-│       └── passenger-scroll.js         # GSAP scroll animations
-│
-├── processed_data/                     # Processed datasets
-│   │
-│   │── # Core visualization data
-│   ├── country_connections_geo.json    # Country pairs with coordinates (D3 map)
-│   ├── country_stats.json              # Aggregated country statistics
-│   ├── country_connections.csv         # Country-to-country route counts
-│   ├── country_ranking.csv             # Countries ranked by connectivity
-│   │
-│   │── # Airport-level data
-│   ├── airport_connectivity.csv        # Individual airport metrics
-│   ├── airports_cleaned.csv            # Cleaned airport database
-│   ├── airlines_active.csv             # Active airlines list
-│   │
-│   │── # CDG Hub case study
-│   ├── hub_cdg_data.json               # Complete CDG dataset (JSON)
-│   ├── hub_cdg_destinations.csv        # Top 20 destinations from CDG
-│   ├── hub_cdg_delays_airlines.csv     # Delay stats by airline
-│   ├── hub_cdg_delays_hourly.csv       # Delay patterns by time of day
-│   ├── hub_cdg_monthly.csv             # Monthly traffic & performance
-│   ├── HUB_CDG_SOURCES.md              # Data sources documentation
-│   │
-│   │── # Supporting data
-│   ├── population.xlsx                 # World population data
-│   └── Raw Datasets.rar                # Original unprocessed data
-│
-└── protocols/                          # Methodology documentation
-    ├── viz_connected.html              # Top 10 Connected Countries
-    ├── viz_gems.html                   # Hidden Gems section
-    ├── viz_global_map.html             # Interactive D3 Map
-    ├── viz_network.html                # Flourish Network (Rafaela)
-    ├── viz_population.html             # Tableau Dashboard (Colin)
-    ├── viz_remote.html                 # Remote Destinations
-    └── viz_teammate.html               # Teammate placeholder
+│   ├── script/
+│   │   ├── map-controller.js     # D3.js interactive map
+│   │   └── passenger-scroll.js   # GSAP scroll animations
+│   └── style/
+│       ├── passenger-experience.css  # Main styles
+│       └── window-elements.css       # Component styles
+├── processed_data/
+│   ├── country_connections_geo.json  # Main connectivity dataset
+│   ├── country_stats.json            # Country statistics
+│   ├── continental_hubs_2024.json    # Hub airports data
+│   ├── continental_hubs_summary.csv  # Hub summary table
+│   ├── hub_airports_by_continent.json
+│   ├── hub_cdg_data.json
+│   └── *.md                          # Source documentation
+└── protocols/
+    ├── viz_global_map.html           # D3 Map metadata
+    ├── viz_network.html              # Network viz metadata
+    ├── viz_continental_hubs.html     # Hubs section metadata
+    ├── viz_gems.html                 # Hidden gems metadata
+    └── viz_*.html                    # Other protocols
 ```
 
 ---
 
-## Visualizations
+## Sections Overview
 
-The project follows a scrollytelling narrative with increasing interactivity:
-
-| Section | Title | Type | Interactivity |
-|---------|-------|------|---------------|
-| 01 | Introduction | Text + Stats | Counter animation |
-| 02 | The Most Connected | Bar Chart | Click → map |
-| 03 | Country Connections Network | Flourish Embed | Hover nodes |
-| 04 | Airports vs Population | Tableau Embed | Filters |
-| 05 | Hidden Gems & Remote | Cards | Click → map |
-| 06 | Inside a Global Hub (CDG) | Stats + Chart | Observe |
-| 07 | Explore the Network | D3.js Map | Full interaction |
-| 08 | What We Learned | Summary Cards | Observe |
-| 09 | Bon Voyage | Finale | None |
+| # | Section | Visualization | Author |
+|---|---------|---------------|--------|
+| 01 | The World at Your Fingertips | Stats counters | Alan |
+| 02 | Explore Global Connectivity | D3.js Interactive Map | Alan |
+| 03 | Hidden Gems & Remote | Clickable Cards → Map | Alan |
+| 04 | Country Connections Network | Flourish Network | Rafaela |
+| 05 | Global Airport Distribution | Flourish Map | Colin/Rafaela |
+| 06 | Continental Aviation Hubs | Interactive Tabs + Flourish | Alan/Rafaela |
+| 07 | What We Learned + Next Steps | Key findings | Team |
 
 ---
 
-## Technologies
+## Version History
 
-### Frontend
-- **HTML5** — Semantic structure
-- **CSS3** — Custom properties, glassmorphism, animations
-- **JavaScript (ES6+)** — Module pattern, async/await
+### v10 (Current) - December 10, 2025
+- **Hub Multiselect System:** Checkboxes replace tabs for comparing multiple hubs
+- **All Hubs Default View:** Shows all 6 continental hubs by default
+- **Dynamic Comparison:** Title changes based on selection (e.g., "Paris vs Dubai vs Sydney")
+- **Flourish Chart Integration:** Real line chart embedded (visualisation/26746807)
+- **Responsive Cards Grid:** 6 hub cards that show/hide based on selection
+- **Increased delay:** Hidden gems click delay changed to 800ms for smoother scroll
 
-### Libraries
-- **D3.js v7** — Interactive world map & data bindings
-- **TopoJSON v3** — Efficient geographic data
-- **GSAP 3.12** — Scroll-triggered animations
-- **ScrollTrigger** — Section-based animation triggers
+### v9 - December 10, 2025
+- **Compact Layout:** Reduced vertical spacing for D3 map and Hidden Gems sections
+- **Hidden Gems Redesign:** 4-column grid layout with flags, clickable cards that navigate to D3 map
+- **Flourish Integration:** Replaced Tableau with Flourish map (visualisation/26727077)
+- **Continental Aviation Hubs:** New interactive section with 6 hub tabs (CDG, ATL, DXB, GRU, CMN, SYD)
+- **Flourish Sync Preparation:** JavaScript API ready for Flourish chart → Hub tab synchronization
+- **Next Steps Section:** Added future research directions
+- **New Protocol:** `viz_continental_hubs.html` metadata page
 
-### External Visualizations
-- **Flourish** — Network diagram (Rafaela)
-- **Tableau Public** — Geographic dashboard (Colin)
+### v8 - December 9, 2025
+- Sidebar layout optimization (15%/85% split)
+- Color scheme refinement (violet/orange palette)
+- Remote items spacing fixes
 
-### Data Processing
-- **Python 3** — pandas, numpy
-- **OpenFlights Database** — Primary data source
+### v7 - December 7, 2025
+- CDG hub case study section
+- Data links and protocol pages
+- Teammate embed integration
+
+### Earlier versions
+- D3 map development, GSAP animations, glassmorphism UI
+
+---
+
+## Interactive Features
+
+### D3 Map (Section 02)
+- Click any country to see flight connections
+- Top 10 sidebar with quick selection
+- Zoom controls and route slider
+- Arced flight paths with animations
+
+### Hidden Gems (Section 03)
+- **Click any card** → Scrolls to map and highlights that country
+- Works for both "Well-Connected" and "Remote" cards
+
+### Continental Hubs (Section 06)
+- **Tab navigation** between 6 continental hubs
+- Each tab shows: airport name, stats, description
+- Placeholder ready for Flourish line chart
+
+---
+
+## Technical Implementation
+
+### CSS Customization Points
+
+**D3 Map Height** (`assets/style/window-elements.css`):
+```css
+/* Line 1384 - Base height */
+.map-main .seat-screen {
+    height: 600px;
+}
+
+/* Line 1939 - Compact mode */
+.compact-layout .map-main .seat-screen {
+    height: 500px;
+}
+```
+
+### JavaScript API
+
+The page exposes a global API for external control:
+
+```javascript
+// Select a hub tab programmatically
+window.selectHub('cdg');  // Options: cdg, atl, dxb, gru, cmn, syd
+
+// Sync from Flourish selection
+window.syncHubFromFlourish('France');  // Accepts country/airport names
+
+// Full API object
+window.PassengerExperience = {
+    selectHub: function(hubId),
+    syncHubFromFlourish: function(selection),
+    hubMapping: { 'France': 'cdg', ... }
+};
+```
+
+### Flourish Integration
+
+The page listens for `postMessage` events from Flourish iframes:
+
+```javascript
+// Flourish chart should emit:
+{
+    type: 'selection',
+    value: 'France'  // or 'CDG', 'Paris', etc.
+}
+```
+
+Rafaela can configure the Flourish chart to send these messages on click.
 
 ---
 
 ## Data Sources
 
-### Primary Source
-| Dataset | Source | Records |
+### Connectivity Data
+- OpenFlights database (routes, airports)
+- Manual verification of country mappings
+
+### Hub Airport Statistics (2024)
+| Airport | Source | Quality |
 |---------|--------|---------|
-| Routes | [OpenFlights](https://openflights.org/data.html) | ~67,000 routes |
-| Airports | [OpenFlights](https://openflights.org/data.html) | ~7,000 airports |
-| Airlines | [OpenFlights](https://openflights.org/data.html) | ~6,000 airlines |
+| CDG | Paris Aéroport / Groupe ADP | Official |
+| ATL | Atlanta Airport Statistics | Official |
+| DXB | Dubai Airports Annual Review | Official |
+| GRU | GRU Airport / CEIC Data | Estimated |
+| SYD | Sydney Airport Corporation | Official |
+| CMN | ONDA Morocco | Estimated |
 
-### CDG Hub Case Study
-Data compiled from multiple public sources:
-- Paris Aéroport (Groupe ADP) official statistics
-- Wikipedia
-- FlightConnections.com
-- The Local France (delay statistics)
-- Statista
-
-See `processed_data/HUB_CDG_SOURCES.md` for complete source documentation.
-
-### Supporting Data
-- World population data (World Bank)
-- Country coordinates (Natural Earth)
+Full source documentation in `processed_data/*.md` files.
 
 ---
 
-## Getting Started
+## Dependencies
 
-### Prerequisites
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Local web server (for CORS compliance)
+- **D3.js v7** - Interactive map
+- **TopoJSON v3** - Geographic data
+- **GSAP 3.12** - Scroll animations
+- **Flourish** - External embeds
+- **Google Fonts** - Playfair Display, Source Sans Pro
 
-### Running Locally
+---
 
-**Option 1: Python**
+## Local Development
+
 ```bash
-cd aviation-project
+# Serve locally (Python)
 python -m http.server 8000
-# Open http://localhost:8000
-```
 
-**Option 2: Node.js**
-```bash
+# Or with Node
 npx serve .
-# Open http://localhost:3000
 ```
 
-**Option 3: VS Code**
-- Install "Live Server" extension
-- Right-click `index.html` → "Open with Live Server"
+Open `http://localhost:8000` in browser.
 
 ---
 
-## Design System
+## Deployment
 
-### Color Palette
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Background | `#0f172a` | Main background |
-| Card | `#1e293b` | Glass cards |
-| Cyan | `#06b6d4` | Accent, highlights |
-| Teal | `#14b8a6` | Secondary accent |
-| Gold | `#fbbf24` | Selected country |
-| Orange | `#f97316` | Warm accents |
+The project is static HTML/CSS/JS and can be deployed to:
+- GitHub Pages
+- Netlify
+- Vercel
+- Any static hosting
 
-### Typography
-- **Display:** Playfair Display (headings)
-- **Body:** Source Sans Pro (text)
-
-### UI Components
-- Airplane window frame (hero & finale)
-- Seat-back screen bezel (visualizations)
-- Glassmorphism cards
-- Animated clouds (CSS emoji filters)
-
----
-
-## Responsive Design
-
-The visualization is optimized for:
-- **Desktop:** 1920px+ (full experience)
-- **Laptop:** 1024px-1919px (adapted layout)
-- **Tablet:** 768px-1023px (stacked sections)
-- **Mobile:** < 768px (simplified view)
-
----
-
-## Key Features
-
-### Interactive Map
-- Click countries to see connections
-- Click arcs to explore specific routes
-- Zoom/pan controls
-- Info panel with statistics
-- Dropdown country selector
-
-### Scroll Animations
-- Progress bar indicator
-- Section fade-in effects
-- Counter animations
-- Parallax cloud movements
-
-### Data Interactions
-- Ranking items link to map
-- Gem cards link to map
-- Remote destinations link to map
-- Edge click for route details
-
----
-
-## Methodology
-
-Each visualization includes a protocol document in the `/protocols` folder documenting:
-- Data source and preprocessing
-- Design decisions
-- Interaction patterns
-- Technical implementation
-
----
-
-## Acknowledgments
-
-- **OpenFlights** for the comprehensive aviation database
-- **Natural Earth** for geographic data
-- **D3.js community** for examples and documentation
-- **Professor Giovanni Profeta** for guidance and feedback
+Ensure `processed_data/` folder is included for D3 map data.
 
 ---
 
 ## License
 
-This project was created for educational purposes as part of the SUPSI Data Visualization course (December 2025).
+Academic project for SUPSI. Data sources credited in protocol pages.
 
 ---
 
-<div align="center">
+## Contact
 
-**Made with ✈️ by Alan, Rafaela & Colin**
-
-*SUPSI — Data Visualization 2025*
-
-</div>
+For questions about this project, contact the team through SUPSI channels.
