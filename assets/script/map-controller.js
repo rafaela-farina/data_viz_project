@@ -19,9 +19,9 @@
             land: '#1e293b',
             landHover: '#334155',
             borders: '#334155',
-            selected: '#466E7A',          // Selected country
-            destination: '#9BC2C7',       // Connected countries
-            arcDefault: '#f4cd57',        // Edges
+            selected: '#467b63',          // Selected country
+            destination: '#A1C79B',       // Connected countries
+            arcDefault: '#c8a12e',        // Edges
             arcSelected: '#dd6d18'        // Selected edge
         },
         regions: {

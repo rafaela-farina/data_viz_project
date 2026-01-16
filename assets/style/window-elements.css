@@ -906,13 +906,13 @@
 
 .country.selected {
     fill: var(--accent-yellow);
-    stroke: #fbbf24;
+    stroke: #466d5b;
     stroke-width: 1.5px;
 }
 
 .country.destination {
-    fill: #0891b2;
-    stroke: #069cc2;
+    fill: #466d5b;
+    stroke: #466d5b;
     stroke-width: 1px;
 }
 
