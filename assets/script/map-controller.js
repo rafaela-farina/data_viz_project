@@ -19,10 +19,10 @@
             land: '#1e293b',
             landHover: '#334155',
             borders: '#334155',
-            selected: '#fbbf24',
-            destination: '#8b5cf6',      // Violet for connected countries
-            arcDefault: '#06b6d4',       // Cyan for edges
-            arcSelected: '#f97316'       // Orange for selected edge
+            selected: '#872ED5',          // Purple for selected country
+            destination: '#bb9cc7',       // Lavender for connected countries
+            arcDefault: '#f4cd57',        // Yellow for edges
+            arcSelected: '#dd6d18'        // Orange for selected edge
         },
         regions: {
             global: { coords: [0, 20], scale: 200 },
@@ -288,7 +288,8 @@
         // Reset country styles
         mapState.mapGroup.selectAll('.country')
             .classed('selected', false)
-            .classed('destination', false);
+            .classed('destination', false)
+            .style('fill', CONFIG.colors.land);
 
         // Get max routes from slider
         const maxRoutesInput = document.getElementById('max-routes');
@@ -307,9 +308,13 @@
             .each(function(d) {
                 const name = getCountryName(d);
                 if (name === countryName) {
-                    d3.select(this).classed('selected', true);
+                    d3.select(this)
+                        .classed('selected', true)
+                        .style('fill', CONFIG.colors.selected);
                 } else if (destinationCountries.has(name)) {
-                    d3.select(this).classed('destination', true);
+                    d3.select(this)
+                        .classed('destination', true)
+                        .style('fill', CONFIG.colors.destination);
                 }
             });
 
@@ -428,12 +433,12 @@
         let html = `
             <h3 style="font-size: 1rem; line-height: 1.3;">
                 <span class="flag">${sourceFlag}</span> ${conn.source}
-                <span style="color: #06b6d4; margin: 0 0.3rem;">→</span>
+                <span style="color: #872ED5; margin: 0 0.3rem;">→</span>
                 <span class="flag">${destFlag}</span> ${conn.dest}
             </h3>
-            <div class="info-stat" style="margin-top: 1rem; padding: 0.75rem; background: rgba(6, 182, 212, 0.1); border-radius: 8px;">
+            <div class="info-stat" style="margin-top: 1rem; padding: 0.75rem; background: rgba(135, 46, 213, 0.1); border-radius: 8px;">
                 <div class="info-stat-label">Direct Routes</div>
-                <div class="info-stat-value" style="font-size: 1.5rem; color: #06b6d4;">${conn.num_routes}</div>
+                <div class="info-stat-value" style="font-size: 1.5rem; color: #872ED5;">${conn.num_routes}</div>
             </div>
         `;
         
@@ -580,7 +585,7 @@
                         <div style="margin: 0.5rem 0; padding: 0.4rem; background: rgba(255,255,255,0.03); border-radius: 4px; font-size: 0.8rem;">
                             <div style="color: #f1f5f9; font-weight: 500;">${airport.name.substring(0, 30)}${airport.name.length > 30 ? '...' : ''}</div>
                             <div style="margin-top: 0.2rem; color: #64748b;">
-                                <span style="color: #06b6d4; font-weight: 600;">${airport.iata}</span> · 
+                                <span style="color: #872ED5; font-weight: 600;">${airport.iata}</span> · 
                                 ${airport.destinations} destinations
                             </div>
                         </div>
@@ -929,7 +934,8 @@
         if (mapState.mapGroup) {
             mapState.mapGroup.selectAll('.country')
                 .classed('selected', false)
-                .classed('destination', false);
+                .classed('destination', false)
+                .style('fill', CONFIG.colors.land);
         }
         
         d3.select('#info-panel').classed('visible', false);
