@@ -722,7 +722,18 @@
         }
 
         if (zoomReset) {
-            zoomReset.addEventListener('click', resetView);
+            zoomReset.addEventListener('click', () => {
+                clearSelection();
+                resetView();
+                
+                // Clear dropdown
+                const select = document.getElementById('country-select');
+                if (select) select.value = '';
+                
+                // Clear sidebar active state
+                const sidebarItems = document.querySelectorAll('.sidebar-item[data-country]');
+                sidebarItems.forEach(item => item.classList.remove('active'));
+            });
         }
 
         if (resetBtn) {
@@ -730,6 +741,10 @@
                 mapState.selectedCountry = null;
                 const select = document.getElementById('country-select');
                 if (select) select.value = '';
+                
+                // Clear sidebar active state
+                const sidebarItems = document.querySelectorAll('.sidebar-item[data-country]');
+                sidebarItems.forEach(item => item.classList.remove('active'));
                 
                 if (mapState.connectionsGroup) {
                     mapState.connectionsGroup.selectAll('*').remove();
@@ -740,7 +755,8 @@
                 if (mapState.mapGroup) {
                     mapState.mapGroup.selectAll('.country')
                         .classed('selected', false)
-                        .classed('destination', false);
+                        .classed('destination', false)
+                        .style('fill', CONFIG.colors.land);
                 }
                 
                 d3.select('#info-panel').classed('visible', false);
